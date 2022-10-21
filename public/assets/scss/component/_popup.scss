@@ -1,0 +1,171 @@
+/* =================== popup =================== */
+$pop-pd: 0 40px;
+$pop-hd-height: 45px;
+
+.popup {
+  @include flex-center;
+
+  z-index: z(minus);
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+
+  &.active {
+    @include full;
+
+    z-index: z(popup);
+    user-select: auto;
+
+    .popup-container {
+      transform: scale(1);
+    }
+  }
+
+  &-bg {
+    @include full;
+
+    z-index: z(zero);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &-container {
+    z-index: z(double);
+    position: relative;
+    max-width: 50vw;
+    min-width: 600px;
+    max-height: 80vh;
+    background-color: color(white);
+    transition: all 0.3s;
+    transform: scale(0.5);
+
+    @include media(2000px) {
+      max-width: 80vw;
+    }
+
+    @include media(1400px) {
+      max-width: 85vw;
+    }
+
+    @include media(600px) {
+      min-width: 0;
+      max-width: 90vw;
+      width: 100%;
+      max-height: 90vh;
+    }
+  }
+
+  &-hd {
+    position: relative;
+    height: $pop-hd-height;
+    padding: $pop-pd;
+    background-color: color(main);
+    line-height: $pop-hd-height;
+    font-size: rem(20);
+    font-weight: 600;
+    color: color(white);
+  }
+
+  &-ft {
+    margin-bottom: 30px;
+    padding: $pop-pd;
+
+    .popup-ft-ttl {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: rem(18);
+      font-weight: 400;
+    }
+
+    .btns-wrap {
+      justify-content: center;
+    }
+
+    .btn {
+      width: 40%;
+    }
+  }
+}
+
+.popup-conts-wrapper {
+  @include custom-scroll;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  max-height: calc(80vh - 45px);
+  padding: $pop-pd;
+
+  .pop-cont-ttl {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: rem(20);
+    font-weight: 500;
+
+    .sm {
+      margin-left: 5px;
+      font-size: rem(14);
+      font-weight: 300;
+      color: color(gray-70);
+    }
+
+    .btn {
+      font-size: rem(16);
+    }
+
+    .inp-grp {
+      margin-top: 0;
+    }
+
+    .inp-select {
+      margin-top: 0;
+      font-size: rem(16);
+    }
+  }
+
+  .sub-txt {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: rem(15);
+    font-weight: 400;
+
+    .txt {
+      margin-left: 8px;
+      font-size: rem(20);
+    }
+  }
+
+  .text-center {
+    margin: 70px 0 60px;
+  }
+
+  .inp-grp {
+    margin-top: 16px;
+  }
+
+  .inp-select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .qr-table {
+    min-width: 800px;
+  }
+
+  .cell-target {
+    width: 10em;
+  }
+
+  .pagination-wrap {
+    margin-bottom: 30px;
+  }
+}

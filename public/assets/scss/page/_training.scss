@@ -1,0 +1,21 @@
+/* =================== training =================== */
+// training today page
+.training-today-page {
+  .filter-btn-wrapper {
+    .input {
+      width: 300px;
+
+      @include media(1400px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.training-create-page {
+  .table-control-wrap {
+    @include media(1540px) {
+      width: 100%;
+    }
+  }
+}

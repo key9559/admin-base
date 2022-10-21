@@ -1,0 +1,93 @@
+.main-container {
+  padding: 20px 10px;
+}
+
+.flex-btw-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: blue;
+}
+
+.edit-date {
+  color: #222;
+}
+
+.manage-table-wrap {
+  width: 100%;
+  overflow: auto;
+}
+
+.manage-table {
+  width: 100%;
+  min-width: 400px;
+}
+
+.manage-table-row.manage-table-hd {
+  height: 30px;
+  line-height: 30px;
+  background-color: #888;
+  color: white;
+}
+.manage-table-row.manage-table-hd:hover, .manage-table-row.manage-table-hd:focus {
+  background-color: #888;
+}
+.manage-table-row:nth-child(even) {
+  background-color: #fff;
+}
+.manage-table-row:hover, .manage-table-row:focus {
+  background-color: #ddd;
+}
+.manage-table-row .cell {
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+.manage-table-row .cell-name {
+  width: 13em;
+  padding: 0;
+}
+.manage-table-row .cell-end {
+  width: 5em;
+}
+.manage-table-row .cell-note {
+  width: 13em;
+}
+.manage-table-row .cell-editdate {
+  width: 5em;
+}
+.manage-table-row .cell-editnote {
+  width: 13em;
+}
+.manage-table-row a {
+  display: block;
+  height: 100%;
+  padding: 10px;
+  color: blue;
+}
+
+.version-ckeck-wrap {
+  padding: 50px 10px;
+}
+
+.version-ckeck-list {
+  position: relative;
+}
+.version-ckeck-list .ver {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50px;
+  font-size: 13px;
+}
+.version-ckeck-list .dec {
+  display: block;
+  padding-left: 50px;
+}

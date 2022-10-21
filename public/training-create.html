@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Expires" content="3600" />
+  <meta http-equiv="Pragma" content="3600" />
+  <meta http-equiv="cache-control" content="max-age=3600" />
+  <title>관리자 | 생성</title>
+
+  <meta name="title" content="타이틀" />
+  <meta name="author" content="회사" />
+  <meta name="description" content="상세설명" />
+  <meta name="keywords" content="키워드" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="유알엘" />
+  <meta property="og:title" content="타이틀" />
+  <meta property="og:description" content="상세설명" />
+  <meta property="og:image" content="assets/images/favicon/og.png" />
+  <!-- Twitter -->
+  <meta property="twitter:url" content="유알엘" />
+  <meta property="twitter:title" content="타이틀" />
+  <meta property="twitter:description" content="상세설명" />
+  <!-- END Open Graph -->
+
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/custom/ui.css" />
+
+  <!-- script vandor -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="assets/js/vendor/datepicker.min.js"></script>
+</head>
+
+<body>
+  <div id="page" class="training-page training-create-page">
+    <!-- start:: header -->
+    <header class="qr-hd">
+      <div class="qr-top-hd">
+        <h1 class="qr-logo">Admin</h1>
+        <div class="btns-wrap">
+          <a href="index.html" class="btn btn-md btn-main">로그아웃</a>
+        </div>
+      </div>
+      <nav class="qr-left-hd scroll-custom">
+        <button type="button" class="nav-ttl">인증관리</button>
+        <ul class="nav-list-wrap">
+          <li class="nav-list">
+            <a href="training-create.html" class="nav-link active">연수 생성</a>
+          </li>
+        </ul>
+        <button type="button" class="nav-ttl">통계</button>
+        <ul class="nav-list-wrap">
+          <li class="nav-list">
+            <a href="report.html" class="nav-link">QR 인증 현황</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end:: header -->
+    <!-- start:: main contents -->
+    <main class="qr-main">
+      <h2 class="page-ttl">생성</h2>
+      <div class="panel-wrap">
+        <div class="panel">
+          <div class="flex-btw-wrap filter-btn-wrapper">
+            <!-- start:: filter date -->
+            <div class="filter-container">
+              <div class="filter-wrap">
+                <div class="filter-grp">
+                  <div class="inp-wrap">
+                    <div class="inp-grp">
+                      <label for="search" class="inp-label">검색어</label>
+                      <select name="selecDivision" id="selecDivision" class="input inp-select">
+                        <option value="부서명" disabled selected>
+                          부서명
+                        </option>
+                        <option value="전체">전체</option>
+                        <option value="미래인재과">미래인재과</option>
+                        <option value="정책학교지원관">정책학교지원관</option>
+                        <option value="예산과">예산과</option>
+                        <option value="학교지원과">학교지원과</option>
+                        <option value="교육혁신과">교육혁신과</option>
+                        <option value="교육과정과">교육과정과</option>
+                        <option value="교원인사과">교원인사과</option>
+                        <option value="민주시민교육과">민주시민교육과</option>
+                        <option value="체육건강과">체육건강과</option>
+                        <option value="총무과">총무과</option>
+                        <option value="행정국">행정국</option>
+                        <option value="재무과">재무과</option>
+                        <option value="시설과">시설과</option>
+                        <option value="안전총괄과">안전총괄과</option>
+                        <option value="소통 담당관">소통 담당관</option>
+                        <option value="감사관">감사관</option>
+                      </select>
+                      <input type="text" id="search" name="search" class="input inp-txt"
+                        placeholder="찾으시려는 내용을 입력해주세요" />
+                    </div>
+                    <div class="inp-grp">
+                      <label for="search" class="inp-label">검색 기간</label>
+                      <button type="button" class="btn btn-md btn-bd-gray btn-date">
+                        전일
+                      </button>
+                      <button type="button" class="btn btn-md btn-bd-gray btn-date">
+                        주간
+                      </button>
+                      <button type="button" class="btn btn-md btn-bd-gray btn-date">
+                        월간
+                      </button>
+                      <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker" />
+                      <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker" />
+                    </div>
+                  </div>
+                  <div class="btns-wrap">
+                    <button type="submit" class="btn btn-square btn-main btn-search">
+                      검색
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end:: filter date -->
+            <!-- start:: button component -->
+            <div class="table-control-wrap">
+              <div class="btns-wrap">
+                <button class="btn btn-md btn-bd-danger" onclick="popupOpen('popupConfirm')">
+                  삭제
+                </button>
+                <button class="btn btn-md btn-bd-gray" onclick="popupOpen('popupEdit')">
+                  편집
+                </button>
+                <button class="btn btn-md btn-bd-gray" onclick="popupOpen('popupCreate')">
+                  생성
+                </button>
+                <button class="btn btn-md btn-bd-gray">엑셀 다운로드</button>
+              </div>
+              <div class="inp-grp">
+                <select name="selecDivision" id="selecDivision" class="input inp-select">
+                  <option value="10개씩 보기" selected>10개씩 보기</option>
+                  <option value="50개씩 보기">50개씩 보기</option>
+                  <option value="100개씩 보기">100개씩 보기</option>
+                </select>
+              </div>
+            </div>
+            <!-- end:: button component -->
+          </div>
+
+          <div class="empty-content" style="display: none">
+            <div class="txt">등록된 연수가 없습니다.</div>
+          </div>
+          <div class="l-board">
+            <!-- start:: table -->
+            <div class="table-container scroll-custom">
+              <table summary="진행중인 연수 리스트" class="qr-table">
+                <caption class="voice-only">
+                  진행중인 연수 리스트
+                </caption>
+                <thead>
+                  <tr class="qr-table-row qr-table-hd">
+                    <th class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
+                        <label for="chck1" class="chck-icon">전체선택</label>
+                      </div>
+                    </th>
+                    <th class="cell cell-num">구분</th>
+                    <th class="cell cell-division">부서명</th>
+                    <th class="cell cell-ttl">연수명</th>
+                    <th class="cell cell-date">연수 기간</th>
+                    <th class="cell cell-place">연수 장소</th>
+                    <th class="cell cell-target">참석 대상</th>
+                  </tr>
+                </thead>
+                <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
+                <tbody>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
+                        <label for="chck1" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">10</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">
+                      등록된 연수명등록된 연수명등록된 연수명등록된
+                      연수명등록된 연수명등록된 연수명등록된 연수명등록된
+                      연수명등록된 연수명등록된 연수명등록된 연수명등록된
+                      연수명등록된 연수명등록된 연수명등록된 연수명등록된
+                      연수명등록된 연수명
+                    </td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <!-- FIXME: 삭제될 반복 영역 -->
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck2" name="chck2" class="inp-chck d-none" />
+                        <label for="chck2" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">9</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.08.09 (화) ~ 2022.09.30 (금)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck3" name="chck3" class="inp-chck d-none" />
+                        <label for="chck3" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">8</td>
+                    <td class="cell cell-division">민주시민교육과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck4" name="chck4" class="inp-chck d-none" />
+                        <label for="chck4" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">7</td>
+                    <td class="cell cell-division">교원인사과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                        <label for="chck5" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">6</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck6" name="chck6" class="inp-chck d-none" />
+                        <label for="chck6" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">5</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck7" name="chck7" class="inp-chck d-none" />
+                        <label for="chck7" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">4</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck8" name="chck8" class="inp-chck d-none" />
+                        <label for="chck8" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">3</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck9" name="chck9" class="inp-chck d-none" />
+                        <label for="chck9" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">2</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <tr class="qr-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck10" name="chck10" class="inp-chck d-none" />
+                        <label for="chck10" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell-num">1</td>
+                    <td class="cell cell-division">학교지원과</td>
+                    <td class="cell cell-ttl">등록된 연수명</td>
+                    <td class="cell cell-date">
+                      2022.01.01 (토) ~ 2022. 01. 31 (월)
+                    </td>
+                    <td class="cell cell-place">1층 대강당</td>
+                    <td class="cell cell-target">100</td>
+                  </tr>
+                  <!-- FIXME: END 삭제될 반복 영역 -->
+                </tbody>
+              </table>
+            </div>
+            <!-- end:: table -->
+
+            <div class="pagination-wrap">
+              <button class="btn btn-page btn-page-icon btn-page-start">
+                맨앞으로
+              </button>
+              <button class="btn btn-page btn-page-icon btn-page-prev">
+                이전페이지
+              </button>
+              <button class="btn btn-page on">1</button>
+              <button class="btn btn-page">2</button>
+              <button class="btn btn-page">3</button>
+              <button class="btn btn-page">4</button>
+              <button class="btn btn-page">5</button>
+              <button class="btn btn-page">6</button>
+              <button class="btn btn-page">7</button>
+              <button class="btn btn-page">8</button>
+              <button class="btn btn-page">9</button>
+              <button class="btn btn-page">10</button>
+              <button class="btn btn-page btn-page-icon btn-page-next">
+                다음페이지
+              </button>
+              <button class="btn btn-page btn-page-icon btn-page-end">
+                맨뒤로
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end:: main contents -->
+    <!-- start:: popups -->
+
+    <!-- training create popup -->
+    <div class="popup" id="popupCreate">
+      <div class="popup-bg" onclick="popupClose();"></div>
+      <div class="popup-container">
+        <div class="popup-hd">
+          <h2 class="popup-ttl">연수 생성</h2>
+          <button class="btn btn-close" onclick="popupClose();">닫기</button>
+        </div>
+        <div class="popup-conts-wrapper">
+          <h3 class="pop-cont-ttl">연수정보 입력</h3>
+
+          <div class="inp-grp">
+            <label for="selecDivision" class="inp-label">담당부서</label>
+
+            <select name="selecDivision" id="selecDivision" class="input inp-select">
+              <option value="부서명" disabled selected>부서명</option>
+              <option value="미래인재과">미래인재과</option>
+              <option value="정책학교지원관">정책학교지원관</option>
+              <option value="예산과">예산과</option>
+              <option value="학교지원과">학교지원과</option>
+              <option value="교육혁신과">교육혁신과</option>
+              <option value="교육과정과">교육과정과</option>
+              <option value="교원인사과">교원인사과</option>
+              <option value="민주시민교육과">민주시민교육과</option>
+              <option value="체육건강과">체육건강과</option>
+              <option value="총무과">총무과</option>
+              <option value="행정국">행정국</option>
+              <option value="재무과">재무과</option>
+              <option value="시설과">시설과</option>
+              <option value="안전총괄과">안전총괄과</option>
+              <option value="소통 담당관">소통 담당관</option>
+              <option value="감사관">감사관</option>
+            </select>
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingTitle" class="inp-label">연수명</label>
+            <input type="text" id="trainingTitle" name="trainingTitle" class="input inp-txt"
+              placeholder="연수명을 입력해주세요" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingDate" class="inp-label">연수기간</label>
+            <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker" />
+            <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingPlace" class="inp-label">연수장소</label>
+            <input type="text" id="trainingPlace" name="trainingPlace" class="input inp-txt"
+              placeholder="연수장소를 입력해주세요" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingNum" class="inp-label">참석대상</label>
+            <input type="tel" id="trainingNum" name="trainingNum" class="input inp-txt" placeholder="참석자 수를 입력해주세요" />
+          </div>
+
+          <h3 class="pop-cont-ttl">
+            접근 비밀번호 설정
+            <small class="sm c-danger">6자리 숫자로 입력해주세요</small>
+          </h3>
+
+          <div class="inp-grp">
+            <label for="password" class="inp-label">입력</label>
+            <input type="password" id="password" name="password" class="input inp-txt" placeholder="비밀번호를 입력해주세요"
+              maxlength="6" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="password2" class="inp-label">재입력</label>
+            <input type="password" id="password2" name="password2" class="input inp-txt" placeholder="비밀번호를 다시 입력해주세요"
+              maxlength="6" />
+          </div>
+        </div>
+        <div class="popup-ft">
+          <h2 class="popup-ft-ttl">
+            연수를 QR 코드로 참석 여부를 체크하시겠습니까?
+          </h2>
+          <div class="btns-wrap">
+            <button class="btn btn-md btn-bd-main">예</button>
+            <button class="btn btn-md btn-bd-danger">아니오</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END training create popup -->
+
+    <!-- training edit popup -->
+    <div class="popup" id="popupEdit">
+      <div class="popup-bg" onclick="popupClose();"></div>
+      <div class="popup-container">
+        <div class="popup-hd">
+          <h2 class="popup-ttl">연수 편집</h2>
+          <button class="btn btn-close" onclick="popupClose();">닫기</button>
+        </div>
+        <div class="popup-conts-wrapper">
+          <h3 class="pop-cont-ttl">연수정보 입력</h3>
+
+          <div class="inp-grp">
+            <label for="selecDivision" class="inp-label">담당부서</label>
+
+            <select name="selecDivision" id="selecDivision" class="input inp-select">
+              <option value="부서명" disabled>부서명</option>
+              <option value="미래인재과">미래인재과</option>
+              <option value="정책학교지원관" selected>정책학교지원관</option>
+              <option value="예산과">예산과</option>
+              <option value="학교지원과">학교지원과</option>
+              <option value="교육혁신과">교육혁신과</option>
+              <option value="교육과정과">교육과정과</option>
+              <option value="교원인사과">교원인사과</option>
+              <option value="민주시민교육과">민주시민교육과</option>
+              <option value="체육건강과">체육건강과</option>
+              <option value="총무과">총무과</option>
+              <option value="행정국">행정국</option>
+              <option value="재무과">재무과</option>
+              <option value="시설과">시설과</option>
+              <option value="안전총괄과">안전총괄과</option>
+              <option value="소통 담당관">소통 담당관</option>
+              <option value="감사관">감사관</option>
+            </select>
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingTitle" class="inp-label">연수명</label>
+            <input type="text" id="trainingTitle" name="trainingTitle" class="input inp-txt" placeholder="연수명을 입력해주세요"
+              value="존경받는 사람이 되는 길" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingDate" class="inp-label">연수기간</label>
+            <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker"
+              value="2022-08-10" />
+            <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker"
+              value="2022-08-17" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingPlace" class="inp-label">연수장소</label>
+            <input type="text" id="trainingPlace" name="trainingPlace" class="input inp-txt" placeholder="연수장소를 입력해주세요"
+              value="대강당" />
+          </div>
+
+          <div class="inp-grp">
+            <label for="trainingNum" class="inp-label">참석대상</label>
+            <input type="tel" id="trainingNum" name="trainingNum" class="input inp-txt" placeholder="참석자 수를 입력해주세요"
+              value="100" />
+          </div>
+
+          <h3 class="pop-cont-ttl">
+            비밀번호 입력
+            <small class="sm c-danger">생성시 입력한 비밀번호를 입력해주세요</small>
+          </h3>
+
+          <div class="inp-grp">
+            <label for="password" class="inp-label">입력</label>
+            <input type="password" id="password" name="password" class="input inp-txt" placeholder="비밀번호를 입력해주세요"
+              maxlength="6" />
+          </div>
+        </div>
+        <div class="popup-ft">
+          <h2 class="popup-ft-ttl">연수를 해당 내용으로 편집하겠습니까?</h2>
+          <div class="btns-wrap">
+            <button class="btn btn-md btn-bd-main">예</button>
+            <button class="btn btn-md btn-bd-danger">아니오</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END training edit popup -->
+
+    <!-- confirm popup -->
+    <div class="popup" id="popupConfirm">
+      <div class="popup-bg" onclick="popupClose();"></div>
+      <div class="popup-container">
+        <div class="popup-hd">
+          <button class="btn btn-close" onclick="popupClose();">닫기</button>
+        </div>
+        <div class="popup-conts-wrapper">
+          <h3 class="pop-cont-ttl text-center">
+            해당 연수를 삭제하시겠습니까?
+          </h3>
+        </div>
+        <div class="popup-ft">
+          <div class="btns-wrap">
+            <button class="btn btn-md btn-bd-main" onclick="popupClose();">
+              예
+            </button>
+            <button class="btn btn-md btn-bd-danger" onclick="popupClose();">
+              아니오
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END confirm popup -->
+    <!-- end:: popups -->
+  </div>
+  <!-- END page -->
+  <script src="assets/js/custom/ui.js"></script>
+  <script>
+    // datepicker
+    // https://github.com/fengyuanchen/datepicker
+    $('[data-toggle="datepicker"]').datepicker({
+      format: 'yyyy-mm-dd',
+      yearSuffix: '년',
+      months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      monthsShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      days: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+      daysMin: ['일', '월', '화', '수', '목', '금', '토'],
+    });
+  </script>
+</body>
+
+</html>

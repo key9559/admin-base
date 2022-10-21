@@ -1,0 +1,229 @@
+/* =================== button =================== */
+// button wrapper
+.btns-wrap {
+  @include flex {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  margin-top: 5px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .btn {
+    margin: 10px 0;
+    margin-left: 10px;
+    &:first-of-type {
+      margin-left: 0px;
+    }
+  }
+}
+
+// button reset
+.btn {
+  @include input-reset;
+  @include flex-center(inline-flex);
+
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.btn:disabled {
+    border-color: color(border);
+    background-color: color(disabled);
+    color: color(text);
+    cursor: default;
+
+    @include hover {
+      box-shadow: none;
+    }
+  }
+}
+
+// button style
+// 버튼 모양
+.btn-square {
+  @include square(90px);
+
+  font-size: rem(20);
+}
+
+// 버튼 높이
+@each $name, $height in $btn-height {
+  .btn-#{$name} {
+    height: $height + px;
+    padding: 0 15px;
+  }
+}
+
+.btn-full {
+  width: 100%;
+}
+
+// 버튼 색
+@each $name, $color in $btn-color {
+  .btn-bd-#{$name} {
+    border: 1px solid color(border);
+    outline: 1px solid transparent;
+
+    @include hover {
+      border: 1px solid $color;
+      color: $color;
+    }
+  }
+}
+
+.btn-main {
+  background-color: color(main);
+  color: color(white);
+
+  @include hover {
+    background-color: #5b85d8;
+  }
+}
+
+.btn-bd-gray {
+  border: 1px solid color(border);
+
+  @include hover {
+    border-color: color(main);
+    color: color(main);
+  }
+}
+
+// custom buttons
+// modal-open
+.btn-table-modal {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 0;
+
+  @include make-virtual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: color(main);
+    transition: all 0.2s;
+  }
+
+  &:after {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+  }
+
+  @include hover {
+    &:after,
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+// modal-close
+.btn-close {
+  @include square(40px);
+
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  font-size: 1px;
+  font-weight: 0;
+  color: transparent;
+  text-indent: -rem;
+
+  @include hover {
+    &:before,
+    &:after {
+      height: 23px;
+    }
+  }
+
+  @include make-virtual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: color(white);
+    transition: height 0.3s;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+// pagination button style
+.btn-page {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 5px;
+  border: 1px solid color(white);
+  border-radius: 4px;
+  font-weight: 600;
+  color: color(gray-9e);
+
+  @include hover {
+    border-color: color(border);
+    color: color(main);
+    box-shadow: none;
+  }
+
+  &.on {
+    background-color: color(sub);
+  }
+
+  &-start {
+    @include bg-url(icon, "icon_start.svg");
+
+    @include hover {
+      @include bg-url(icon, "icon_start_on.svg");
+    }
+  }
+
+  &-prev {
+    @include bg-url(icon, "icon_prev.svg");
+
+    @include hover {
+      @include bg-url(icon, "icon_prev_on.svg");
+    }
+  }
+
+  &-next {
+    @include bg-url(icon, "icon_next.svg");
+
+    @include hover {
+      @include bg-url(icon, "icon_next_on.svg");
+    }
+  }
+
+  &-end {
+    @include bg-url(icon, "icon_end.svg");
+
+    @include hover {
+      @include bg-url(icon, "icon_end_on.svg");
+    }
+  }
+}
+
+.btn-page-icon {
+  @extend .voice-only;
+  @include square(30px);
+  @include bg-op;
+
+  position: inherit;
+  transition: all 0.3s;
+}

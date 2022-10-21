@@ -1,0 +1,51 @@
+// gray color는 따로 사용하고, red등의 컬러 추가해서 사용
+$color-set: (
+  main: #2b5ec0,
+  sub: #f1f2f8,
+  success: #1bc5bd,
+  warning: #ffa800,
+  danger: #ee2d41,
+  text: #424242,
+  border: #e0e0e0,
+  disabled: #f5f5f5,
+  white: #fff,
+  gray-70: #707070,
+  gray-9e: #9e9e9e,
+  gray-f0: #f0f0f0,
+  gray-fa: #fafafa,
+);
+
+$zIndex-set: (
+  popup: 100,
+  fixed: 20,
+  header: 10,
+  double: 2,
+  default: 1,
+  zero: 0,
+  minus: -1,
+);
+
+$path-set: (
+  icon: "../../images/icon/",
+  img: "../../images/img/",
+  logo: "../../images/logo/",
+);
+
+// 높이, 넓이
+$hd-height: 60px;
+$gnb-width: 250px;
+
+// button & badge
+// btn 높이 추가하면 .btn-ht-크기 가 추가된다.
+$btn-height: (
+  md: 40,
+  lg: 90,
+);
+
+// btn color 추가하면 .btn-색이름 .btn-bd-색이름 .btn-gst-색이름 이 추가된다.
+$btn-color: (
+  main: #{color(main)},
+  success: color(success),
+  warning: color(warning),
+  danger: color(danger),
+);

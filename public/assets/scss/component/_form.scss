@@ -1,0 +1,267 @@
+/* =================== form =================== */
+.inp-grp {
+  @include flex {
+    @include flex-op(center, flex-start);
+  }
+
+  margin-top: 14px;
+
+  @include media(1400px) {
+    display: block;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.input {
+  @include input-reset;
+
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: em(14);
+  border: 1px solid color(border);
+
+  @include media(1400px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include hover {
+    border-color: color(main);
+  }
+
+  &::placeholder {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    background-color: color(disabled);
+    color: color(text);
+    cursor: default;
+
+    @include hover {
+      border-color: color(border);
+    }
+  }
+
+  &.inp-area {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+  }
+}
+
+.inp-label {
+  min-width: 5em;
+  padding-right: 10px;
+  font-size: rem(15);
+
+  @include media(1400px) {
+    display: inline-block;
+  }
+}
+
+.inp-date {
+  @include bg-op($s: 15px, $p: center right 10px);
+  @include bg-url(icon, "icon_calander.svg");
+
+  position: relative;
+  max-width: 130px;
+
+  &::-webkit-calendar-picker-indicator {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    background-image: none;
+    position: relative;
+    z-index: 0;
+  }
+
+  &::-webkit-datetime-edit-fields-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  @include media(1400px) {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+
+.inp-select {
+  @include bg-url(icon, "icon_select.svg");
+  @include bg-op($p: center right 5px);
+  max-width: 150px;
+  padding-right: 25px;
+  cursor: pointer;
+
+  @include hover {
+    @include bg-url(icon, "icon_select_on.svg");
+  }
+
+  @include media(1400px) {
+    display: inline-block;
+    margin: 10px 0;
+    // max-width: calc(100% - 5em);
+    max-width: 100%;
+  }
+}
+
+// checkbox custom
+.chck-icon {
+  @include square(20px);
+  @include bg-url(icon, "icon_check.svg");
+  @include bg-op;
+
+  overflow: hidden;
+  display: block;
+  border: 1px solid color(border);
+  background-color: color(white);
+  line-height: 0;
+  font-size: rem(1);
+  color: transparent;
+  text-indent: -100px;
+  letter-spacing: -100px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @at-root .inp-chck:checked ~ & {
+    background-color: color(success);
+  }
+}
+
+.chck-txt {
+  margin-left: 5px;
+  font-size: rem(16);
+  cursor: pointer;
+}
+
+// table layout
+.table-control-wrap {
+  @include media(1540px) {
+    @include flex {
+      justify-content: flex-end;
+    }
+  }
+
+  .btns-wrap {
+    display: inline-block;
+  }
+
+  .inp-grp {
+    display: inline-block;
+    margin-left: 10px;
+
+    @include media(1540px) {
+      margin-top: 10px;
+    }
+
+    @include media(1400px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.qr-table {
+  min-width: 1200px;
+  width: 100%;
+  border-top: 1px solid color(border);
+  border-bottom: 1px solid color(border);
+
+  .qr-table-row {
+    &:nth-child(even) {
+      background-color: color(gray-fa);
+    }
+
+    @include hover {
+      background-color: color(gray-f0);
+    }
+  }
+
+  .qr-table-hd {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .cell {
+    height: 48px;
+    padding: 0 15px;
+    line-height: 1.4;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th.cell {
+    background-color: color(sub);
+    font-weight: 500;
+    font-size: rem(17);
+  }
+
+  .cell-chck {
+    width: 3em;
+
+    .inp-grp {
+      display: inline-block;
+    }
+  }
+
+  .cell-num {
+    width: 3em;
+  }
+
+  .cell-division {
+    width: 5em;
+  }
+
+  .cell-ttl {
+    @include ellipse(1, 48px);
+  }
+
+  td.cell-ttl {
+    text-align: left;
+  }
+
+  .cell-date {
+    width: 15em;
+  }
+
+  .cell-place {
+    width: 8em;
+  }
+
+  .cell-target {
+    width: 5.5em;
+  }
+
+  .cell-atnum {
+    width: 5.5em;
+  }
+
+  .cell-atrate {
+    width: 3em;
+  }
+
+  .cell-more {
+    width: 6.5em;
+  }
+}

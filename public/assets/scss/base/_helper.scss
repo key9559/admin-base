@@ -1,0 +1,47 @@
+/* =================== helper =================== */
+// 노출되지 않을 영역
+.d-none {
+  display: none;
+}
+
+// 보이진 않지만 리딩되는 영역
+.voice-only {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -rem;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  color: transparent !important;
+}
+
+// text
+.c-main {
+  color: color(main);
+}
+
+.c-danger {
+  color: color(danger);
+}
+
+.text-center {
+  text-align: center;
+}
+
+// flex content
+.flex-btw-wrap {
+  @include flex-btw;
+
+  @include media(1400px) {
+    display: block;
+  }
+}
+
+// scroll custom element에 height 지정 필수
+.scroll-custom {
+  @include custom-scroll;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
