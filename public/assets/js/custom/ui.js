@@ -17,6 +17,8 @@ function popupClose() {
 const $gnbActive = document.querySelector(".nav-link.active");
 const $gnbTtl = document.querySelectorAll(".nav-ttl");
 
+console.log($gnbTtl);
+
 for (i = 0; i <= $gnbTtl.length; i++) {
   let $targetGnbTtl = $gnbTtl[i];
 

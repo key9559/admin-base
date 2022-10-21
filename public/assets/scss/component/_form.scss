@@ -26,7 +26,7 @@
   border-radius: 4px;
   background-color: transparent;
   font-size: em(14);
-  border: 1px solid color(border);
+  border: 1px solid color(gray-100);
 
   @include media(1400px) {
     margin-left: 0;
@@ -38,7 +38,7 @@
   }
 
   @include hover {
-    border-color: color(main);
+    border-color: color(primary);
   }
 
   &::placeholder {
@@ -46,12 +46,12 @@
   }
 
   &:disabled {
-    background-color: color(disabled);
+    background-color: color(gray-50);
     color: color(text);
     cursor: default;
 
     @include hover {
-      border-color: color(border);
+      border-color: color(gray-100);
     }
   }
 
@@ -130,8 +130,8 @@
 
   overflow: hidden;
   display: block;
-  border: 1px solid color(border);
-  background-color: color(white);
+  border: 1px solid color(gray-100);
+  background-color: color(gray-0);
   line-height: 0;
   font-size: rem(1);
   color: transparent;
@@ -140,8 +140,8 @@
   cursor: pointer;
   transition: all 0.3s;
 
-  @at-root .inp-chck:checked ~ & {
-    background-color: color(success);
+  @at-root .inp-chck:checked~& {
+    background-color: color(primary);
   }
 }
 
@@ -181,13 +181,13 @@
   overflow: auto;
 }
 
-.qr-table {
+.ad-table {
   min-width: 1200px;
   width: 100%;
-  border-top: 1px solid color(border);
-  border-bottom: 1px solid color(border);
+  border-top: 1px solid color(gray-100);
+  border-bottom: 1px solid color(gray-100);
 
-  .qr-table-row {
+  .ad-table-row {
     &:nth-child(even) {
       background-color: color(gray-fa);
     }
@@ -197,7 +197,7 @@
     }
   }
 
-  .qr-table-hd {
+  .ad-table-hd {
     position: sticky;
     top: 0;
     left: 0;
@@ -212,7 +212,7 @@
   }
 
   th.cell {
-    background-color: color(sub);
+    background-color: color(secondary);
     font-weight: 500;
     font-size: rem(17);
   }

@@ -7,9 +7,10 @@
 // 보이진 않지만 리딩되는 영역
 .voice-only {
   overflow: hidden;
-  position: absolute;
+  z-index: -10;
+  position: relative;
   top: 0;
-  left: -rem;
+  left: -1px;
   width: 1px;
   height: 1px;
   font-size: 1px;
@@ -17,14 +18,6 @@
 }
 
 // text
-.c-main {
-  color: color(main);
-}
-
-.c-danger {
-  color: color(danger);
-}
-
 .text-center {
   text-align: center;
 }

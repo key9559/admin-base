@@ -6,17 +6,14 @@
     flex-wrap: wrap;
   }
 
-  margin-top: 5px;
 
-  &:first-child {
-    margin-top: 0;
+  &:not(:first-child) {
+    margin-top: 5px;
   }
 
   .btn {
-    margin: 10px 0;
-    margin-left: 10px;
-    &:first-of-type {
-      margin-left: 0px;
+    &:not(:first-of-type) {
+      margin-left: 10px;
     }
   }
 }
@@ -27,70 +24,124 @@
   @include flex-center(inline-flex);
 
   border-radius: 4px;
-  font-weight: 500;
-  cursor: pointer;
+  font-weight: 400;
   transition: all 0.3s;
-
-  &.btn:disabled {
-    border-color: color(border);
-    background-color: color(disabled);
-    color: color(text);
-    cursor: default;
-
-    @include hover {
-      box-shadow: none;
-    }
-  }
 }
 
 // button style
-// 버튼 모양
-.btn-square {
-  @include square(90px);
-
-  font-size: rem(20);
-}
-
 // 버튼 높이
-@each $name, $height in $btn-height {
-  .btn-#{$name} {
-    height: $height + px;
-    padding: 0 15px;
-  }
+.btn-m {
+  height: 32px;
+  padding: 0 12px;
+  font-size: rem(14);
 }
 
-.btn-full {
-  width: 100%;
+.btn-l {
+  height: 40px;
+  padding: 0 20px;
+  font-size: rem(14);
+}
+
+.btn-xl {
+  height: 48px;
+  padding: 0 40px;
+  font-size: rem(18);
 }
 
 // 버튼 색
-@each $name, $color in $btn-color {
-  .btn-bd-#{$name} {
-    border: 1px solid color(border);
-    outline: 1px solid transparent;
+// fill button
+@each $name,
+$color in $btn-color {
+
+  // basic은 예외로 작성
+  .btn-#{$name} {
+    background-color: color(#{$color} + '-500');
+    color: color(gray-0);
 
     @include hover {
-      border: 1px solid $color;
-      color: $color;
+      background-color: color(#{$color} + '-300');
+      color: color(gray-0);
+    }
+
+    @include active {
+      background-color: color(#{$color} + '-600');
+      color: color(gray-0);
+    }
+
+    @include disabled {
+      background-color: color(#{$color} + '-200');
+      color: color(gray-0);
+      cursor: not-allowed;
     }
   }
 }
 
-.btn-main {
-  background-color: color(main);
-  color: color(white);
+// ghost button
+@each $name,
+$color in $btn-color {
 
-  @include hover {
-    background-color: #5b85d8;
+  // basic은 예외로 작성
+  .btn-ghost-#{$name} {
+    border: 1px solid color(#{$color} + '-500');
+    color: color(#{$color} + '-500');
+
+    @include hover {
+      border-color: color(#{$color} + '-300');
+      color: color(#{$color} + '-300');
+    }
+
+    @include active {
+      border-color: color(#{$color} + '-600');
+      color: color(#{$color} + '-600');
+    }
+
+    @include disabled {
+      border-color: color(#{$color} + '-200');
+      color: color(#{$color} + '-200');
+      cursor: not-allowed;
+    }
   }
 }
 
-.btn-bd-gray {
-  border: 1px solid color(border);
+.btn-basic {
+  background-color: color(gray-50);
+  color: color(text);
 
   @include hover {
-    border-color: color(main);
-    color: color(main);
+    background-color: color(gray-50);
+    color: color(gray-600);
+  }
+
+  @include active {
+    background-color: color(gray-200);
+    color: color(gray-600);
+  }
+
+  @include disabled {
+    background-color: color(gray-50);
+    color: color(gray-400);
+    cursor: not-allowed;
+  }
+}
+
+.btn-ghost-basic {
+  border: 1px solid color(gray-300);
+  color: color(text);
+
+  @include hover {
+    border-color: color(gray-200);
+    color: color(gray-400);
+  }
+
+  @include active {
+    border-color: color(gray-400);
+    color: color(gray-600);
+  }
+
+  @include disabled {
+    border-color: color(gray-300);
+    color: color(gray-400);
+    cursor: not-allowed;
   }
 }
 
@@ -108,7 +159,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background-color: color(main);
+    background-color: color(primary);
     transition: all 0.2s;
   }
 
@@ -120,6 +171,7 @@
   }
 
   @include hover {
+
     &:after,
     &:before {
       width: 100%;
@@ -141,6 +193,7 @@
   text-indent: -rem;
 
   @include hover {
+
     &:before,
     &:after {
       height: 23px;
@@ -153,7 +206,7 @@
     left: 50%;
     width: 2px;
     height: 20px;
-    background-color: color(white);
+    background-color: color(gray-0);
     transition: height 0.3s;
   }
 
@@ -171,19 +224,19 @@
   min-width: 30px;
   height: 30px;
   padding: 0 5px;
-  border: 1px solid color(white);
+  border: 1px solid color(gray-0);
   border-radius: 4px;
   font-weight: 600;
-  color: color(gray-9e);
+  color: color(gray-500);
 
   @include hover {
-    border-color: color(border);
-    color: color(main);
+    border-color: color(gray-100);
+    color: color(primary);
     box-shadow: none;
   }
 
   &.on {
-    background-color: color(sub);
+    background-color: color(secondary);
   }
 
   &-start {

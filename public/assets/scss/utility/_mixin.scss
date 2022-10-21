@@ -60,8 +60,8 @@
 }
 
 // background image
-@mixin bg-url($path, $img) {
-  background-image: urlPath($path, $img);
+@mixin bg-url($path, $img){
+background-image: urlPath($path, $img);
 }
 
 @mixin bg-op($p: center, $s: auto, $r: no-repeat) {
@@ -115,8 +115,24 @@
 }
 
 @mixin hover {
+
   &:hover,
   &:focus {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
+    @content;
+  }
+}
+
+@mixin disabled {
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus {
     @content;
   }
 }
@@ -145,6 +161,7 @@
 
 // iphone notch
 @mixin notch {
+
   /* iPhone XS : 2436x1125px at 458ppi */
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     @content;
@@ -169,7 +186,7 @@
 }
 
 // scroll custom style
-@mixin custom-scroll($c: color(border), $sub-c: #fff, $r: 0, $s: 8px) {
+@mixin custom-scroll($c: color(gray-100), $sub-c: #fff, $r: 0, $s: 8px) {
   &::-webkit-scrollbar {
     width: $s;
     height: $s;

@@ -3,7 +3,7 @@
   min-height: 100vh;
   padding-top: $hd-height;
   padding-left: $gnb-width;
-  background-color: color(gray-fa);
+  background-color: color(gray-100);
 }
 
 .panel-wrap {
@@ -30,10 +30,11 @@
   overflow-y: auto;
   overscroll-behavior: contain;
   width: 100%;
-  max-height: calc(100vh - $hd-height - 120px);
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 40px;
-  border: 1px solid color(border);
-  background-color: color(white);
+  border: 1px solid color(gray-100);
+  background-color: color(gray-0);
 }
 
 .chart-ttl {
@@ -42,8 +43,8 @@
   font-weight: 500;
 }
 
-.qr-main {
-  padding: 0 30px;
+.ad-main {
+  padding: 0 15px;
 }
 
 // common
@@ -134,22 +135,22 @@
 // datepicker
 .datepicker-container .datepicker-panel {
   li:hover {
-    border: 1px solid color(main);
-    background-color: color(white);
-    color: color(main);
+    border: 1px solid color(primary);
+    background-color: color(gray-0);
+    color: color(primary);
     box-sizing: border-box;
   }
 
   .highlighted,
   .highlighted:hover {
-    background-color: color(white);
-    color: color(main);
+    background-color: color(gray-0);
+    color: color(primary);
   }
 
   .picked,
   .picked:hover {
-    background-color: color(main);
-    color: color(white);
+    background-color: color(primary);
+    color: color(gray-0);
   }
 
   ul[data-view="week"] li {
