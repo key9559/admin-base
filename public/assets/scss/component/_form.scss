@@ -162,16 +162,16 @@
 .ad-table {
   min-width: 1200px;
   width: 100%;
-  border-top: 1px solid color(gray-100);
-  border-bottom: 1px solid color(gray-100);
+  border-top: 1px solid color(gray-200);
+  border-bottom: 1px solid color(gray-200);
 
   .ad-table-row {
-    &:nth-child(even) {
-      background-color: color(gray-fa);
-    }
+    // &:nth-child(even) {
+    //   background-color: color(gray-50);
+    // }
 
     @include hover {
-      background-color: color(gray-f0);
+      background-color: color(gray-200);
     }
   }
 
@@ -187,12 +187,12 @@
     line-height: 1.4;
     text-align: center;
     vertical-align: middle;
+    font-weight: 400;
+    font-size: rem(14);
   }
 
   th.cell {
-    background-color: color(secondary);
-    font-weight: 500;
-    font-size: rem(17);
+    background-color: color(gray-50);
   }
 
   .cell-chck {

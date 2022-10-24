@@ -5,24 +5,6 @@
   padding-left: $gnb-width;
 }
 
-.panel-wrap {
-  display: flex;
-  gap: 20px;
-
-  .main-panel {
-    flex-grow: 8;
-    flex-basis: 600px;
-    width: 66%;
-    flex-shrink: 0;
-  }
-
-  .side-panel {
-    flex-grow: 4;
-    width: 34%;
-    flex-basis: 540px;
-  }
-}
-
 .ad-main {
   overscroll-behavior: contain;
   width: 100%;
@@ -103,6 +85,11 @@
   font-weight: 500;
 }
 
+.page-breadcrumb {
+  margin-top: 4px;
+  color: color(gray-500);
+}
+
 // empty content
 .empty-content {
   width: 100%;
@@ -119,4 +106,25 @@
 // pagination
 .pagination-wrap {
   @include flex-center;
+}
+
+// card
+.card-wrap {
+  @include flex {
+    @include flex-op(stretch, flex-start);
+
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.card-basic {
+  width: calc(16.666% - 17px);
+  height: 120px;
+  padding: 20px;
+  background-color: color(gray-50);
+
+  .card-dec {
+    text-align: right;
+  }
 }
