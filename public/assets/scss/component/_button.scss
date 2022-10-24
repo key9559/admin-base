@@ -55,20 +55,24 @@ $color in $btn-color {
 
   // basic은 예외로 작성
   .btn-#{$name} {
+    border: 1px solid color(#{$color} + '-500');
     background-color: color(#{$color} + '-500');
     color: color(gray-0);
 
     @include hover {
+      border-color: color(#{$color} + '-300');
       background-color: color(#{$color} + '-300');
       color: color(gray-0);
     }
 
     @include active {
+      border-color: color(#{$color} + '-600');
       background-color: color(#{$color} + '-600');
       color: color(gray-0);
     }
 
     @include disabled {
+      border-color: color(#{$color} + '-200');
       background-color: color(#{$color} + '-200');
       color: color(gray-0);
       cursor: not-allowed;
@@ -104,20 +108,24 @@ $color in $btn-color {
 }
 
 .btn-basic {
+  border: 1px solid color(gray-300);
   background-color: color(gray-50);
   color: color(text);
 
   @include hover {
+    border-color: color(gray-50);
     background-color: color(gray-50);
     color: color(gray-600);
   }
 
   @include active {
+    border-color: color(gray-200);
     background-color: color(gray-200);
     color: color(gray-600);
   }
 
   @include disabled {
+    border-color: color(gray-50);
     background-color: color(gray-50);
     color: color(gray-400);
     cursor: not-allowed;
@@ -146,39 +154,6 @@ $color in $btn-color {
 }
 
 // custom buttons
-// modal-open
-.btn-table-modal {
-  position: relative;
-  display: inline-block;
-  padding: 2px;
-  border-radius: 0;
-
-  @include make-virtual {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: color(primary);
-    transition: all 0.2s;
-  }
-
-  &:after {
-    top: auto;
-    right: 0;
-    bottom: 0;
-    left: auto;
-  }
-
-  @include hover {
-
-    &:after,
-    &:before {
-      width: 100%;
-    }
-  }
-}
-
 // modal-close
 .btn-close {
   @include square(40px);
@@ -221,62 +196,65 @@ $color in $btn-color {
 
 // pagination button style
 .btn-page {
-  min-width: 30px;
-  height: 30px;
-  padding: 0 5px;
-  border: 1px solid color(gray-0);
-  border-radius: 4px;
-  font-weight: 600;
-  color: color(gray-500);
+  min-width: 32px;
+  height: 32px;
+  margin-left: -1px;
+  padding: 0 12px;
+  border: 1px solid color(gray-300);
+  border-radius: 0;
+
+  &:nth-child(2) {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:nth-last-child(2) {
+    border-radius: 0 4px 4px 0;
+  }
 
   @include hover {
-    border-color: color(gray-100);
-    color: color(primary);
-    box-shadow: none;
+    color: color(gray-500);
   }
 
   &.on {
-    background-color: color(secondary);
+    border-color: color(primary);
+    color: color(primary);
   }
 
-  &-start {
-    @include bg-url(icon, "icon_start.svg");
+  &-prev,
+  &-next {
+    margin-right: 13px;
+    padding: 0;
 
-    @include hover {
-      @include bg-url(icon, "icon_start_on.svg");
+    @include make-before {
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid color(gray-900);
+      border-left: 2px solid color(gray-900);
+      transform: rotate(-45deg);
     }
-  }
-
-  &-prev {
-    @include bg-url(icon, "icon_prev.svg");
 
     @include hover {
-      @include bg-url(icon, "icon_prev_on.svg");
+      &:before {
+        border-color: color(gray-500);
+      }
     }
   }
 
   &-next {
-    @include bg-url(icon, "icon_next.svg");
+    margin-right: 0;
+    margin-left: 13px;
 
-    @include hover {
-      @include bg-url(icon, "icon_next_on.svg");
-    }
-  }
-
-  &-end {
-    @include bg-url(icon, "icon_end.svg");
-
-    @include hover {
-      @include bg-url(icon, "icon_end_on.svg");
+    &:before {
+      transform: rotate(135deg);
     }
   }
 }
 
 .btn-page-icon {
-  @extend .voice-only;
-  @include square(30px);
+  @include square(32px);
   @include bg-op;
 
   position: inherit;
   transition: all 0.3s;
+  border: 0;
 }

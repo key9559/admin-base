@@ -3,7 +3,6 @@
   min-height: 100vh;
   padding-top: $hd-height;
   padding-left: $gnb-width;
-  background-color: color(gray-100);
 }
 
 .panel-wrap {
@@ -24,33 +23,83 @@
   }
 }
 
-.panel {
-  @include custom-scroll;
-
-  overflow-y: auto;
+.ad-main {
   overscroll-behavior: contain;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 40px;
-  border: 1px solid color(gray-100);
-  background-color: color(gray-0);
-}
-
-.chart-ttl {
-  margin-bottom: 50px;
-  font-size: rem(20);
-  font-weight: 500;
-}
-
-.ad-main {
   padding: 0 15px;
 }
 
-// common
-.page-ttl {
-  padding: 30px 0 20px;
+// typography
+.ttl-style01 {
+  font-size: rem(30);
+  font-weight: 600;
+}
+
+.ttl-style02 {
   font-size: rem(24);
+  font-weight: 600;
+}
+
+.bd-style01-bold {
+  font-size: rem(18);
+  font-weight: 600;
+}
+
+.bd-style01-medium {
+  font-size: rem(18);
+  font-weight: 500;
+}
+
+.bd-style01-regular {
+  font-size: rem(18);
+  font-weight: 500;
+}
+
+.bd-style02-bold {
+  font-size: rem(16);
+  font-weight: 600;
+}
+
+.bd-style02-medium {
+  font-size: rem(16);
+  font-weight: 500;
+}
+
+.bd-style02-regular {
+  font-size: rem(16);
+  font-weight: 500;
+}
+
+.bd-style03-bold {
+  font-size: rem(14);
+  font-weight: 600;
+}
+
+.bd-style03-medium {
+  font-size: rem(14);
+  font-weight: 500;
+}
+
+.bd-style03-regular {
+  font-size: rem(14);
+  font-weight: 500;
+}
+
+.bd-style04-bold {
+  font-size: rem(12);
+  font-weight: 600;
+}
+
+.bd-style04-medium {
+  font-size: rem(12);
+  font-weight: 500;
+}
+
+.bd-style04-regular {
+  font-size: rem(12);
   font-weight: 500;
 }
 
@@ -67,98 +116,7 @@
   }
 }
 
-// filter
-.filter-btn-wrapper {
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-
-  .btns-wrap {
-    @include media(1400px) {
-      justify-content: flex-end;
-    }
-  }
-
-  .btn {
-    margin-bottom: 0;
-  }
-}
-
-.filter-grp {
-  @include flex;
-
-  @include media(1400px) {
-    display: block;
-
-    .btn-search {
-      width: 100%;
-      height: 40px;
-    }
-  }
-
-  .inp-grp {
-    flex-basis: 500px;
-  }
-
-  .btn-date {
-    margin-left: 10px;
-  }
-
-  .btns-wrap {
-    margin-top: 0;
-    margin-left: 10px;
-
-    @include media(1400px) {
-      margin-top: 10px;
-      margin-left: 0;
-    }
-
-    .btn {
-      margin: 0;
-    }
-  }
-}
-
 // pagination
 .pagination-wrap {
-  @include flex-center {
-    gap: 5px;
-  }
-}
-
-.l-board {
-  .pagination-wrap {
-    margin-top: 30px;
-  }
-}
-
-// datepicker
-.datepicker-container .datepicker-panel {
-  li:hover {
-    border: 1px solid color(primary);
-    background-color: color(gray-0);
-    color: color(primary);
-    box-sizing: border-box;
-  }
-
-  .highlighted,
-  .highlighted:hover {
-    background-color: color(gray-0);
-    color: color(primary);
-  }
-
-  .picked,
-  .picked:hover {
-    background-color: color(primary);
-    color: color(gray-0);
-  }
-
-  ul[data-view="week"] li {
-    background-color: #f5f5f5;
-
-    &:hover {
-      border: 0;
-      color: color(text);
-    }
-  }
+  @include flex-center;
 }

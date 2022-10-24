@@ -12,11 +12,6 @@
   background-color: color(gray-0);
   border-bottom: 1px solid color(gray-100);
 
-  .ad-logo {
-    font-size: rem(24);
-    font-weight: 500;
-  }
-
   .btns-wrap {
     position: absolute;
     top: 50%;
@@ -33,16 +28,25 @@
 
 // left fixed
 .ad-left-hd {
-  z-index: z(double);
+  z-index: z(header);
   position: fixed;
   top: 0;
   left: 0;
   width: $gnb-width;
   height: 100vh;
-  // padding: 0 20px;
-  padding-top: calc($hd-height + 20px);
   border-right: 1px solid color(gray-100);
   background-color: color(gray-0);
+
+  .ad-logo-wrap {
+    height: $logo-height;
+    padding: 25px 30px;
+    background-color: color(primary);
+    color: white;
+  }
+
+  .ad-gnb {
+    height: calc(100vh - $logo-height);
+  }
 
   .nav-ttl {
     @include input-reset;

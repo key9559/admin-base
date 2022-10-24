@@ -25,10 +25,6 @@
 // flex content
 .flex-btw-wrap {
   @include flex-btw;
-
-  @include media(1400px) {
-    display: block;
-  }
 }
 
 // scroll custom element에 height 지정 필수

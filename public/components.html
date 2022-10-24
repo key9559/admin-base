@@ -32,28 +32,12 @@
   <!-- css link -->
   <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css">
   <link rel="stylesheet" href="assets/css/custom/ui.css" />
+  <link rel="stylesheet" href="assets/css/custom/components.css" />
 
   <!-- script vandor -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="assets/js/vendor/datepicker.min.js"></script>
-  <style>
-    .component-ttl {
-      font-size: 30px;
-    }
-
-    .component-sub-ttl {
-      margin: 20px 0;
-      padding: 10px 20px;
-      font-size: 20px;
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-
-    .component-desc {
-      margin-top: 5px;
-      font-size: 18px;
-    }
-  </style>
 </head>
 
 <body>
@@ -61,114 +45,133 @@
     <!-- start:: header -->
     <header class="ad-hd">
       <div class="ad-top-hd">
-        <h1 class="ad-logo">Admin</h1>
         <div class="btns-wrap">
-          <a href="index.html" class="btn btn-m btn-main">로그아웃</a>
+          <spsan class="user-name bd-style03-regular">홍길동 님</spsan>
+          <a href="index.html" class="btn btn-m bd-style03-regular">로그아웃</a>
         </div>
       </div>
-      <nav class="ad-left-hd scroll-custom">
-        <button type="button" class="nav-ttl">대분류1</button>
-        <ul class="nav-list-wrap">
-          <li class="nav-list">
-            <a href="training-create.html" class="nav-link">중분류1(생성페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="training-create.html" class="nav-link">중분류2(생성페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="training-create.html" class="nav-link">중분류3(생성페이지이동)</a>
-          </li>
-        </ul>
-        <button type="button" class="nav-ttl">대분류2</button>
-        <ul class="nav-list-wrap">
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
-          </li>
-        </ul>
-        <button type="button" class="nav-ttl">대분류3</button>
-        <ul class="nav-list-wrap">
-          <li class="nav-list">
-            <a href="" class="nav-link active">중분류1</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류2</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류3</a>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류4</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류5</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류6</a>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류7</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류8</a>
-          </li>
-          <li class="nav-list">
-            <a href="" class="nav-link">중분류9</a>
-          </li>
-        </ul>
-        <button type="button" class="nav-ttl">대분류4</button>
-        <ul class="nav-list-wrap">
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류4(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류5(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류6(통계페이지이동)</a>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류7(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류8(통계페이지이동)</a>
-          </li>
-          <li class="nav-list">
-            <a href="report.html" class="nav-link">중분류9(통계페이지이동)</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="ad-left-hd">
+        <h1 class="ad-logo-wrap">Admin</h1>
+        <nav class="ad-gnb scroll-custom">
+          <button type="button" class="nav-ttl">대분류1</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류1(생성페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류2(생성페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류3(생성페이지이동)</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류2</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류3</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="" class="nav-link active">중분류1</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류2</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류3</a>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류4</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류5</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류6</a>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류7</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류8</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류9</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류4</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류4(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류5(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류6(통계페이지이동)</a>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류7(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류8(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류9(통계페이지이동)</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- end:: header -->
     <!-- start:: main contents -->
     <main class="ad-main">
-      <h2 class="page-ttl">
-        페이지 제목이 들어갑니다. panel의 위 형제로 들어갑니다.
+      <h2 class="ttl-style01">
+        페이지 제목이 들어갑니다
       </h2>
+      <p class="bd-style03-regular">브레드크럼이 들어갑니다</p>
 
       <div class="panel">
-        <!-- START component name -->
+        <!-- START typography -->
         <section class="component-container">
           <h2 class="component-ttl">타이포</h2>
           <p class="component-desc">본문에 쓰이는 문장 타입입니다.</p>
           <h3 class="component-sub-ttl">
             제목
           </h3>
+          <p class="ttl-style01">제목스타일1</p>
+          <p class="ttl-style02">제목스타일1</p>
           <h3 class="component-sub-ttl">
             내용
           </h3>
+          <p class="bd-style01-bold">내용스타일1 bold</p>
+          <p class="bd-style01-medium">내용스타일1 medium</p>
+          <p class="bd-style01-regular">내용스타일1 regular</p>
+          <p class="bd-style02-bold">내용스타일2 bold</p>
+          <p class="bd-style02-medium">내용스타일2 medium</p>
+          <p class="bd-style02-regular">내용스타일2 regular</p>
+          <p class="bd-style03-bold">내용스타일3 bold</p>
+          <p class="bd-style03-medium">내용스타일3 medium</p>
+          <p class="bd-style03-regular">내용스타일3 regular</p>
+          <p class="bd-style04-bold">내용스타일4 bold</p>
+          <p class="bd-style04-medium">내용스타일4 medium</p>
+          <p class="bd-style04-regular">내용스타일4 regular</p>
         </section>
-        <!-- END component name -->
+        <!-- END typography -->
+
         <!-- START button component -->
         <section class="component-container">
           <h2 class="component-ttl">
@@ -185,7 +188,7 @@
           </div>
           <!-- end:: button single -->
           <h3 class="component-sub-ttl">
-            button medium size
+            button medium size : padding: 0 12px
           </h3>
           <!-- start:: button default -->
           <div class="btns-wrap">
@@ -201,7 +204,7 @@
           <!-- end:: button default -->
 
           <h3 class="component-sub-ttl">
-            button large size
+            button large size : padding: 0 20px
           </h3>
           <!-- start:: button large -->
           <div class="btns-wrap">
@@ -217,7 +220,7 @@
           <!-- end:: button large -->
 
           <h3 class="component-sub-ttl">
-            button x-large size
+            button x-large size : padding: 0 40px
           </h3>
           <!-- start:: button x-large -->
           <div class="btns-wrap">
@@ -269,6 +272,26 @@
         </section>
         <!-- END button component -->
 
+        <!-- START pagination component -->
+        <section class="component-container">
+          <h2 class="component-ttl">페이지네이션</h2>
+
+          <div class="pagination-wrap">
+            <a href="" class="btn btn-page btn-page-icon btn-page-prev">
+              <span class="voice-only">이전페이지</span>
+            </a>
+            <a href="" class="btn btn-page bd-style03-regular">9991</a>
+            <a href="" class="btn btn-page bd-style03-regular">9992</a>
+            <a href="" class="btn btn-page bd-style03-regular on">9993</a>
+            <a href="" class="btn btn-page bd-style03-regular">9994</a>
+            <a href="" class="btn btn-page bd-style03-regular">9995</a>
+            <a href="" class="btn btn-page btn-page-icon btn-page-next">
+              <span class="voice-only">다음페이지</span>
+            </a>
+          </div>
+        </section>
+        <!-- END pagination component -->
+
         <!-- START input component -->
         <section class="component-container">
           <h2 class="component-ttl">
@@ -309,6 +332,56 @@
           </div>
           <!-- end:: input calander -->
 
+          <h3 class="component-sub-ttl">셀렉트</h3>
+          <!-- start:: select -->
+          <div class="inp-grp">
+            <select name="selec1" id="selec1" class="input inp-select">
+              <option value="전체" selected>전체</option>
+              <option value="미래인재과">미래인재과</option>
+            </select>
+          </div>
+          <!-- end:: select -->
+
+          <h3 class="component-sub-ttl">셀렉트옆에 다른 컨텐츠가 있을 때</h3>
+          <!-- start:: select with else -->
+          <div class="inp-grp">
+            <select name="selec2" id="selec2" class="input inp-select with-conts">
+              <option value="전체" selected>전체</option>
+              <option value="미래인재과">미래인재과</option>
+            </select>
+          </div>
+          <!-- end:: select with else -->
+
+          <h3 class="component-sub-ttl">셀렉트 두개 나란히</h3>
+          <!-- start:: double select -->
+          <div class="inp-grp">
+            <select name="selec3" id="selec3" class="input inp-select with-conts">
+              <option value="전체" selected>등록순</option>
+              <option value="미래인재과">미래인재과</option>
+            </select>
+            <select name="selec4" id="selec4" class="input inp-select with-conts">
+              <option value="전체" selected>20개씩</option>
+              <option value="미래인재과">미래인재과</option>
+            </select>
+          </div>
+          <!-- end:: double select -->
+
+          <h3 class="component-sub-ttl">셀렉트 옆에 인풋이 있는 경우</h3>
+          <!-- start:: double select -->
+          <div class="inp-wrap">
+            <div class="inp-grp">
+              <select name="selec3" id="selec3" class="input inp-select with-conts">
+                <option value="전체" selected>등록순</option>
+                <option value="미래인재과">미래인재과</option>
+              </select>
+            </div>
+            <div class="inp-grp">
+              <label for="text1" class="inp-label">레이블</label>
+              <input type="text" id="text1" name="text1" class="input inp-txt" placeholder="placeholder" />
+            </div>
+          </div>
+          <!-- end:: double select -->
+
           <h3 class="component-sub-ttl">체크박스</h3>
           <!-- start:: input checkbox -->
           <div class="inp-grp">
@@ -330,171 +403,11 @@
           <div class="inp-grp">
             <input type="checkbox" id="test3" name="test3" class="inp-chck d-none" />
             <label for="test3" class="chck-icon">선택</label>
-            <label for="test3" class="chck-txt">문구도 선택영역입니다.</label>
+            <label for="test3" class="chck-txt bd-style02-regular">문구도 선택영역입니다.</label>
           </div>
           <!-- end:: input checkbox with description -->
-
-          <h3 class="component-sub-ttl">셀렉트</h3>
-          <!-- start:: select -->
-          <div class="inp-grp">
-            <select name="selec1" id="selec1" class="input inp-select">
-              <option value="부서명" disabled selected>부서명</option>
-              <option value="전체">전체</option>
-              <option value="미래인재과">미래인재과</option>
-              <option value="정책학교지원관">정책학교지원관</option>
-              <option value="예산과">예산과</option>
-              <option value="학교지원과">학교지원과</option>
-              <option value="교육혁신과">교육혁신과</option>
-              <option value="교육과정과">교육과정과</option>
-              <option value="교원인사과">교원인사과</option>
-              <option value="민주시민교육과">민주시민교육과</option>
-              <option value="체육건강과">체육건강과</option>
-              <option value="총무과">총무과</option>
-              <option value="행정국">행정국</option>
-              <option value="재무과">재무과</option>
-              <option value="시설과">시설과</option>
-              <option value="안전총괄과">안전총괄과</option>
-              <option value="소통 담당관">소통 담당관</option>
-              <option value="감사관">감사관</option>
-            </select>
-          </div>
-          <!-- end:: select -->
         </section>
         <!-- END input component -->
-
-        <!-- START filter component -->
-        <section class="component-container">
-          <h2 class="component-ttl">
-            필터
-          </h2>
-          <p class="component-desc">filter-container 를 한 단위로 사용됩니다.</p>
-
-          <h3 class="component-sub-ttl">글자 검색만 있는 경우</h3>
-          <!-- start:: filter only text -->
-          <div class="filter-container">
-            <div class="filter-wrap">
-              <div class="filter-grp">
-                <div class="inp-grp">
-                  <label for="search" class="inp-label">검색어</label>
-                  <select name="selec2" id="selec2" class="input inp-select">
-                    <option value="부서명" disabled selected>부서명</option>
-                    <option value="전체">전체</option>
-                    <option value="미래인재과">미래인재과</option>
-                    <option value="정책학교지원관">정책학교지원관</option>
-                    <option value="예산과">예산과</option>
-                    <option value="학교지원과">학교지원과</option>
-                    <option value="교육혁신과">교육혁신과</option>
-                    <option value="교육과정과">교육과정과</option>
-                    <option value="교원인사과">교원인사과</option>
-                    <option value="민주시민교육과">민주시민교육과</option>
-                    <option value="체육건강과">체육건강과</option>
-                    <option value="총무과">총무과</option>
-                    <option value="행정국">행정국</option>
-                    <option value="재무과">재무과</option>
-                    <option value="시설과">시설과</option>
-                    <option value="안전총괄과">안전총괄과</option>
-                    <option value="소통 담당관">소통 담당관</option>
-                    <option value="감사관">감사관</option>
-                  </select>
-                  <input type="text" id="search" name="search" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요" />
-                </div>
-                <div class="btns-wrap">
-                  <button type="submit" class="btn btn-m btn-main btn-search">
-                    검색
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end:: filter only text -->
-
-          <h3 class="component-sub-ttl">기간 검색만 있는 경우</h3>
-          <!-- start:: filter date -->
-          <div class="filter-container">
-            <div class="filter-wrap">
-              <div class="filter-grp">
-                <div class="inp-grp">
-                  <label for="search" class="inp-label">검색 기간</label>
-                  <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                    전일
-                  </button>
-                  <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                    주간
-                  </button>
-                  <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                    월간
-                  </button>
-                  <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker" />
-                  <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker" />
-                </div>
-                <div class="btns-wrap">
-                  <button type="submit" class="btn btn-m btn-main btn-search">
-                    검색
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end:: filter date -->
-
-          <h3 class="component-sub-ttl">
-            글자 검색과 기간 검색이 같이 있는 경우
-          </h3>
-          <!-- start:: filter date -->
-          <div class="filter-container">
-            <div class="filter-wrap">
-              <div class="filter-grp">
-                <div class="inp-wrap">
-                  <div class="inp-grp">
-                    <label for="search" class="inp-label">검색어</label>
-                    <select name="selec3" id="selec3" class="input inp-select">
-                      <option value="부서명" disabled selected>부서명</option>
-                      <option value="전체">전체</option>
-                      <option value="미래인재과">미래인재과</option>
-                      <option value="정책학교지원관">정책학교지원관</option>
-                      <option value="예산과">예산과</option>
-                      <option value="학교지원과">학교지원과</option>
-                      <option value="교육혁신과">교육혁신과</option>
-                      <option value="교육과정과">교육과정과</option>
-                      <option value="교원인사과">교원인사과</option>
-                      <option value="민주시민교육과">민주시민교육과</option>
-                      <option value="체육건강과">체육건강과</option>
-                      <option value="총무과">총무과</option>
-                      <option value="행정국">행정국</option>
-                      <option value="재무과">재무과</option>
-                      <option value="시설과">시설과</option>
-                      <option value="안전총괄과">안전총괄과</option>
-                      <option value="소통 담당관">소통 담당관</option>
-                      <option value="감사관">감사관</option>
-                    </select>
-                    <input type="text" id="search" name="search" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요" />
-                  </div>
-                  <div class="inp-grp">
-                    <label for="search" class="inp-label">검색 기간</label>
-                    <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                      전일
-                    </button>
-                    <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                      주간
-                    </button>
-                    <button type="button" class="btn btn-m btn-bd-gray btn-date">
-                      월간
-                    </button>
-                    <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker" />
-                    <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker" />
-                  </div>
-                </div>
-                <div class="btns-wrap">
-                  <button type="submit" class="btn btn-square btn-main btn-search">
-                    검색
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end:: filter date -->
-        </section>
-        <!-- END filter component -->
 
         <!-- START empty component -->
         <section class="component-container">
@@ -504,311 +417,179 @@
           <p class="component-desc">컨텐츠가 비어있을 경우 사용하는 영역입니다.
             empty-content 단위로 사용됩니다.</p>
           <div class="empty-content">
-            <div class="txt">오늘 진행되는 연수가 없습니다.</div>
+            <div class="txt">내용이 없습니다.</div>
           </div>
         </section>
         <!-- END empty component -->
 
-        <!-- START pagination component -->
-        <section class="component-container">
-          <h2 class="component-ttl">페이지네이션</h2>
-
-          <div class="pagination-wrap">
-            <button class="btn btn-page btn-page-icon btn-page-start">
-              <span class="voice-only">맨앞으로</span>
-            </button>
-            <button class="btn btn-page btn-page-icon btn-page-prev">
-              <span class="voice-only">이전페이지</span>
-            </button>
-            <button class="btn btn-page on">1</button>
-            <button class="btn btn-page">2</button>
-            <button class="btn btn-page">3</button>
-            <button class="btn btn-page">4</button>
-            <button class="btn btn-page">5</button>
-            <button class="btn btn-page">6</button>
-            <button class="btn btn-page">7</button>
-            <button class="btn btn-page">8</button>
-            <button class="btn btn-page">9</button>
-            <button class="btn btn-page">10</button>
-            <button class="btn btn-page btn-page-icon btn-page-next">
-              <span class="voice-only">다음페이지</span>
-            </button>
-            <button class="btn btn-page btn-page-icon btn-page-end">
-              <span class="voice-only">맨뒤로</span>
-            </button>
-          </div>
-        </section>
-        <!-- END pagination component -->
-
         <!-- START table component -->
         <section class="component-container">
           <h2 class="component-ttl">테이블</h2>
+          <p class="component-desc">기본적으로 정렬과 개수를 보는 셀렉트가 함께 다닙니다.</p>
           <!-- start:: table -->
-          <div class="table-container scroll-custom">
-            <table summary="진행중인 연수 리스트" class="ad-table">
-              <caption class="voice-only">
-                진행중인 연수 리스트
-              </caption>
-              <thead>
-                <tr class="ad-table-row ad-table-hd">
-                  <th class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
-                      <label for="chck1" class="chck-icon">전체선택</label>
-                    </div>
-                  </th>
-                  <th class="cell cell-num">구분</th>
-                  <th class="cell cell-division">부서명</th>
-                  <th class="cell cell-ttl">연수명</th>
-                  <th class="cell cell-date">연수 기간</th>
-                  <th class="cell cell-place">연수 장소</th>
-                  <th class="cell cell-target">참석 대상</th>
-                  <th class="cell cell-atnum">참석자 수</th>
-                  <th class="cell cell-atrate">참석률</th>
-                  <th class="cell cell-more">자세히 보기</th>
-                </tr>
-              </thead>
-              <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
-              <tbody>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
-                      <label for="chck1" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">10</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">
-                    등록된 연수명등록된 연수명등록된 연수명등록된 연수명등록된
-                    연수명등록된 연수명등록된 연수명등록된 연수명등록된
-                    연수명등록된 연수명등록된 연수명등록된 연수명등록된
-                    연수명등록된 연수명등록된 연수명등록된 연수명등록된 연수명
-                  </td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <!-- FIXME: 삭제될 반복 영역 -->
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck2" name="chck2" class="inp-chck d-none" />
-                      <label for="chck2" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">9</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.08.09 (화) ~ 2022.09.30 (금)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck3" name="chck3" class="inp-chck d-none" />
-                      <label for="chck3" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">8</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck4" name="chck4" class="inp-chck d-none" />
-                      <label for="chck4" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">7</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
-                      <label for="chck5" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">6</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck6" name="chck6" class="inp-chck d-none" />
-                      <label for="chck6" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">5</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck7" name="chck7" class="inp-chck d-none" />
-                      <label for="chck7" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">4</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck8" name="chck8" class="inp-chck d-none" />
-                      <label for="chck8" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">3</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck9" name="chck9" class="inp-chck d-none" />
-                      <label for="chck9" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">2</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <tr class="ad-table-row">
-                  <td class="cell cell-chck">
-                    <div class="inp-grp">
-                      <input type="checkbox" id="chck10" name="chck10" class="inp-chck d-none" />
-                      <label for="chck10" class="chck-icon">선택</label>
-                    </div>
-                  </td>
-                  <td class="cell cell-num">1</td>
-                  <td class="cell cell-division">학교지원과</td>
-                  <td class="cell cell-ttl">등록된 연수명</td>
-                  <td class="cell cell-date">
-                    2022.01.01 (토) ~ 2022. 01. 31 (월)
-                  </td>
-                  <td class="cell cell-place">1층 대강당</td>
-                  <td class="cell cell-target">100</td>
-                  <td class="cell cell-atnum">90</td>
-                  <td class="cell cell-atrate">90%</td>
-                  <td class="cell cell-more">
-                    <button type="button" class="btn btn-table-modal btn-modal-open">
-                      클릭
-                    </button>
-                  </td>
-                </tr>
-                <!-- FIXME: END 삭제될 반복 영역 -->
-              </tbody>
-            </table>
+          <div class="table-container">
+            <!-- start:: double select -->
+            <div class="table-control-wrap flex-btw-wrap">
+              <div class="inp-grp">
+                <select name="selec3" id="selec3" class="input inp-select with-conts">
+                  <option value="전체" selected>등록순</option>
+                  <option value="미래인재과">미래인재과</option>
+                </select>
+                <select name="selec4" id="selec4" class="input inp-select with-conts">
+                  <option value="전체" selected>20개씩</option>
+                  <option value="미래인재과">미래인재과</option>
+                </select>
+              </div>
+              <div class="btns-wrap">
+                <button class="btn btn-l btn-ghost-basic">발송예약</button>
+                <button class="btn btn-l btn-ghost-basic">삭제</button>
+                <button class="btn btn-l btn-ghost-basic">파일 업로드</button>
+                <button class="btn btn-l btn-ghost-basic">파일 다운로드</button>
+              </div>
+            </div>
+            <!-- end:: double select -->
+            <div class="table-wrap scroll-custom">
+              <table summary="진행중인 연수 리스트" class="ad-table">
+                <caption class="voice-only">
+                  진행중인 연수 리스트
+                </caption>
+                <thead>
+                  <tr class="ad-table-row ad-table-hd">
+                    <th class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck-all" name="chck-all" class="inp-chck d-none" />
+                        <label for="chck-all" class="chck-icon">전체선택</label>
+                      </div>
+                    </th>
+                    <th class="cell cell01">NO</th>
+                    <th class="cell cell02">이름</th>
+                    <th class="cell cell03">이메일</th>
+                    <th class="cell cell04">소속</th>
+                    <th class="cell cell05">강의 수</th>
+                    <th class="cell cell06">학생 수</th>
+                    <th class="cell cell07">가입일자</th>
+                    <th class="cell cell08">직책</th>
+                    <th class="cell cell09">가입상태</th>
+                    <th class="cell cell10">상세보기</th>
+                  </tr>
+                </thead>
+                <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
+                <tbody>
+                  <tr class="ad-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                        <label for="chck5" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell01">5</td>
+                    <td class="cell cell02">홍길동</td>
+                    <td class="cell cell03">admin@bublecon.io</td>
+                    <td class="cell cell04">용인백현초등학교</td>
+                    <td class="cell cell05">12</td>
+                    <td class="cell cell06">10</td>
+                    <td class="cell cell07">2022.11.22</td>
+                    <td class="cell cell09">교사</td>
+                    <td class="cell cell08">화원</td>
+                    <td class="cell cell10">
+                      <button type="button" class="btn btn-table-modal btn-modal-open">
+                        바로가기
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- FIXME: 삭제될 반복 영역 -->
+                  <tr class="ad-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck4" name="chck4" class="inp-chck d-none" />
+                        <label for="chck4" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell01">4</td>
+                    <td class="cell cell02">홍길동</td>
+                    <td class="cell cell03">admin@bublecon.io</td>
+                    <td class="cell cell04">용인백현초등학교</td>
+                    <td class="cell cell05">12</td>
+                    <td class="cell cell06">10</td>
+                    <td class="cell cell07">2022.11.22</td>
+                    <td class="cell cell09">교사</td>
+                    <td class="cell cell08">화원</td>
+                    <td class="cell cell10">
+                      <button type="button" class="btn btn-table-modal btn-modal-open">
+                        바로가기
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="ad-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck3" name="chck3" class="inp-chck d-none" />
+                        <label for="chck3" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell01">3</td>
+                    <td class="cell cell02">홍길동</td>
+                    <td class="cell cell03">admin@bublecon.io</td>
+                    <td class="cell cell04">용인백현초등학교</td>
+                    <td class="cell cell05">12</td>
+                    <td class="cell cell06">10</td>
+                    <td class="cell cell07">2022.11.22</td>
+                    <td class="cell cell09">교사</td>
+                    <td class="cell cell08">화원</td>
+                    <td class="cell cell10">
+                      <button type="button" class="btn btn-table-modal btn-modal-open">
+                        바로가기
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="ad-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck2" name="chck2" class="inp-chck d-none" />
+                        <label for="chck2" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell01">2</td>
+                    <td class="cell cell02">홍길동</td>
+                    <td class="cell cell03">admin@bublecon.io</td>
+                    <td class="cell cell04">용인백현초등학교</td>
+                    <td class="cell cell05">12</td>
+                    <td class="cell cell06">10</td>
+                    <td class="cell cell07">2022.11.22</td>
+                    <td class="cell cell09">교사</td>
+                    <td class="cell cell08">화원</td>
+                    <td class="cell cell10">
+                      <button type="button" class="btn btn-table-modal btn-modal-open">
+                        바로가기
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="ad-table-row">
+                    <td class="cell cell-chck">
+                      <div class="inp-grp">
+                        <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
+                        <label for="chck1" class="chck-icon">선택</label>
+                      </div>
+                    </td>
+                    <td class="cell cell01">1</td>
+                    <td class="cell cell02">홍길동</td>
+                    <td class="cell cell03">admin@bublecon.io</td>
+                    <td class="cell cell04">용인백현초등학교</td>
+                    <td class="cell cell05">12</td>
+                    <td class="cell cell06">10</td>
+                    <td class="cell cell07">2022.11.22</td>
+                    <td class="cell cell09">교사</td>
+                    <td class="cell cell08">화원</td>
+                    <td class="cell cell10">
+                      <button type="button" class="btn btn-table-modal btn-modal-open">
+                        바로가기
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- FIXME: END 삭제될 반복 영역 -->
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- end:: table -->
         </section>
