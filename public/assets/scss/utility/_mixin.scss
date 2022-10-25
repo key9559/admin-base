@@ -210,3 +210,34 @@ background-image: urlPath($path, $img);
     display: none !important;
   }
 }
+
+// typography
+@mixin ttl-style01 {
+  font-size: rem(30);
+  font-weight: 600;
+}
+
+@mixin ttl-style02 {
+  font-size: rem(24);
+  font-weight: 600;
+}
+
+@mixin bd-style01($fw: 600) {
+  font-size: rem(18);
+  font-weight: $fw;
+}
+
+@mixin bd-style02($fw: 600) {
+  font-size: rem(16);
+  font-weight: $fw;
+}
+
+@mixin bd-style03($fw: 600) {
+  font-size: rem(14);
+  font-weight: $fw;
+}
+
+@mixin bd-style04($fw: 600) {
+  font-size: rem(12);
+  font-weight: $fw;
+}

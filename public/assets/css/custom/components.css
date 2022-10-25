@@ -18,3 +18,23 @@
   margin-top: 5px;
   font-size: 18px;
 }
+
+.bd-style01 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.bd-style02 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bd-style03 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.bd-style04 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}

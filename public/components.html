@@ -46,14 +46,14 @@
     <header class="ad-hd">
       <div class="ad-top-hd">
         <div class="btns-wrap">
-          <spsan class="user-name bd-style03-regular">홍길동 님</spsan>
-          <a href="index.html" class="btn btn-m bd-style03-regular">로그아웃</a>
+          <spsan class="user-name">홍길동 님</spsan>
+          <a href="index.html" class="btn btn-m">로그아웃</a>
         </div>
       </div>
       <div class="ad-left-hd">
         <h1 class="ad-logo-wrap">
           <img src="assets/images/logo/bbc_logo.svg" alt="Learning ACID" />
-          <div class="bd-style03-bold desc">버블교육기관</div>
+          <div class="desc">버블교육기관</div>
         </h1>
         <nav class="ad-gnb scroll-custom">
           <button type="button" class="nav-ttl">대분류1</button>
@@ -142,298 +142,296 @@
     <!-- end:: header -->
     <!-- start:: main contents -->
     <main class="ad-main">
-      <h2 class="ttl-style01">
+      <h2 class="main-ttl">
         페이지 제목이 들어갑니다
       </h2>
-      <p class="page-breadcrumb bd-style03-regular">Home > 관리자 관리 > 관리자 목록</p>
-      <p class="page-breadcrumb bd-style03-regular">브레드크럼</p>
+      <p class="page-breadcrumb">Home > 관리자 관리 > 관리자 목록</p>
+      <p class="page-breadcrumb">브레드크럼</p>
 
-      <div class="panel">
-        <!-- START typography -->
-        <section class="component-container">
-          <h2 class="component-ttl">타이포</h2>
-          <p class="component-desc">본문에 쓰이는 문장 타입입니다.</p>
-          <h3 class="component-sub-ttl">
-            제목
-          </h3>
-          <p class="ttl-style01">제목스타일1</p>
-          <p class="ttl-style02">제목스타일1</p>
-          <h3 class="component-sub-ttl">
-            내용
-          </h3>
-          <p class="bd-style01-bold">내용스타일1 bold</p>
-          <p class="bd-style01-medium">내용스타일1 medium</p>
-          <p class="bd-style01-regular">내용스타일1 regular</p>
-          <p class="bd-style02-bold">내용스타일2 bold</p>
-          <p class="bd-style02-medium">내용스타일2 medium</p>
-          <p class="bd-style02-regular">내용스타일2 regular</p>
-          <p class="bd-style03-bold">내용스타일3 bold</p>
-          <p class="bd-style03-medium">내용스타일3 medium</p>
-          <p class="bd-style03-regular">내용스타일3 regular</p>
-          <p class="bd-style04-bold">내용스타일4 bold</p>
-          <p class="bd-style04-medium">내용스타일4 medium</p>
-          <p class="bd-style04-regular">내용스타일4 regular</p>
-        </section>
-        <!-- END typography -->
+      <!-- START typography -->
+      <section class="component-container">
+        <h2 class="component-ttl">타이포</h2>
+        <p class="component-desc">본문에 쓰이는 문장 타입입니다.</p>
+        <h3 class="component-sub-ttl">
+          제목
+        </h3>
+        <p class="main-ttl">제목스타일1</p>
+        <p class="sub-ttl">제목스타일1</p>
+        <h3 class="component-sub-ttl">
+          내용 : .mixin으로 각 클래스에 불러와서 사용합니다.(하단클래스는 components에서만 사용)
+        </h3>
+        <p class="bd-style01">내용스타일1</p>
+        <p class="bd-style02">내용스타일2</p>
+        <p class="bd-style03">내용스타일3</p>
+        <p class="bd-style04">내용스타일4</p>
+      </section>
+      <!-- END typography -->
 
-        <!-- START button component -->
-        <section class="component-container">
-          <h2 class="component-ttl">
-            버튼
-          </h2>
-          <p class="component-desc">개수가 늘어날 경우를 대비하여 btns-wrap 을 한 단위로 사용됩니다.</p>
+      <!-- START button component -->
+      <section class="component-container">
+        <h2 class="component-ttl">
+          버튼
+        </h2>
+        <p class="component-desc">개수가 늘어날 경우를 대비하여 btns-wrap 을 한 단위로 사용됩니다.</p>
 
-          <h3 class="component-sub-ttl">
-            button default
-          </h3>
-          <!-- start:: button single -->
-          <div class="btns-wrap">
-            <button class="btn btn-m btn-ghost-basic">버튼</button>
-          </div>
-          <!-- end:: button single -->
-          <h3 class="component-sub-ttl">
-            button medium size : padding: 0 12px
-          </h3>
-          <!-- start:: button default -->
-          <div class="btns-wrap">
-            <button class="btn btn-m btn-ghost-basic">버튼</button>
-            <button class="btn btn-m btn-ghost-red">버튼</button>
-            <button class="btn btn-m btn-ghost-primary">버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-m btn-basic">버튼</button>
-            <button class="btn btn-m btn-red">버튼</button>
-            <button class="btn btn-m btn-primary">버튼</button>
-          </div>
-          <!-- end:: button default -->
+        <h3 class="component-sub-ttl">
+          button default
+        </h3>
+        <!-- start:: button single -->
+        <div class="btns-wrap">
+          <button class="btn btn-m btn-ghost-basic">버튼</button>
+        </div>
+        <!-- end:: button single -->
+        <h3 class="component-sub-ttl">
+          button medium size : padding: 0 12px
+        </h3>
+        <!-- start:: button default -->
+        <div class="btns-wrap">
+          <button class="btn btn-m btn-ghost-basic">버튼</button>
+          <button class="btn btn-m btn-ghost-red">버튼</button>
+          <button class="btn btn-m btn-ghost-primary">버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-m btn-basic">버튼</button>
+          <button class="btn btn-m btn-red">버튼</button>
+          <button class="btn btn-m btn-primary">버튼</button>
+        </div>
+        <!-- end:: button default -->
 
-          <h3 class="component-sub-ttl">
-            button large size : padding: 0 20px
-          </h3>
-          <!-- start:: button large -->
-          <div class="btns-wrap">
-            <button class="btn btn-l btn-ghost-basic">버튼</button>
-            <button class="btn btn-l btn-ghost-red">버튼</button>
-            <button class="btn btn-l btn-ghost-primary">버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-l btn-basic">버튼</button>
-            <button class="btn btn-l btn-red">버튼</button>
-            <button class="btn btn-l btn-primary">버튼</button>
-          </div>
-          <!-- end:: button large -->
+        <h3 class="component-sub-ttl">
+          button large size : padding: 0 20px
+        </h3>
+        <!-- start:: button large -->
+        <div class="btns-wrap">
+          <button class="btn btn-l btn-ghost-basic">버튼</button>
+          <button class="btn btn-l btn-ghost-red">버튼</button>
+          <button class="btn btn-l btn-ghost-primary">버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-l btn-basic">버튼</button>
+          <button class="btn btn-l btn-red">버튼</button>
+          <button class="btn btn-l btn-primary">버튼</button>
+        </div>
+        <!-- end:: button large -->
 
-          <h3 class="component-sub-ttl">
-            button x-large size : padding: 0 40px
-          </h3>
-          <!-- start:: button x-large -->
-          <div class="btns-wrap">
-            <button class="btn btn-xl btn-ghost-basic">버튼</button>
-            <button class="btn btn-xl btn-ghost-red">버튼</button>
-            <button class="btn btn-xl btn-ghost-primary">버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-xl btn-basic">버튼</button>
-            <button class="btn btn-xl btn-red">버튼</button>
-            <button class="btn btn-xl btn-primary">버튼</button>
-          </div>
-          <!-- end:: button x-large -->
+        <h3 class="component-sub-ttl">
+          button x-large size : padding: 0 40px
+        </h3>
+        <!-- start:: button x-large -->
+        <div class="btns-wrap">
+          <button class="btn btn-xl btn-ghost-basic">버튼</button>
+          <button class="btn btn-xl btn-ghost-red">버튼</button>
+          <button class="btn btn-xl btn-ghost-primary">버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-xl btn-basic">버튼</button>
+          <button class="btn btn-xl btn-red">버튼</button>
+          <button class="btn btn-xl btn-primary">버튼</button>
+        </div>
+        <!-- end:: button x-large -->
 
-          <h3 class="component-sub-ttl">버튼별 비활성화</h3>
-          <!-- start:: button default disabled -->
-          <div class="btns-wrap">
-            <button class="btn btn-m btn-ghost-basic" disabled>버튼</button>
-            <button class="btn btn-m btn-ghost-red" disabled>버튼</button>
-            <button class="btn btn-m btn-ghost-primary" disabled>버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-m btn-basic" disabled>버튼</button>
-            <button class="btn btn-m btn-red" disabled>버튼</button>
-            <button class="btn btn-m btn-primary" disabled>버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-l btn-ghost-basic" disabled>버튼</button>
-            <button class="btn btn-l btn-ghost-red" disabled>버튼</button>
-            <button class="btn btn-l btn-ghost-primary" disabled>버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-l btn-basic" disabled>버튼</button>
-            <button class="btn btn-l btn-red" disabled>버튼</button>
-            <button class="btn btn-l btn-primary" disabled>버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-xl btn-ghost-basic" disabled>버튼</button>
-            <button class="btn btn-xl btn-ghost-red" disabled>버튼</button>
-            <button class="btn btn-xl btn-ghost-primary" disabled>버튼</button>
-          </div>
-          <div class="btns-wrap">
-            <button class="btn btn-xl btn-basic" disabled>버튼</button>
-            <button class="btn btn-xl btn-red" disabled>버튼</button>
-            <button class="btn btn-xl btn-primary" disabled>버튼</button>
-          </div>
-          <!-- end:: button default disabled -->
+        <h3 class="component-sub-ttl">버튼별 비활성화</h3>
+        <!-- start:: button default disabled -->
+        <div class="btns-wrap">
+          <button class="btn btn-m btn-ghost-basic" disabled>버튼</button>
+          <button class="btn btn-m btn-ghost-red" disabled>버튼</button>
+          <button class="btn btn-m btn-ghost-primary" disabled>버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-m btn-basic" disabled>버튼</button>
+          <button class="btn btn-m btn-red" disabled>버튼</button>
+          <button class="btn btn-m btn-primary" disabled>버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-l btn-ghost-basic" disabled>버튼</button>
+          <button class="btn btn-l btn-ghost-red" disabled>버튼</button>
+          <button class="btn btn-l btn-ghost-primary" disabled>버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-l btn-basic" disabled>버튼</button>
+          <button class="btn btn-l btn-red" disabled>버튼</button>
+          <button class="btn btn-l btn-primary" disabled>버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-xl btn-ghost-basic" disabled>버튼</button>
+          <button class="btn btn-xl btn-ghost-red" disabled>버튼</button>
+          <button class="btn btn-xl btn-ghost-primary" disabled>버튼</button>
+        </div>
+        <div class="btns-wrap">
+          <button class="btn btn-xl btn-basic" disabled>버튼</button>
+          <button class="btn btn-xl btn-red" disabled>버튼</button>
+          <button class="btn btn-xl btn-primary" disabled>버튼</button>
+        </div>
+        <!-- end:: button default disabled -->
 
-        </section>
-        <!-- END button component -->
+      </section>
+      <!-- END button component -->
 
-        <!-- START pagination component -->
-        <section class="component-container">
-          <h2 class="component-ttl">페이지네이션</h2>
+      <!-- START pagination component -->
+      <section class="component-container">
+        <h2 class="component-ttl">페이지네이션</h2>
 
-          <div class="pagination-wrap">
-            <a href="" class="btn btn-page btn-page-icon btn-page-prev">
-              <span class="voice-only">이전페이지</span>
-            </a>
-            <a href="" class="btn btn-page bd-style03-regular">9991</a>
-            <a href="" class="btn btn-page bd-style03-regular">9992</a>
-            <a href="" class="btn btn-page bd-style03-regular on">9993</a>
-            <a href="" class="btn btn-page bd-style03-regular">9994</a>
-            <a href="" class="btn btn-page bd-style03-regular">9995</a>
-            <a href="" class="btn btn-page btn-page-icon btn-page-next">
-              <span class="voice-only">다음페이지</span>
-            </a>
-          </div>
-        </section>
-        <!-- END pagination component -->
+        <div class="pagination-wrap">
+          <a href="" class="btn btn-page btn-page-icon btn-page-prev">
+            <span class="voice-only">이전페이지</span>
+          </a>
+          <a href="" class="btn btn-page">9991</a>
+          <a href="" class="btn btn-page">9992</a>
+          <a href="" class="btn btn-page on">9993</a>
+          <a href="" class="btn btn-page">9994</a>
+          <a href="" class="btn btn-page">9995</a>
+          <a href="" class="btn btn-page">9996</a>
+          <a href="" class="btn btn-page">9997</a>
+          <a href="" class="btn btn-page">9998</a>
+          <a href="" class="btn btn-page">9999</a>
+          <a href="" class="btn btn-page">10000</a>
+          <a href="" class="btn btn-page btn-page-icon btn-page-next">
+            <span class="voice-only">다음페이지</span>
+          </a>
+        </div>
+      </section>
+      <!-- END pagination component -->
 
-        <!-- START input component -->
-        <section class="component-container">
-          <h2 class="component-ttl">
-            input
-          </h2>
-          <p class="component-desc">유효성 검사를 위해 inp-grp 를 한 단위로 사용됩니다.</p>
+      <!-- START input component -->
+      <section class="component-container">
+        <h2 class="component-ttl">
+          input
+        </h2>
+        <p class="component-desc">유효성 검사를 위해 inp-grp 를 한 단위로 사용됩니다.</p>
 
-          <h3 class="component-sub-ttl">글쓰는 영역의 경우</h3>
-          <!-- start:: input text -->
-          <div class="inp-grp">
-            <label for="text1" class="inp-label">레이블</label>
-            <input type="text" id="text1" name="text1" class="input inp-txt" placeholder="placeholder" />
-          </div>
-          <!-- end:: input text -->
+        <h3 class="component-sub-ttl">글쓰는 영역의 경우</h3>
+        <!-- start:: input text -->
+        <div class="inp-grp">
+          <label for="text1" class="inp-label">레이블</label>
+          <input type="text" id="text1" name="text1" class="input inp-txt" placeholder="placeholder" />
+        </div>
+        <!-- end:: input text -->
 
-          <h3 class="component-sub-ttl">글쓰는 영역이 비활성화 된 경우</h3>
-          <!-- start:: input text disabled -->
-          <div class="inp-grp">
-            <label for="text2" class="inp-label">레이블</label>
-            <input type="text" id="text2" name="text2" class="input inp-txt" placeholder="placeholder" disabled />
-          </div>
-          <!-- end:: input text disabled -->
+        <h3 class="component-sub-ttl">글쓰는 영역이 비활성화 된 경우</h3>
+        <!-- start:: input text disabled -->
+        <div class="inp-grp">
+          <label for="text2" class="inp-label">레이블</label>
+          <input type="text" id="text2" name="text2" class="input inp-txt" placeholder="placeholder" disabled />
+        </div>
+        <!-- end:: input text disabled -->
 
-          <h3 class="component-sub-ttl">여러줄 글쓰는 영역의 경우</h3>
-          <!-- start:: input text -->
-          <div class="inp-grp">
-            <label for="text3" class="inp-label">레이블</label>
-            <textarea name="text3" id="text3" class="input inp-area" placeholder="placeholder"></textarea>
-          </div>
-          <!-- end:: input text -->
+        <h3 class="component-sub-ttl">여러줄 글쓰는 영역의 경우</h3>
+        <!-- start:: input text -->
+        <div class="inp-grp">
+          <label for="text3" class="inp-label">레이블</label>
+          <textarea name="text3" id="text3" class="input inp-area" placeholder="placeholder"></textarea>
+        </div>
+        <!-- end:: input text -->
 
-          <h3 class="component-sub-ttl">달력을 플러그인 사용</h3>
-          <!-- start:: input calander -->
-          <div class="inp-grp">
-            <label for="text4" class="inp-label">레이블</label>
-            <input type="text" class="input inp-date" placeholder="시작일 입력" data-toggle="datepicker" />
-            <input type="text" class="input inp-date" placeholder="마감일 입력" data-toggle="datepicker" />
-          </div>
-          <!-- end:: input calander -->
+        <h3 class="component-sub-ttl">달력을 플러그인 사용</h3>
+        <!-- start:: input calander -->
+        <div class="inp-grp">
+          <label for="cal1" class="inp-label">기간</label>
+          <input type="text" id="cal1" name="cal1" class="input inp-date" value="2022-10-25" placeholder="시작일을 입력해주세요"
+            data-toggle="datepicker" />
+          <label for="cal2" class="inp-label">기간</label>
+          <input type="text" id="cal2" name="cal2" class="input inp-date" value="2022-10-25" placeholder="완료일을 입력해주세요"
+            data-toggle="datepicker" />
+        </div>
+        <!-- end:: input calander -->
 
-          <h3 class="component-sub-ttl">셀렉트</h3>
-          <!-- start:: select -->
-          <div class="inp-grp">
-            <select name="selec1" id="selec1" class="input inp-select">
-              <option value="전체" selected>전체</option>
-              <option value="미래인재과">미래인재과</option>
-            </select>
-          </div>
-          <!-- end:: select -->
+        <h3 class="component-sub-ttl">셀렉트</h3>
+        <!-- start:: select -->
+        <div class="inp-grp">
+          <select name="selec1" id="selec1" class="input inp-select">
+            <option value="전체" selected>전체</option>
+            <option value="미래인재과">미래인재과</option>
+          </select>
+        </div>
+        <!-- end:: select -->
 
-          <h3 class="component-sub-ttl">셀렉트옆에 다른 컨텐츠가 있을 때</h3>
-          <!-- start:: select with else -->
-          <div class="inp-grp">
-            <select name="selec2" id="selec2" class="input inp-select with-conts">
-              <option value="전체" selected>전체</option>
-              <option value="미래인재과">미래인재과</option>
-            </select>
-          </div>
-          <!-- end:: select with else -->
+        <h3 class="component-sub-ttl">셀렉트옆에 다른 컨텐츠가 있을 때</h3>
+        <!-- start:: select with else -->
+        <div class="inp-grp">
+          <select name="selec2" id="selec2" class="input inp-select with-conts">
+            <option value="전체" selected>전체</option>
+            <option value="미래인재과">미래인재과</option>
+          </select>
+        </div>
+        <!-- end:: select with else -->
 
-          <h3 class="component-sub-ttl">셀렉트 두개 나란히</h3>
-          <!-- start:: double select -->
+        <h3 class="component-sub-ttl">셀렉트 두개 나란히</h3>
+        <!-- start:: double select -->
+        <div class="inp-grp">
+          <select name="selec3" id="selec3" class="input inp-select with-conts">
+            <option value="전체" selected>등록순</option>
+            <option value="미래인재과">미래인재과</option>
+          </select>
+          <select name="selec4" id="selec4" class="input inp-select with-conts">
+            <option value="전체" selected>20개씩</option>
+            <option value="미래인재과">미래인재과</option>
+          </select>
+        </div>
+        <!-- end:: double select -->
+
+        <h3 class="component-sub-ttl">셀렉트 옆에 인풋이 있는 경우</h3>
+        <!-- start:: input with select -->
+        <div class="inp-wrap">
           <div class="inp-grp">
             <select name="selec3" id="selec3" class="input inp-select with-conts">
               <option value="전체" selected>등록순</option>
               <option value="미래인재과">미래인재과</option>
             </select>
-            <select name="selec4" id="selec4" class="input inp-select with-conts">
-              <option value="전체" selected>20개씩</option>
-              <option value="미래인재과">미래인재과</option>
-            </select>
+            <label for="text1" class="inp-label">레이블</label>
+            <input type="text" id="text1" name="text1" class="input inp-txt" placeholder="placeholder" />
           </div>
-          <!-- end:: double select -->
+        </div>
+        <!-- end:: input with select -->
 
-          <h3 class="component-sub-ttl">셀렉트 옆에 인풋이 있는 경우</h3>
+        <h3 class="component-sub-ttl">체크박스</h3>
+        <!-- start:: input checkbox -->
+        <div class="inp-grp">
+          <input type="checkbox" id="test1" name="test1" class="inp-chck d-none" />
+          <label for="test1" class="chck-icon">선택</label>
+        </div>
+        <!-- end:: input checkbox -->
+
+        <h3 class="component-sub-ttl">체크박스 체크되었을 경우</h3>
+        <!-- start:: input checkbox:checked -->
+        <div class="inp-grp">
+          <input type="checkbox" id="test2" name="test2" class="inp-chck d-none" checked />
+          <label for="test2" class="chck-icon">선택</label>
+        </div>
+        <!-- end:: input checkbox:checked -->
+
+        <h3 class="component-sub-ttl">체크박스 옆에 문구가 있는 경우</h3>
+        <!-- start:: input checkbox with description -->
+        <div class="inp-grp">
+          <input type="checkbox" id="test3" name="test3" class="inp-chck d-none" />
+          <label for="test3" class="chck-icon">선택</label>
+          <label for="test3" class="chck-txt">문구도 선택영역입니다.</label>
+        </div>
+        <!-- end:: input checkbox with description -->
+      </section>
+      <!-- END input component -->
+
+      <!-- START empty component -->
+      <section class="component-container">
+        <h2 class="component-ttl">
+          비어있음 상태
+        </h2>
+        <p class="component-desc">컨텐츠가 비어있을 경우 사용하는 영역입니다.
+          empty-content 단위로 사용됩니다.</p>
+        <div class="empty-content">
+          <div class="txt">내용이 없습니다.</div>
+        </div>
+      </section>
+      <!-- END empty component -->
+
+      <!-- START table component -->
+      <section class="component-container">
+        <h2 class="component-ttl">테이블</h2>
+        <p class="component-sub-ttl">정렬과 개수를 보는 셀렉트가 있는 경우</p>
+        <!-- start:: table -->
+        <div class="table-container">
           <!-- start:: double select -->
-          <div class="inp-wrap">
-            <div class="inp-grp">
-              <select name="selec3" id="selec3" class="input inp-select with-conts">
-                <option value="전체" selected>등록순</option>
-                <option value="미래인재과">미래인재과</option>
-              </select>
-            </div>
-            <div class="inp-grp">
-              <label for="text1" class="inp-label">레이블</label>
-              <input type="text" id="text1" name="text1" class="input inp-txt" placeholder="placeholder" />
-            </div>
-          </div>
-          <!-- end:: double select -->
-
-          <h3 class="component-sub-ttl">체크박스</h3>
-          <!-- start:: input checkbox -->
-          <div class="inp-grp">
-            <input type="checkbox" id="test1" name="test1" class="inp-chck d-none" />
-            <label for="test1" class="chck-icon">선택</label>
-          </div>
-          <!-- end:: input checkbox -->
-
-          <h3 class="component-sub-ttl">체크박스 체크되었을 경우</h3>
-          <!-- start:: input checkbox:checked -->
-          <div class="inp-grp">
-            <input type="checkbox" id="test2" name="test2" class="inp-chck d-none" checked />
-            <label for="test2" class="chck-icon">선택</label>
-          </div>
-          <!-- end:: input checkbox:checked -->
-
-          <h3 class="component-sub-ttl">체크박스 옆에 문구가 있는 경우</h3>
-          <!-- start:: input checkbox with description -->
-          <div class="inp-grp">
-            <input type="checkbox" id="test3" name="test3" class="inp-chck d-none" />
-            <label for="test3" class="chck-icon">선택</label>
-            <label for="test3" class="chck-txt bd-style02-regular">문구도 선택영역입니다.</label>
-          </div>
-          <!-- end:: input checkbox with description -->
-        </section>
-        <!-- END input component -->
-
-        <!-- START empty component -->
-        <section class="component-container">
-          <h2 class="component-ttl">
-            비어있음 상태
-          </h2>
-          <p class="component-desc">컨텐츠가 비어있을 경우 사용하는 영역입니다.
-            empty-content 단위로 사용됩니다.</p>
-          <div class="empty-content">
-            <div class="txt">내용이 없습니다.</div>
-          </div>
-        </section>
-        <!-- END empty component -->
-
-        <!-- START table component -->
-        <section class="component-container">
-          <h2 class="component-ttl">테이블</h2>
-          <p class="component-desc">기본적으로 정렬과 개수를 보는 셀렉트가 함께 다닙니다.</p>
-          <!-- start:: table -->
-          <div class="table-container">
-            <!-- start:: double select -->
-            <div class="table-control-wrap flex-btw-wrap">
+          <div class="table-control-wrap flex-btw-wrap">
+            <div class="table-control-left">
               <div class="inp-grp">
                 <select name="selec3" id="selec3" class="input inp-select with-conts">
                   <option value="전체" selected>등록순</option>
@@ -444,6 +442,8 @@
                   <option value="미래인재과">미래인재과</option>
                 </select>
               </div>
+            </div>
+            <div class="table-control-right">
               <div class="btns-wrap">
                 <button class="btn btn-l btn-ghost-basic">발송예약</button>
                 <button class="btn btn-l btn-ghost-basic">삭제</button>
@@ -451,209 +451,802 @@
                 <button class="btn btn-l btn-ghost-basic">파일 다운로드</button>
               </div>
             </div>
-            <!-- end:: double select -->
-            <div class="table-wrap scroll-custom">
-              <table summary="진행중인 연수 리스트" class="ad-table">
-                <caption class="voice-only">
-                  진행중인 연수 리스트
-                </caption>
-                <thead>
-                  <tr class="ad-table-row ad-table-hd">
-                    <th class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck-all" name="chck-all" class="inp-chck d-none" />
-                        <label for="chck-all" class="chck-icon">전체선택</label>
-                      </div>
-                    </th>
-                    <th class="cell cell01">NO</th>
-                    <th class="cell cell02">이름</th>
-                    <th class="cell cell03">이메일</th>
-                    <th class="cell cell04">소속</th>
-                    <th class="cell cell05">강의 수</th>
-                    <th class="cell cell06">학생 수</th>
-                    <th class="cell cell07">가입일자</th>
-                    <th class="cell cell08">직책</th>
-                    <th class="cell cell09">가입상태</th>
-                    <th class="cell cell10">상세보기</th>
-                  </tr>
-                </thead>
-                <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
-                <tbody>
-                  <tr class="ad-table-row">
-                    <td class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
-                        <label for="chck5" class="chck-icon">선택</label>
-                      </div>
-                    </td>
-                    <td class="cell cell01">5</td>
-                    <td class="cell cell02">홍길동</td>
-                    <td class="cell cell03">admin@bublecon.io</td>
-                    <td class="cell cell04">용인백현초등학교</td>
-                    <td class="cell cell05">12</td>
-                    <td class="cell cell06">10</td>
-                    <td class="cell cell07">2022.11.22</td>
-                    <td class="cell cell09">교사</td>
-                    <td class="cell cell08">화원</td>
-                    <td class="cell cell10">
-                      <button type="button" class="btn btn-table-modal btn-modal-open">
-                        바로가기
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- FIXME: 삭제될 반복 영역 -->
-                  <tr class="ad-table-row">
-                    <td class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck4" name="chck4" class="inp-chck d-none" />
-                        <label for="chck4" class="chck-icon">선택</label>
-                      </div>
-                    </td>
-                    <td class="cell cell01">4</td>
-                    <td class="cell cell02">홍길동</td>
-                    <td class="cell cell03">admin@bublecon.io</td>
-                    <td class="cell cell04">용인백현초등학교</td>
-                    <td class="cell cell05">12</td>
-                    <td class="cell cell06">10</td>
-                    <td class="cell cell07">2022.11.22</td>
-                    <td class="cell cell09">교사</td>
-                    <td class="cell cell08">화원</td>
-                    <td class="cell cell10">
-                      <button type="button" class="btn btn-table-modal btn-modal-open">
-                        바로가기
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="ad-table-row">
-                    <td class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck3" name="chck3" class="inp-chck d-none" />
-                        <label for="chck3" class="chck-icon">선택</label>
-                      </div>
-                    </td>
-                    <td class="cell cell01">3</td>
-                    <td class="cell cell02">홍길동</td>
-                    <td class="cell cell03">admin@bublecon.io</td>
-                    <td class="cell cell04">용인백현초등학교</td>
-                    <td class="cell cell05">12</td>
-                    <td class="cell cell06">10</td>
-                    <td class="cell cell07">2022.11.22</td>
-                    <td class="cell cell09">교사</td>
-                    <td class="cell cell08">화원</td>
-                    <td class="cell cell10">
-                      <button type="button" class="btn btn-table-modal btn-modal-open">
-                        바로가기
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="ad-table-row">
-                    <td class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck2" name="chck2" class="inp-chck d-none" />
-                        <label for="chck2" class="chck-icon">선택</label>
-                      </div>
-                    </td>
-                    <td class="cell cell01">2</td>
-                    <td class="cell cell02">홍길동</td>
-                    <td class="cell cell03">admin@bublecon.io</td>
-                    <td class="cell cell04">용인백현초등학교</td>
-                    <td class="cell cell05">12</td>
-                    <td class="cell cell06">10</td>
-                    <td class="cell cell07">2022.11.22</td>
-                    <td class="cell cell09">교사</td>
-                    <td class="cell cell08">화원</td>
-                    <td class="cell cell10">
-                      <button type="button" class="btn btn-table-modal btn-modal-open">
-                        바로가기
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="ad-table-row">
-                    <td class="cell cell-chck">
-                      <div class="inp-grp">
-                        <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
-                        <label for="chck1" class="chck-icon">선택</label>
-                      </div>
-                    </td>
-                    <td class="cell cell01">1</td>
-                    <td class="cell cell02">홍길동</td>
-                    <td class="cell cell03">admin@bublecon.io</td>
-                    <td class="cell cell04">용인백현초등학교</td>
-                    <td class="cell cell05">12</td>
-                    <td class="cell cell06">10</td>
-                    <td class="cell cell07">2022.11.22</td>
-                    <td class="cell cell09">교사</td>
-                    <td class="cell cell08">화원</td>
-                    <td class="cell cell10">
-                      <button type="button" class="btn btn-table-modal btn-modal-open">
-                        바로가기
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- FIXME: END 삭제될 반복 영역 -->
-                </tbody>
-              </table>
+          </div>
+          <!-- end:: double select -->
+          <div class="table-wrap scroll-custom">
+            <table summary="진행중인 연수 리스트" class="ad-table">
+              <caption class="voice-only">
+                진행중인 연수 리스트
+              </caption>
+              <thead>
+                <tr class="ad-table-row ad-table-hd">
+                  <th class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck-all" name="chck-all" class="inp-chck d-none" />
+                      <label for="chck-all" class="chck-icon">전체선택</label>
+                    </div>
+                  </th>
+                  <th class="cell cell01">NO</th>
+                  <th class="cell cell02">이름</th>
+                  <th class="cell cell03">이메일</th>
+                  <th class="cell cell04">소속</th>
+                  <th class="cell cell05">강의 수</th>
+                  <th class="cell cell06">학생 수</th>
+                  <th class="cell cell07">가입일자</th>
+                  <th class="cell cell08">직책</th>
+                  <th class="cell cell09">가입상태</th>
+                  <th class="cell cell10">상세보기</th>
+                </tr>
+              </thead>
+              <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
+              <tbody>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">5</td>
+                  <td class="cell cell02">홍길동</td>
+                  <td class="cell cell03">admin@bublecon.io</td>
+                  <td class="cell cell04">용인백현초등학교</td>
+                  <td class="cell cell05">12</td>
+                  <td class="cell cell06">10</td>
+                  <td class="cell cell07">2022.11.22</td>
+                  <td class="cell cell09">교사</td>
+                  <td class="cell cell08">화원</td>
+                  <td class="cell cell10">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      바로가기
+                    </button>
+                  </td>
+                </tr>
+                <!-- FIXME: 삭제될 반복 영역 -->
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck4" name="chck4" class="inp-chck d-none" />
+                      <label for="chck4" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">4</td>
+                  <td class="cell cell02">홍길동</td>
+                  <td class="cell cell03">admin@bublecon.io</td>
+                  <td class="cell cell04">용인백현초등학교</td>
+                  <td class="cell cell05">12</td>
+                  <td class="cell cell06">10</td>
+                  <td class="cell cell07">2022.11.22</td>
+                  <td class="cell cell09">교사</td>
+                  <td class="cell cell08">화원</td>
+                  <td class="cell cell10">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      바로가기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck3" name="chck3" class="inp-chck d-none" />
+                      <label for="chck3" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">3</td>
+                  <td class="cell cell02">홍길동</td>
+                  <td class="cell cell03">admin@bublecon.io</td>
+                  <td class="cell cell04">용인백현초등학교</td>
+                  <td class="cell cell05">12</td>
+                  <td class="cell cell06">10</td>
+                  <td class="cell cell07">2022.11.22</td>
+                  <td class="cell cell09">교사</td>
+                  <td class="cell cell08">화원</td>
+                  <td class="cell cell10">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      바로가기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck2" name="chck2" class="inp-chck d-none" />
+                      <label for="chck2" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">2</td>
+                  <td class="cell cell02">홍길동</td>
+                  <td class="cell cell03">admin@bublecon.io</td>
+                  <td class="cell cell04">용인백현초등학교</td>
+                  <td class="cell cell05">12</td>
+                  <td class="cell cell06">10</td>
+                  <td class="cell cell07">2022.11.22</td>
+                  <td class="cell cell09">교사</td>
+                  <td class="cell cell08">화원</td>
+                  <td class="cell cell10">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      바로가기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck1" name="chck1" class="inp-chck d-none" />
+                      <label for="chck1" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">1</td>
+                  <td class="cell cell02">홍길동</td>
+                  <td class="cell cell03">admin@bublecon.io</td>
+                  <td class="cell cell04">용인백현초등학교</td>
+                  <td class="cell cell05">12</td>
+                  <td class="cell cell06">10</td>
+                  <td class="cell cell07">2022.11.22</td>
+                  <td class="cell cell09">교사</td>
+                  <td class="cell cell08">화원</td>
+                  <td class="cell cell10">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      바로가기
+                    </button>
+                  </td>
+                </tr>
+                <!-- FIXME: END 삭제될 반복 영역 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end:: table -->
+        <p class="component-sub-ttl">검색결과화면</p>
+        <!-- start:: table -->
+        <div class="table-container">
+          <!-- start:: double select -->
+          <div class="table-control-wrap flex-btw-wrap">
+            <div class="table-control-left">
+              <span class="search-result">총 <b>1,234,567,890</b>개의 목록이 있습니다.</span>
+            </div>
+            <div class="table-control-right control-inputs-wrap">
+              <div class="control-group">
+                <span>선택한 주문을</span>
+                <select name="selec3" id="selec3" class="input inp-select">
+                  <option value="전체" selected>등록순</option>
+                  <option value="미래인재과">미래인재과</option>
+                </select>
+                <button class="btn btn-l btn-basic">적용</button>
+              </div>
+              <div class="control-group">
+                <button class="btn btn-l btn-ghost-basic">취소 완료</button>
+                <select name="selec3" id="selec3" class="input inp-select">
+                  <option value="전체" selected>등록순</option>
+                  <option value="미래인재과">미래인재과</option>
+                </select>
+                <button class="btn btn-l btn-basic">엑셀 다운</button>
+              </div>
             </div>
           </div>
-          <!-- end:: table -->
-        </section>
-        <!-- END table component -->
+          <!-- end:: double select -->
+          <div class="table-wrap scroll-custom">
+            <table summary="진행중인 연수 리스트" class="ad-table">
+              <caption class="voice-only">
+                진행중인 연수 리스트
+              </caption>
+              <thead>
+                <tr class="ad-table-row ad-table-hd">
+                  <th class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck-all" name="chck-all" class="inp-chck d-none" />
+                      <label for="chck-all" class="chck-icon">전체선택</label>
+                    </div>
+                  </th>
+                  <th class="cell cell01">결제 번호</th>
+                  <th class="cell cell02">결제 상태</th>
+                  <th class="cell cell03">결제 수단</th>
+                  <th class="cell cell04">결제일</th>
+                  <th class="cell cell05">결제액</th>
+                  <th class="cell cell06">결제 방법</th>
+                  <th class="cell cell07">상품명</th>
+                  <th class="cell cell08">결제 유형</th>
+                  <th class="cell cell09">상세보기</th>
+                </tr>
+              </thead>
+              <!-- TODO: 리스트는 한 장에 10개씩 보입니다. -->
+              <tbody>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <!-- FIXME: 삭제될 반복 영역 -->
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <tr class="ad-table-row">
+                  <td class="cell cell-chck">
+                    <div class="inp-grp">
+                      <input type="checkbox" id="chck5" name="chck5" class="inp-chck d-none" />
+                      <label for="chck5" class="chck-icon">선택</label>
+                    </div>
+                  </td>
+                  <td class="cell cell01">A11111111</td>
+                  <td class="cell cell02">결제 완료</td>
+                  <td class="cell cell03">신용카드</td>
+                  <td class="cell cell04">2022-10-20 12:34:56</td>
+                  <td class="cell cell05">123,000</td>
+                  <td class="cell cell06">신용카드</td>
+                  <td class="cell cell07">기본</td>
+                  <td class="cell cell08">정기 결제</td>
+                  <td class="cell cell09">
+                    <button type="button" class="btn btn-table-modal btn-modal-open">
+                      상세 보기
+                    </button>
+                  </td>
+                </tr>
+                <!-- FIXME: END 삭제될 반복 영역 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end:: table -->
+      </section>
+      <!-- END table component -->
 
-        <!-- START card -->
-        <section class="component-container">
-          <h2 class="component-ttl">카드</h2>
-          <p class="component-desc">.</p>
-          <h3 class="component-sub-ttl">
-            단독사용
-          </h3>
-          <div class="card-wrap">
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+      <!-- START card -->
+      <section class="component-container">
+        <h2 class="component-ttl">카드</h2>
+        <p class="component-desc">.</p>
+        <h3 class="component-sub-ttl">
+          단독사용
+        </h3>
+
+        <!-- start:: card 1 -->
+        <div class="card-wrap">
+          <div class="card-basic">
+            <div class="card-ttl">전체</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+        </div>
+        <!-- end:: card 1 -->
+
+        <h3 class="component-sub-ttl">
+          6개 사용
+        </h3>
+        <!-- start:: card 6 -->
+        <div class="card-wrap">
+          <div class="card-basic">
+            <div class="card-ttl">전체</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+          <div class="card-basic">
+            <div class="card-ttl">결제완료</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+          <div class="card-basic">
+            <div class="card-ttl">취소</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+          <div class="card-basic">
+            <div class="card-ttl">취소진행중</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+          <div class="card-basic">
+            <div class="card-ttl">결제기한초과</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+          <div class="card-basic">
+            <div class="card-ttl">전체</div>
+            <div class="card-dec"><b class="main-ttl">200</b>건</div>
+          </div>
+        </div>
+        <!-- end:: card 6 -->
+      </section>
+      <!-- END card -->
+
+      <!-- START tab title -->
+      <section class="component-container">
+        <h2 class="component-ttl">탭 타이틀</h2>
+        <p class="component-desc">탭 타이틀 스타일 모음</p>
+        <h3 class="component-sub-ttl">
+          tab1
+        </h3>
+        <ul class="tab-title-container">
+          <li class="tab-title active">
+            <button class="btn tab-title-txt">회원 정보</button>
+          </li>
+          <li class="tab-title">
+            <button class="btn tab-title-txt">문의</button>
+          </li>
+          <li class="tab-title">
+            <button class="btn tab-title-txt">메모</button>
+          </li>
+        </ul>
+      </section>
+      <!-- END tab title -->
+
+      <!-- START search table -->
+      <section class="component-container">
+        <h2 class="component-ttl">커스텀 테이블</h2>
+        <p class="component-desc">반응형으로 조정이 되는 테이블은 table이 아닌 div로 구성합니다. </p>
+
+        <h3 class="component-sub-ttl">
+          검색테이블1 : 기간, 검색어, 상품명, 주문상태
+        </h3>
+        <!-- start:: table -->
+        <div class="custom-table-container">
+          <div class="custom-table-wrap">
+
+            <!-- 기간 -->
+            <div class="custom-table-row full-size">
+              <!-- start:: input calander -->
+              <h3 class="custom-table-ttl">기간</h3>
+              <div class="inp-grp">
+                <!-- TODO: 처음 날짜는 검색일 날짜 -->
+                <label for="cal1" class="inp-label">기간</label>
+                <input type="text" id="cal1" name="cal1" class="input inp-date" value="2022-10-25"
+                  placeholder="시작일을 입력해주세요" data-toggle="datepicker" />
+                <label for="cal2" class="inp-label">기간</label>
+                <input type="text" id="cal2" name="cal2" class="input inp-date" value="2022-10-25"
+                  placeholder="완료일을 입력해주세요" data-toggle="datepicker" />
+              </div>
+              <!-- end:: input calander -->
+              <div class="btns-wrap">
+                <button class="btn btn-m btn-basic">오늘</button>
+                <button class="btn btn-m btn-basic">최근7일</button>
+                <button class="btn btn-m btn-basic">당월</button>
+                <button class="btn btn-m btn-basic">전월</button>
+                <button class="btn btn-m btn-basic">3개월</button>
+              </div>
+            </div>
+
+            <!-- 검색어, 상품명 -->
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">검색어</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="search-keyword-sort" class="inp-label">검색어 종류</label>
+                  <select name="search-keyword-sort" id="search-keyword-sort" class="input inp-select with-conts">
+                    <option value="전체" selected>전체</option>
+                    <option value="미래인재과">미래인재과</option>
+                  </select>
+                  <label for="srarch-keyword" class="inp-label">검색어</label>
+                  <input type="text" id="srarch-keyword" name="srarch-keyword" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." />
+                </div>
+              </div>
+              <!-- end:: input with select -->
+            </div>
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">상품명</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="search-name-sort" class="inp-label">상품 종류</label>
+                  <select name="search-name-sort" id="search-name-sort" class="input inp-select with-conts">
+                    <option value="전체" selected>전체</option>
+                    <option value="미래인재과">미래인재과</option>
+                  </select>
+                  <label for="search-name" class="inp-label">상품명</label>
+                  <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." />
+                </div>
+              </div>
+              <!-- end:: input with select -->
+            </div>
+
+            <!-- 주문상태 -->
+            <div class="custom-table-row full-size">
+              <!-- start:: input checkbox with description -->
+              <h3 class="custom-table-ttl">주문상태</h3>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <div class="inp-grp">
+                <input type="checkbox" id="search-chck" name="search-chck" class="inp-chck d-none" />
+                <label for="search-chck" class="chck-icon">선택</label>
+                <label for="search-chck" class="chck-txt">주문상태</label>
+              </div>
+              <!-- end:: input checkbox with description -->
+            </div>
+
+            <!-- 버튼 -->
+            <div class="custom-table-row full-size search-btn-wrap">
+              <div class="btns-wrap">
+                <button class="btn btn-xl btn-ghost-primary">초기화</button>
+                <button class="btn btn-xl btn-primary">검색</button>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- END card -->
+          <!-- end search custom table -->
+        </div>
+        <!-- end:: table -->
 
-        <!-- START card -->
-        <section class="component-container">
-          <h2 class="component-ttl">카드</h2>
-          <p class="component-desc">.</p>
-          <h3 class="component-sub-ttl">
-            6개 사용
-          </h3>
-          <div class="card-wrap">
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+        <h3 class="component-sub-ttl">
+          기본정보
+        </h3>
+        <!-- start:: table -->
+        <div class="custom-table-container">
+          <p class="custom-table-container-ttl">기본 정보</p>
+          <div class="custom-table-wrap">
+            <!-- 회원 상태, 회원 유형 -->
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">회원 상태</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="user-status" class="inp-label">상태 선택</label>
+                  <select name="user-status" id="user-status" class="input inp-select">
+                    <option value="활성" selected>활성</option>
+                    <option value="비활성">비활성</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end:: input with select -->
             </div>
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">회원 유형</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="user-sort" class="inp-label">유형 선택</label>
+                  <select name="user-sort" id="user-sort" class="input inp-select">
+                    <option value="시스템 관리자" selected>시스템 관리자</option>
+                    <option value="교사">교사</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end:: input with select -->
             </div>
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+
+            <!-- 프로필 사진, 회원 이메일, 전화번호, 이름 -->
+            <div class="custom-table-row full-size">
+              <div class="custom-table-rowspan-cellhalf">
+                <div class="custom-table-row custom-table-rowspan4">
+                  <h3 class="custom-table-ttl">프로필 사진</h3>
+                </div>
+              </div>
+              <div class="custom-table-rowspan-cellhalf">
+                <div class="custom-table-row full-size">
+                  <h3 class="custom-table-ttl">회원 이메일</h3>
+                  <div class="inp-grp">
+                    <label for="search-name" class="inp-label">회원 이메일</label>
+                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." />
+                  </div>
+                </div>
+                <div class="custom-table-row full-size">
+                  <h3 class="custom-table-ttl">회원 이메일</h3>
+                  <div class="inp-grp">
+                    <label for="search-name" class="inp-label">회원 이메일</label>
+                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." />
+                  </div>
+                </div>
+                <div class="custom-table-row full-size">
+                  <h3 class="custom-table-ttl">전화번호</h3>
+                  <div class="inp-grp">
+                    <label for="search-name" class="inp-label">전화번호</label>
+                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." />
+                  </div>
+                </div>
+                <div class="custom-table-row full-size">
+                  <h3 class="custom-table-ttl">이름</h3>
+                  <div class="inp-grp">
+                    <label for="search-name" class="inp-label">이름</label>
+                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+
+            <!-- 최종 로그인 정보, 탈퇴 일시 -->
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">최종 로그인 정보(IP)</h3>
+              <div class="inp-grp">
+                <label for="search-name" class="inp-label">최종 로그인 정보(IP)</label>
+                <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22 (192.168.0.19)" disabled />
+              </div>
             </div>
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">탈퇴 일시</h3>
+              <div class="inp-grp">
+                <label for="search-name" class="inp-label">최종 로그인 정보(IP)</label>
+                <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22" disabled />
+              </div>
             </div>
-            <div class="card-basic">
-              <div class="card-ttl bd-style01-regular">전체</div>
-              <div class="card-dec bd-style02-regular"><b class="ttl-style01">200</b>건</div>
+
+            <!-- 버튼 -->
+            <div class="custom-table-row full-size search-btn-wrap">
+              <div class="btns-wrap">
+                <button class="btn btn-xl btn-ghost-primary">초기화</button>
+                <button class="btn btn-xl btn-primary">적용</button>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- END card -->
+          <!-- end search custom table -->
+        </div>
+        <!-- end:: table -->
 
-        <!-- FIXME: component style -->
-        <!-- START component name -->
-        <!-- <section class="component-container">
+        <h3 class="component-sub-ttl">
+          사업자정보
+        </h3>
+        <!-- start:: table -->
+        <div class="custom-table-container">
+          <p class="custom-table-container-ttl">사업자 정보</p>
+          <div class="custom-table-wrap">
+            <!-- 회원 상태, 회원 유형 -->
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">회원 상태</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="user-status" class="inp-label">상태 선택</label>
+                  <select name="user-status" id="user-status" class="input inp-select">
+                    <option value="활성" selected>활성</option>
+                    <option value="비활성">비활성</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end:: input with select -->
+            </div>
+            <div class="custom-table-row half-size">
+              <!-- start:: input with select -->
+              <h3 class="custom-table-ttl">회원 유형</h3>
+              <div class="inp-wrap">
+                <div class="inp-grp">
+                  <label for="user-sort" class="inp-label">유형 선택</label>
+                  <select name="user-sort" id="user-sort" class="input inp-select">
+                    <option value="시스템 관리자" selected>시스템 관리자</option>
+                    <option value="교사">교사</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end:: input with select -->
+            </div>
+
+            <!-- 이름, 최종로그인정보 -->
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">이름(IP)</h3>
+              <div class="custom-table-desc">홍길동
+              </div>
+            </div>
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">최종 로그인 정보(IP)</h3>
+              <div class="custom-table-desc">2022.10.28 17:23:22 (192.168.0.19)
+              </div>
+            </div>
+
+            <!-- 가입일시 -->
+            <div class="custom-table-row full-size">
+              <h3 class="custom-table-ttl">가입 일시(IP)</h3>
+              <div class="custom-table-desc">2022.10.28 17:23:22 (192.168.0.19)
+              </div>
+            </div>
+
+            <!-- 버튼 -->
+            <div class="custom-table-row full-size search-btn-wrap">
+              <div class="btns-wrap">
+                <button class="btn btn-xl btn-ghost-primary">초기화</button>
+                <button class="btn btn-xl btn-primary">적용</button>
+              </div>
+            </div>
+          </div>
+          <!-- end search custom table -->
+        </div>
+        <!-- end:: table -->
+
+      </section>
+      <!-- END search table -->
+
+      <!-- FIXME: component style -->
+      <!-- START component name -->
+      <!-- <section class="component-container">
             <h2 class="component-ttl">기본형</h2>
           <p class="component-desc">설명</p>
           <h3 class="component-sub-ttl">
@@ -661,11 +1254,11 @@
           </h3>
           내용
           </section> -->
-        <!-- END component name -->
+      <!-- END component name -->
 
-        <!-- FIXME: popup style -->
-        <!-- popup base -->
-        <!-- <div class="popup" id="popupBase">
+      <!-- FIXME: popup style -->
+      <!-- popup base -->
+      <!-- <div class="popup" id="popupBase">
             <div class="popup-bg" onclick="popupClose();"></div>
             <div class="popup-container">
               <div class="popup-hd">
@@ -686,8 +1279,7 @@
               </div>
             </div>
           </div> -->
-        <!-- END popup -->
-      </div>
+      <!-- END popup -->
       <!-- END component -->
     </main>
     <!-- end:: main contents -->

@@ -11,14 +11,14 @@
 
 // 3. vendor
 
-// 4. component
+// 4. layout
+@import "layout/common";
+@import "layout/header";
+
+// 5. component
 @import "component/button";
 @import "component/form";
 @import "component/popup";
-
-// 5. layout
-@import "layout/common";
-@import "layout/header";
 
 // 6. pages
 // @import "page/login";

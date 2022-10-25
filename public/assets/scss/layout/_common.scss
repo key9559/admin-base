@@ -14,78 +14,17 @@
   padding: 0 15px;
 }
 
-// typography
-.ttl-style01 {
-  font-size: rem(30);
-  font-weight: 600;
+.main-ttl {
+  @include ttl-style01;
 }
 
-.ttl-style02 {
-  font-size: rem(24);
-  font-weight: 600;
-}
-
-.bd-style01-bold {
-  font-size: rem(18);
-  font-weight: 600;
-}
-
-.bd-style01-medium {
-  font-size: rem(18);
-  font-weight: 500;
-}
-
-.bd-style01-regular {
-  font-size: rem(18);
-  font-weight: 500;
-}
-
-.bd-style02-bold {
-  font-size: rem(16);
-  font-weight: 600;
-}
-
-.bd-style02-medium {
-  font-size: rem(16);
-  font-weight: 500;
-}
-
-.bd-style02-regular {
-  font-size: rem(16);
-  font-weight: 500;
-}
-
-.bd-style03-bold {
-  font-size: rem(14);
-  font-weight: 600;
-}
-
-.bd-style03-medium {
-  font-size: rem(14);
-  font-weight: 500;
-}
-
-.bd-style03-regular {
-  font-size: rem(14);
-  font-weight: 500;
-}
-
-.bd-style04-bold {
-  font-size: rem(12);
-  font-weight: 600;
-}
-
-.bd-style04-medium {
-  font-size: rem(12);
-  font-weight: 500;
-}
-
-.bd-style04-regular {
-  font-size: rem(12);
-  font-weight: 500;
+.sub-ttl {
+  @include ttl-style02;
 }
 
 .page-breadcrumb {
+  @include bd-style03(400);
+
   margin-top: 4px;
   color: color(gray-500);
 }
@@ -119,12 +58,52 @@
 }
 
 .card-basic {
+  @include flex-col {
+    justify-content: space-between;
+  }
+
   width: calc(16.666% - 17px);
   height: 120px;
   padding: 20px;
   background-color: color(gray-50);
 
+  .card-ttl {
+    @include bd-style01(400);
+  }
+
   .card-dec {
+    @include bd-style02(400);
+
     text-align: right;
+  }
+}
+
+// tab title area
+.tab-title-container {
+  border-bottom: 1px solid color(gray-300);
+}
+
+.tab-title {
+  display: inline-block;
+  width: 130px;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  transform: translateY(1px);
+
+  .tab-title-txt {
+    display: flex;
+    width: 100%;
+    margin-left: -4px;
+    padding-bottom: 15px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  @include hover {
+    border-color: color(Primary-200);
+  }
+
+  &.active {
+    border-color: color(Primary-700);
   }
 }

@@ -24,3 +24,19 @@
 	margin-top: 5px;
 	font-size: 18px;
 }
+
+.bd-style01 {
+	@include bd-style01(400);
+}
+
+.bd-style02 {
+	@include bd-style02(400);
+}
+
+.bd-style03 {
+	@include bd-style03(400);
+}
+
+.bd-style04 {
+	@include bd-style04(400);
+}

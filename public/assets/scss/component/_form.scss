@@ -21,14 +21,14 @@
   display: block;
   width: 100%;
   height: 40px;
-  margin-left: 10px;
   padding: 0 10px;
   border-radius: 4px;
   background-color: transparent;
   font-size: rem(14);
   border: 1px solid color(gray-300);
+  margin-left: 10px;
 
-  &:first-child {
+  &:first-of-type {
     margin-left: 0;
   }
 
@@ -42,7 +42,7 @@
 
   &:disabled {
     background-color: color(gray-50);
-    color: color(text);
+    color: color(gray-500);
     cursor: default;
 
     @include hover {
@@ -66,10 +66,12 @@
 .inp-label {
   overflow: hidden;
   position: absolute;
+  top: -1px;
+  left: -1px;
   width: 1px;
   height: 1px;
-  user-select: none;
   color: transparent;
+  user-select: none;
 }
 
 .inp-date {
@@ -101,7 +103,7 @@
   @include bg-url(icon, "icon_select.svg");
   @include bg-op($p: center right 5px);
 
-  max-width: 150px;
+  width: 150px;
   padding-right: 25px;
   cursor: pointer;
 
@@ -110,13 +112,17 @@
   }
 
   &.with-conts {
-    max-width: 100px;
+    width: 100px;
+  }
+
+  ~.inp-txt {
+    margin-left: 10px;
   }
 }
 
 // checkbox custom
 .chck-icon {
-  @include square(22px);
+  @include square(26px);
   @include bg-url(icon, "icon_check.svg");
   @include bg-op;
 
@@ -139,24 +145,51 @@
 }
 
 .chck-txt {
+  @include bd-style02(400);
+
   margin-left: 10px;
 }
-
-// table layout
-// .table-control-wrap {
-//   .btns-wrap {
-//     display: inline-block;
-//   }
-
-//   .inp-grp {
-//     display: inline-block;
-//     margin-left: 10px;
-//   }
-// }
 
 .table-wrap {
   overflow: auto;
   margin-top: 25px;
+}
+
+.search-result {
+  @include bg-op($p: left center);
+  @include bd-style02(400);
+
+  padding-left: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_29_6880)'%3E%3Cpath d='M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z' fill='%23CED4DA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_29_6880'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+  >b {
+    @include ttl-style02;
+  }
+}
+
+.control-inputs-wrap {
+  .control-group {
+    @include flex(inline-flex) {
+      align-items: center;
+    }
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    >span {
+      @include bd-style02(400);
+    }
+
+    .inp-select {
+      width: 140px;
+    }
+
+    >button,
+    >select {
+      margin-left: 14px;
+    }
+  }
 }
 
 .ad-table {
@@ -241,5 +274,76 @@
 
   .cell-more {
     width: 6.5em;
+  }
+}
+
+// custom table(not table)
+.custom-table-container-ttl {
+  @include bd-style01(500);
+  margin-bottom: 30px;
+}
+
+.custom-table-wrap {
+  @include flex {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  border-bottom: 1px solid color(gray-300);
+
+  .custom-table-row {
+    @include flex;
+
+    border-top: 1px solid color(gray-300);
+
+    &.full-size {
+      width: 100%;
+    }
+
+    &.half-size {
+      width: 50%;
+    }
+  }
+
+  .custom-table-ttl {
+    display: block;
+    width: 180px;
+    min-height: 80px;
+    background-color: color(gray-50);
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .custom-table-desc {
+    padding: 30px 22px;
+  }
+
+  .inp-grp {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .btns-wrap {
+    margin: 0;
+  }
+
+  .search-btn-wrap {
+    justify-content: center;
+    padding-top: 36px;
+
+    .btn:not(first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .custom-table-rowspan4 {
+    .custom-table-ttl {
+      min-height: calc(80px * 4);
+      line-height: calc(80px * 4);
+    }
+  }
+
+  .custom-table-rowspan-cellhalf {
+    width: 50%;
   }
 }
