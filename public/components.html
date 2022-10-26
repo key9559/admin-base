@@ -10,7 +10,7 @@
   <meta http-equiv="Expires" content="3600" />
   <meta http-equiv="Pragma" content="3600" />
   <meta http-equiv="cache-control" content="max-age=3600" />
-  <title>관리자 | 컴포넌트</title>
+  <title>ACID관리자 | 컴포넌트</title>
 
   <meta name="title" content="타이틀" />
   <meta name="author" content="회사" />
@@ -329,6 +329,7 @@
           <label for="cal1" class="inp-label">기간</label>
           <input type="text" id="cal1" name="cal1" class="input inp-date" value="2022-10-25" placeholder="시작일을 입력해주세요"
             data-toggle="datepicker" />
+          <span class="date-icon">~</span>
           <label for="cal2" class="inp-label">기간</label>
           <input type="text" id="cal2" name="cal2" class="input inp-date" value="2022-10-25" placeholder="완료일을 입력해주세요"
             data-toggle="datepicker" />
@@ -399,6 +400,14 @@
         </div>
         <!-- end:: input checkbox:checked -->
 
+        <h3 class="component-sub-ttl">체크박스 disabled</h3>
+        <!-- start:: input checkbox:disabled -->
+        <div class="inp-grp">
+          <input type="checkbox" id="test2" name="test2" class="inp-chck d-none" disabled />
+          <label for="test2" class="chck-icon">선택</label>
+        </div>
+        <!-- end:: input checkbox:disabled -->
+
         <h3 class="component-sub-ttl">체크박스 옆에 문구가 있는 경우</h3>
         <!-- start:: input checkbox with description -->
         <div class="inp-grp">
@@ -407,6 +416,39 @@
           <label for="test3" class="chck-txt">문구도 선택영역입니다.</label>
         </div>
         <!-- end:: input checkbox with description -->
+
+        <h3 class="component-sub-ttl">라디오버튼</h3>
+        <!-- start:: input radio -->
+        <div class="inp-grp">
+          <input type="radio" id="radio1" name="radio1" class="inp-radio d-none" />
+          <label for="radio1" class="radio-icon">선택</label>
+        </div>
+        <!-- end:: input radio -->
+
+        <h3 class="component-sub-ttl">라디오버튼 체크되었을 경우</h3>
+        <!-- start:: input radio:checked -->
+        <div class="inp-grp">
+          <input type="radio" id="radio2" name="radio2" class="inp-radio d-none" checked />
+          <label for="radio2" class="radio-icon">선택</label>
+        </div>
+        <!-- end:: input radio:checked -->
+
+        <h3 class="component-sub-ttl">라디오버튼 disabled</h3>
+        <!-- start:: input radio:disabled -->
+        <div class="inp-grp">
+          <input type="radio" id="radio2" name="radio2" class="inp-radio d-none" disabled />
+          <label for="radio2" class="radio-icon">선택</label>
+        </div>
+        <!-- end:: input radio:disabled -->
+
+        <h3 class="component-sub-ttl">라디오버튼 옆에 문구가 있는 경우</h3>
+        <!-- start:: input radio with description -->
+        <div class="inp-grp">
+          <input type="radio" id="radio3" name="radio3" class="inp-radio d-none" />
+          <label for="radio3" class="radio-icon">선택</label>
+          <label for="radio3" class="radio-txt">문구도 선택영역입니다.</label>
+        </div>
+        <!-- end:: input radio with description -->
       </section>
       <!-- END input component -->
 
@@ -943,7 +985,7 @@
       </section>
       <!-- END tab title -->
 
-      <!-- START search table -->
+      <!-- START custom table -->
       <section class="component-container">
         <h2 class="component-ttl">커스텀 테이블</h2>
         <p class="component-desc">반응형으로 조정이 되는 테이블은 table이 아닌 div로 구성합니다. </p>
@@ -951,7 +993,7 @@
         <h3 class="component-sub-ttl">
           검색테이블1 : 기간, 검색어, 상품명, 주문상태
         </h3>
-        <!-- start:: table -->
+        <!-- start:: search table -->
         <div class="custom-table-container">
           <div class="custom-table-wrap">
 
@@ -964,6 +1006,7 @@
                 <label for="cal1" class="inp-label">기간</label>
                 <input type="text" id="cal1" name="cal1" class="input inp-date" value="2022-10-25"
                   placeholder="시작일을 입력해주세요" data-toggle="datepicker" />
+                <span class="date-icon">~</span>
                 <label for="cal2" class="inp-label">기간</label>
                 <input type="text" id="cal2" name="cal2" class="input inp-date" value="2022-10-25"
                   placeholder="완료일을 입력해주세요" data-toggle="datepicker" />
@@ -1061,12 +1104,12 @@
           </div>
           <!-- end search custom table -->
         </div>
-        <!-- end:: table -->
+        <!-- end:: search table -->
 
         <h3 class="component-sub-ttl">
           기본정보
         </h3>
-        <!-- start:: table -->
+        <!-- start:: user personal info table -->
         <div class="custom-table-container">
           <p class="custom-table-container-ttl">기본 정보</p>
           <div class="custom-table-wrap">
@@ -1105,39 +1148,47 @@
               <div class="custom-table-rowspan-cellhalf">
                 <div class="custom-table-row custom-table-rowspan4">
                   <h3 class="custom-table-ttl">프로필 사진</h3>
+                  <div class="image-upload-wrap">
+                    <img src="assets/images/img/img_empty.png" alt="프로필 사진" />
+                    <div class="inp-grp">
+                      <label for="profile-upload" class="inp-file-label-field input inp-txt">파일명.jpg</label>
+                      <label for="profile-upload" class="inp-file-label-btn btn btn-l btn-basic">파일 찾기</label>
+                      <input type="file" id="profile-upload" name="file-upload" class="input inp-file" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="custom-table-rowspan-cellhalf">
                 <div class="custom-table-row full-size">
                   <h3 class="custom-table-ttl">회원 이메일</h3>
                   <div class="inp-grp">
-                    <label for="search-name" class="inp-label">회원 이메일</label>
-                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
-                      placeholder="찾으시려는 내용을 입력해주세요." />
-                  </div>
-                </div>
-                <div class="custom-table-row full-size">
-                  <h3 class="custom-table-ttl">회원 이메일</h3>
-                  <div class="inp-grp">
-                    <label for="search-name" class="inp-label">회원 이메일</label>
-                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
-                      placeholder="찾으시려는 내용을 입력해주세요." />
+                    <label for="user-email" class="inp-label">회원 이메일</label>
+                    <input type="text" id="user-email" name="user-email" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." value="abcd1111@aaaa.com" />
                   </div>
                 </div>
                 <div class="custom-table-row full-size">
                   <h3 class="custom-table-ttl">전화번호</h3>
                   <div class="inp-grp">
-                    <label for="search-name" class="inp-label">전화번호</label>
-                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
-                      placeholder="찾으시려는 내용을 입력해주세요." />
+                    <label for="user-tel" class="inp-label">전화번호</label>
+                    <input type="text" id="user-tel" name="user-tel" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." value="010-1234-5678" />
                   </div>
                 </div>
                 <div class="custom-table-row full-size">
                   <h3 class="custom-table-ttl">이름</h3>
                   <div class="inp-grp">
-                    <label for="search-name" class="inp-label">이름</label>
-                    <input type="text" id="search-name" name="search-name" class="input inp-txt"
-                      placeholder="찾으시려는 내용을 입력해주세요." />
+                    <label for="user-name" class="inp-label">이름</label>
+                    <input type="text" id="user-name" name="user-name" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." value="홍길동" />
+                  </div>
+                </div>
+                <div class="custom-table-row full-size">
+                  <h3 class="custom-table-ttl">가입 일시(IP)</h3>
+                  <div class="inp-grp">
+                    <label for="rego-date" class="inp-label">가입 일시(IP)</label>
+                    <input type="text" id="rego-date" name="rego-date" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22 (192.168.0.19)" disabled />
                   </div>
                 </div>
               </div>
@@ -1147,85 +1198,138 @@
             <div class="custom-table-row half-size">
               <h3 class="custom-table-ttl">최종 로그인 정보(IP)</h3>
               <div class="inp-grp">
-                <label for="search-name" class="inp-label">최종 로그인 정보(IP)</label>
-                <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                <label for="last-login" class="inp-label">최종 로그인 정보(IP)</label>
+                <input type="text" id="last-login" name="last-login" class="input inp-txt"
                   placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22 (192.168.0.19)" disabled />
               </div>
             </div>
             <div class="custom-table-row half-size">
               <h3 class="custom-table-ttl">탈퇴 일시</h3>
               <div class="inp-grp">
-                <label for="search-name" class="inp-label">최종 로그인 정보(IP)</label>
-                <input type="text" id="search-name" name="search-name" class="input inp-txt"
+                <label for="user-del-date" class="inp-label">탈퇴 일시</label>
+                <input type="text" id="user-del-date" name="user-del-date" class="input inp-txt"
                   placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22" disabled />
               </div>
             </div>
 
-            <!-- 버튼 -->
             <div class="custom-table-row full-size search-btn-wrap">
-              <div class="btns-wrap">
-                <button class="btn btn-xl btn-ghost-primary">초기화</button>
-                <button class="btn btn-xl btn-primary">적용</button>
-              </div>
             </div>
           </div>
           <!-- end search custom table -->
         </div>
-        <!-- end:: table -->
+        <!-- end:: user personal info table -->
 
         <h3 class="component-sub-ttl">
           사업자정보
         </h3>
-        <!-- start:: table -->
+        <!-- start:: user company info table -->
         <div class="custom-table-container">
           <p class="custom-table-container-ttl">사업자 정보</p>
           <div class="custom-table-wrap">
-            <!-- 회원 상태, 회원 유형 -->
+            <!-- 사업자 유무, 사업자 번호 -->
             <div class="custom-table-row half-size">
-              <!-- start:: input with select -->
-              <h3 class="custom-table-ttl">회원 상태</h3>
-              <div class="inp-wrap">
-                <div class="inp-grp">
-                  <label for="user-status" class="inp-label">상태 선택</label>
-                  <select name="user-status" id="user-status" class="input inp-select">
-                    <option value="활성" selected>활성</option>
-                    <option value="비활성">비활성</option>
-                  </select>
-                </div>
+              <h3 class="custom-table-ttl">사업자 유무</h3>
+              <div class="inp-grp">
+                <input type="radio" id="company-corp" name="company-sort" class="inp-radio d-none" />
+                <label for="company-corp" class="radio-icon">선택</label>
+                <label for="company-corp" class="radio-txt">법인</label>
               </div>
-              <!-- end:: input with select -->
-            </div>
-            <div class="custom-table-row half-size">
-              <!-- start:: input with select -->
-              <h3 class="custom-table-ttl">회원 유형</h3>
-              <div class="inp-wrap">
-                <div class="inp-grp">
-                  <label for="user-sort" class="inp-label">유형 선택</label>
-                  <select name="user-sort" id="user-sort" class="input inp-select">
-                    <option value="시스템 관리자" selected>시스템 관리자</option>
-                    <option value="교사">교사</option>
-                  </select>
-                </div>
-              </div>
-              <!-- end:: input with select -->
-            </div>
-
-            <!-- 이름, 최종로그인정보 -->
-            <div class="custom-table-row half-size">
-              <h3 class="custom-table-ttl">이름(IP)</h3>
-              <div class="custom-table-desc">홍길동
+              <div class="inp-grp">
+                <input type="radio" id="company-personal" name="company-sort" class="inp-radio d-none" />
+                <label for="company-personal" class="radio-icon">선택</label>
+                <label for="company-personal" class="radio-txt">개인</label>
               </div>
             </div>
             <div class="custom-table-row half-size">
-              <h3 class="custom-table-ttl">최종 로그인 정보(IP)</h3>
-              <div class="custom-table-desc">2022.10.28 17:23:22 (192.168.0.19)
+              <h3 class="custom-table-ttl">사업자 번호</h3>
+              <div class="inp-grp">
+                <label for="company-num" class="inp-label">사업자 번호</label>
+                <input type="text" id="company-num" name="company-num" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="000-00-00000" />
               </div>
             </div>
 
-            <!-- 가입일시 -->
+            <!-- 상호명, 대표명 -->
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">상호명</h3>
+              <div class="inp-grp">
+                <label for="company-name" class="inp-label">상호명</label>
+                <input type="text" id="company-name" name="company-name" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="(주)버블콘" />
+              </div>
+            </div>
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">대표명</h3>
+              <div class="inp-grp">
+                <label for="ceo-name" class="inp-label">대표명</label>
+                <input type="text" id="ceo-name" name="ceo-name" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                  value="홍길동" />
+              </div>
+            </div>
+
+            <!-- 업태, 업종 -->
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">업태</h3>
+              <div class="inp-grp">
+                <label for="company-condition" class="inp-label">업태</label>
+                <input type="text" id="company-condition" name="company-condition" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="서비스업" />
+              </div>
+            </div>
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">업종</h3>
+              <div class="inp-grp">
+                <label for="company-category" class="inp-label">업종</label>
+                <input type="text" id="company-category" name="company-category" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="전자상거래" />
+              </div>
+            </div>
+
+            <!-- 통신판매업 신고번호, 세금계산서 이메일 -->
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">통신판매업 신고번호</h3>
+              <div class="inp-grp">
+                <label for="report-num" class="inp-label">통신판매업 신고번호</label>
+                <input type="text" id="report-num" name="report-num" class="input inp-txt"
+                  placeholder="찾으시려는 내용을 입력해주세요." value="000-000-00000" />
+              </div>
+            </div>
+            <div class="custom-table-row half-size">
+              <h3 class="custom-table-ttl">세금계산서 이메일</h3>
+              <div class="inp-grp">
+                <label for="tax-mail" class="inp-label">세금계산서 이메일</label>
+                <input type="text" id="tax-mail" name="tax-mail" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                  value="email@email.com" />
+              </div>
+            </div>
+
+            <!-- 주소(사업장), 최종 상태 변경 일시 -->
             <div class="custom-table-row full-size">
-              <h3 class="custom-table-ttl">가입 일시(IP)</h3>
-              <div class="custom-table-desc">2022.10.28 17:23:22 (192.168.0.19)
+              <div class="custom-table-rowspan-cellhalf">
+                <div class="custom-table-row custom-table-rowspan-2input">
+                  <h3 class="custom-table-ttl">주소(사업장)</h3>
+                  <div class="address-wrap">
+                    <div class="inp-grp">
+                      <label for="company-address" class="inp-label">주소(사업장)</label>
+                      <input type="text" id="company-address" name="company-address" class="input inp-txt"
+                        placeholder="우편 번호를 검색하세요." />
+                      <button class="btn btn-l btn-basic">우편 검색</button>
+                      <label for="company-add-detail" class="inp-label">상세 주소</label>
+                      <input type="text" id="company-add-detail" name="company-add-detail" class="input inp-txt"
+                        placeholder="상세 주소를 입력하세요." />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-table-rowspan-cellhalf">
+                <div class="custom-table-row custom-table-rowspan-2input">
+                  <h3 class="custom-table-ttl">최종 상태 변경 일시</h3>
+                  <div class="inp-grp">
+                    <label for="last-edit-date" class="inp-label">최종 상태 변경 일시</label>
+                    <input type="text" id="last-edit-date" name="last-edit-date" class="input inp-txt"
+                      placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22" disabled />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1239,10 +1343,10 @@
           </div>
           <!-- end search custom table -->
         </div>
-        <!-- end:: table -->
+        <!-- end:: user company info table -->
 
       </section>
-      <!-- END search table -->
+      <!-- END custom table -->
 
       <!-- FIXME: component style -->
       <!-- START component name -->

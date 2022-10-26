@@ -196,7 +196,7 @@ $color in $btn-color {
 
 // pagination button style
 .btn-page {
-  @include bd-style03(400);
+  @include bd-style03;
 
   min-width: 32px;
   height: 32px;

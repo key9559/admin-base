@@ -222,22 +222,22 @@ background-image: urlPath($path, $img);
   font-weight: 600;
 }
 
-@mixin bd-style01($fw: 600) {
+@mixin bd-style01($fw: 400) {
   font-size: rem(18);
   font-weight: $fw;
 }
 
-@mixin bd-style02($fw: 600) {
+@mixin bd-style02($fw: 400) {
   font-size: rem(16);
   font-weight: $fw;
 }
 
-@mixin bd-style03($fw: 600) {
+@mixin bd-style03($fw: 400) {
   font-size: rem(14);
   font-weight: $fw;
 }
 
-@mixin bd-style04($fw: 600) {
+@mixin bd-style04($fw: 400) {
   font-size: rem(12);
   font-weight: $fw;
 }

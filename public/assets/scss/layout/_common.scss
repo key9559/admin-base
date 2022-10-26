@@ -3,6 +3,7 @@
   min-height: 100vh;
   padding-top: $hd-height;
   padding-left: $gnb-width;
+  padding-bottom: 100px;
 }
 
 .ad-main {
@@ -23,7 +24,7 @@
 }
 
 .page-breadcrumb {
-  @include bd-style03(400);
+  @include bd-style03;
 
   margin-top: 4px;
   color: color(gray-500);
@@ -45,6 +46,8 @@
 // pagination
 .pagination-wrap {
   @include flex-center;
+
+  margin-top: 30px;
 }
 
 // card
@@ -55,6 +58,8 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  margin-top: 34px;
 }
 
 .card-basic {
@@ -68,11 +73,11 @@
   background-color: color(gray-50);
 
   .card-ttl {
-    @include bd-style01(400);
+    @include bd-style01;
   }
 
   .card-dec {
-    @include bd-style02(400);
+    @include bd-style02;
 
     text-align: right;
   }
@@ -80,6 +85,7 @@
 
 // tab title area
 .tab-title-container {
+  margin-top: 46px;
   border-bottom: 1px solid color(gray-300);
 }
 

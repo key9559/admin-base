@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Expires" content="3600" />
+  <meta http-equiv="Pragma" content="3600" />
+  <meta http-equiv="cache-control" content="max-age=3600" />
+  <title>ACID관리자 | 회원관리</title>
+
+  <meta name="title" content="타이틀" />
+  <meta name="author" content="회사" />
+  <meta name="description" content="상세설명" />
+  <meta name="keywords" content="키워드" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="유알엘" />
+  <meta property="og:title" content="타이틀" />
+  <meta property="og:description" content="상세설명" />
+  <meta property="og:image" content="assets/images/favicon/og.png" />
+  <!-- Twitter -->
+  <meta property="twitter:url" content="유알엘" />
+  <meta property="twitter:title" content="타이틀" />
+  <meta property="twitter:description" content="상세설명" />
+  <!-- END Open Graph -->
+
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css">
+  <link rel="stylesheet" href="assets/css/custom/ui.css" />
+
+  <!-- script vandor -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="assets/js/vendor/datepicker.min.js"></script>
+</head>
+
+<body>
+  <div id="page" class="component-page">
+    <!-- start:: header -->
+    <header class="ad-hd">
+      <div class="ad-top-hd">
+        <div class="btns-wrap">
+          <spsan class="user-name">홍길동 님</spsan>
+          <a href="index.html" class="btn btn-m">로그아웃</a>
+        </div>
+      </div>
+      <div class="ad-left-hd">
+        <h1 class="ad-logo-wrap">
+          <img src="assets/images/logo/bbc_logo.svg" alt="Learning ACID" />
+          <div class="desc">버블교육기관</div>
+        </h1>
+        <nav class="ad-gnb scroll-custom">
+          <button type="button" class="nav-ttl">대분류1</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류1(생성페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류2(생성페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="training-create.html" class="nav-link">중분류3(생성페이지이동)</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류2</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류3</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="" class="nav-link active">중분류1</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류2</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류3</a>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류4</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류5</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류6</a>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류7</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류8</a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link">중분류9</a>
+            </li>
+          </ul>
+          <button type="button" class="nav-ttl">대분류4</button>
+          <ul class="nav-list-wrap">
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류1(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류2(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류3(통계페이지이동)</a>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류4(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류5(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류6(통계페이지이동)</a>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류7(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류8(통계페이지이동)</a>
+            </li>
+            <li class="nav-list">
+              <a href="report.html" class="nav-link">중분류9(통계페이지이동)</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end:: header -->
+    <!-- start:: main contents -->
+    <main class="ad-main">
+      <h2 class="main-ttl">
+        회원 관리
+      </h2>
+      <p class="page-breadcrumb">Home > 회원 관리 > 회원 목록 > 회원 상세</p>
+      <!-- tab titles -->
+      <ul class="tab-title-container">
+        <li class="tab-title active">
+          <button class="btn tab-title-txt">회원 정보</button>
+        </li>
+        <li class="tab-title">
+          <button class="btn tab-title-txt">문의</button>
+        </li>
+        <li class="tab-title">
+          <button class="btn tab-title-txt">메모</button>
+        </li>
+      </ul>
+
+      <!-- start:: user personal info table -->
+      <div class="custom-table-container">
+        <p class="custom-table-container-ttl">기본 정보</p>
+        <div class="custom-table-wrap">
+          <!-- 회원 상태, 회원 유형 -->
+          <div class="custom-table-row half-size">
+            <!-- start:: input with select -->
+            <h3 class="custom-table-ttl">회원 상태</h3>
+            <div class="inp-wrap">
+              <div class="inp-grp">
+                <label for="user-status" class="inp-label">상태 선택</label>
+                <select name="user-status" id="user-status" class="input inp-select">
+                  <option value="활성" selected>활성</option>
+                  <option value="비활성">비활성</option>
+                </select>
+              </div>
+            </div>
+            <!-- end:: input with select -->
+          </div>
+          <div class="custom-table-row half-size">
+            <!-- start:: input with select -->
+            <h3 class="custom-table-ttl">회원 유형</h3>
+            <div class="inp-wrap">
+              <div class="inp-grp">
+                <label for="user-sort" class="inp-label">유형 선택</label>
+                <select name="user-sort" id="user-sort" class="input inp-select">
+                  <option value="시스템 관리자" selected>시스템 관리자</option>
+                  <option value="교사">교사</option>
+                </select>
+              </div>
+            </div>
+            <!-- end:: input with select -->
+          </div>
+
+          <!-- 프로필 사진, 회원 이메일, 전화번호, 이름 -->
+          <div class="custom-table-row full-size">
+            <div class="custom-table-rowspan-cellhalf">
+              <div class="custom-table-row custom-table-rowspan4">
+                <h3 class="custom-table-ttl">프로필 사진</h3>
+                <div class="image-upload-wrap">
+                  <img src="assets/images/img/img_empty.png" alt="프로필 사진" />
+                  <div class="inp-grp">
+                    <label for="profile-upload" class="inp-file-label-field input inp-txt">파일명.jpg</label>
+                    <label for="profile-upload" class="inp-file-label-btn btn btn-l btn-basic">파일 찾기</label>
+                    <input type="file" id="profile-upload" name="file-upload" class="input inp-file" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-table-rowspan-cellhalf">
+              <div class="custom-table-row full-size">
+                <h3 class="custom-table-ttl">회원 이메일</h3>
+                <div class="inp-grp">
+                  <label for="user-email" class="inp-label">회원 이메일</label>
+                  <input type="text" id="user-email" name="user-email" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." value="abcd1111@aaaa.com" />
+                </div>
+              </div>
+              <div class="custom-table-row full-size">
+                <h3 class="custom-table-ttl">전화번호</h3>
+                <div class="inp-grp">
+                  <label for="user-tel" class="inp-label">전화번호</label>
+                  <input type="text" id="user-tel" name="user-tel" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                    value="010-1234-5678" />
+                </div>
+              </div>
+              <div class="custom-table-row full-size">
+                <h3 class="custom-table-ttl">이름</h3>
+                <div class="inp-grp">
+                  <label for="user-name" class="inp-label">이름</label>
+                  <input type="text" id="user-name" name="user-name" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." value="홍길동" />
+                </div>
+              </div>
+              <div class="custom-table-row full-size">
+                <h3 class="custom-table-ttl">가입 일시(IP)</h3>
+                <div class="inp-grp">
+                  <label for="rego-date" class="inp-label">가입 일시(IP)</label>
+                  <input type="text" id="rego-date" name="rego-date" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22 (192.168.0.19)" disabled />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 최종 로그인 정보, 탈퇴 일시 -->
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">최종 로그인 정보(IP)</h3>
+            <div class="inp-grp">
+              <label for="last-login" class="inp-label">최종 로그인 정보(IP)</label>
+              <input type="text" id="last-login" name="last-login" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                value="2022.10.28 17:23:22 (192.168.0.19)" disabled />
+            </div>
+          </div>
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">탈퇴 일시</h3>
+            <div class="inp-grp">
+              <label for="user-del-date" class="inp-label">탈퇴 일시</label>
+              <input type="text" id="user-del-date" name="user-del-date" class="input inp-txt"
+                placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22" disabled />
+            </div>
+          </div>
+
+          <div class="custom-table-row full-size search-btn-wrap">
+          </div>
+        </div>
+        <!-- end search custom table -->
+      </div>
+      <!-- end:: user personal info table -->
+
+      <!-- start:: user company info table -->
+      <div class="custom-table-container">
+        <p class="custom-table-container-ttl">사업자 정보</p>
+        <div class="custom-table-wrap">
+          <!-- 사업자 유무, 사업자 번호 -->
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">사업자 유무</h3>
+            <div class="inp-grp">
+              <input type="radio" id="company-corp" name="company-sort" class="inp-radio d-none" />
+              <label for="company-corp" class="radio-icon">선택</label>
+              <label for="company-corp" class="radio-txt">법인</label>
+            </div>
+            <div class="inp-grp">
+              <input type="radio" id="company-personal" name="company-sort" class="inp-radio d-none" />
+              <label for="company-personal" class="radio-icon">선택</label>
+              <label for="company-personal" class="radio-txt">개인</label>
+            </div>
+          </div>
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">사업자 번호</h3>
+            <div class="inp-grp">
+              <label for="company-num" class="inp-label">사업자 번호</label>
+              <input type="text" id="company-num" name="company-num" class="input inp-txt"
+                placeholder="찾으시려는 내용을 입력해주세요." value="000-00-00000" />
+            </div>
+          </div>
+
+          <!-- 상호명, 대표명 -->
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">상호명</h3>
+            <div class="inp-grp">
+              <label for="company-name" class="inp-label">상호명</label>
+              <input type="text" id="company-name" name="company-name" class="input inp-txt"
+                placeholder="찾으시려는 내용을 입력해주세요." value="(주)버블콘" />
+            </div>
+          </div>
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">대표명</h3>
+            <div class="inp-grp">
+              <label for="ceo-name" class="inp-label">대표명</label>
+              <input type="text" id="ceo-name" name="ceo-name" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                value="홍길동" />
+            </div>
+          </div>
+
+          <!-- 업태, 업종 -->
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">업태</h3>
+            <div class="inp-grp">
+              <label for="company-condition" class="inp-label">업태</label>
+              <input type="text" id="company-condition" name="company-condition" class="input inp-txt"
+                placeholder="찾으시려는 내용을 입력해주세요." value="서비스업" />
+            </div>
+          </div>
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">업종</h3>
+            <div class="inp-grp">
+              <label for="company-category" class="inp-label">업종</label>
+              <input type="text" id="company-category" name="company-category" class="input inp-txt"
+                placeholder="찾으시려는 내용을 입력해주세요." value="전자상거래" />
+            </div>
+          </div>
+
+          <!-- 통신판매업 신고번호, 세금계산서 이메일 -->
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">통신판매업 신고번호</h3>
+            <div class="inp-grp">
+              <label for="report-num" class="inp-label">통신판매업 신고번호</label>
+              <input type="text" id="report-num" name="report-num" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                value="000-000-00000" />
+            </div>
+          </div>
+          <div class="custom-table-row half-size">
+            <h3 class="custom-table-ttl">세금계산서 이메일</h3>
+            <div class="inp-grp">
+              <label for="tax-mail" class="inp-label">세금계산서 이메일</label>
+              <input type="text" id="tax-mail" name="tax-mail" class="input inp-txt" placeholder="찾으시려는 내용을 입력해주세요."
+                value="email@email.com" />
+            </div>
+          </div>
+
+          <!-- 주소(사업장), 최종 상태 변경 일시 -->
+          <div class="custom-table-row full-size">
+            <div class="custom-table-rowspan-cellhalf">
+              <div class="custom-table-row custom-table-rowspan-2input">
+                <h3 class="custom-table-ttl">주소(사업장)</h3>
+                <div class="address-wrap">
+                  <div class="inp-grp">
+                    <label for="company-address" class="inp-label">주소(사업장)</label>
+                    <input type="text" id="company-address" name="company-address" class="input inp-txt"
+                      placeholder="우편 번호를 검색하세요." />
+                    <button class="btn btn-l btn-basic">우편 검색</button>
+                    <label for="company-add-detail" class="inp-label">상세 주소</label>
+                    <input type="text" id="company-add-detail" name="company-add-detail" class="input inp-txt"
+                      placeholder="상세 주소를 입력하세요." />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-table-rowspan-cellhalf">
+              <div class="custom-table-row custom-table-rowspan-2input">
+                <h3 class="custom-table-ttl">최종 상태 변경 일시</h3>
+                <div class="inp-grp">
+                  <label for="last-edit-date" class="inp-label">최종 상태 변경 일시</label>
+                  <input type="text" id="last-edit-date" name="last-edit-date" class="input inp-txt"
+                    placeholder="찾으시려는 내용을 입력해주세요." value="2022.10.28 17:23:22" disabled />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 버튼 -->
+          <div class="custom-table-row full-size search-btn-wrap">
+            <div class="btns-wrap">
+              <button class="btn btn-xl btn-ghost-primary">초기화</button>
+              <button class="btn btn-xl btn-primary">적용</button>
+            </div>
+          </div>
+        </div>
+        <!-- end search custom table -->
+      </div>
+      <!-- end:: user company info table -->
+      <!-- END component -->
+    </main>
+    <!-- end:: main contents -->
+  </div>
+  <!-- END page -->
+  <script src="assets/js/custom/ui.js"></script>
+</body>
+
+</html>
