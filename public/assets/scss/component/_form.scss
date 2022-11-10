@@ -89,6 +89,7 @@
 
   position: relative;
   max-width: 130px;
+  margin: 0;
   padding-left: 38px;
 
   ~.date-icon {
@@ -223,7 +224,7 @@
   margin-left: 10px;
 }
 
-// rable style
+// table style
 .table-wrap {
   overflow: auto;
   margin-top: 25px;
@@ -273,11 +274,11 @@
   border-bottom: 1px solid color(gray-200);
 
   .ad-table-row {
-    // &:nth-child(even) {
-    //   background-color: color(gray-50);
-    // }
-
     @include hover {
+      background-color: color(gray-100);
+    }
+
+    &.chck-row {
       background-color: color(gray-200);
     }
   }

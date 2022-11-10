@@ -1,23 +1,24 @@
-// popup
-const $openBtn = document.querySelectorAll(".btn-modal-open");
+// table checked
+let $inputCheckboxs = document.querySelectorAll(".cell-chck [type='checkbox']");
 
-function popupOpen(name) {
-  var $popupName = document.getElementById(name);
+for (i = 0; i <= $inputCheckboxs.length; i++) {
+  let $inputCheckbox = $inputCheckboxs[i];
 
-  $popupName.classList.add("active");
-}
+  if ($inputCheckboxs >= 0) {
+    $inputCheckbox.addEventListener("click", function () {
+      let $inputCheckeds = document.querySelectorAll(".cell-chck .inp-chck:checked");
+      for (i = 0; i <= $inputCheckeds.length; i++) {
+        let $inputChecked = $inputCheckeds[i];
+        $inputChecked.closest('.ad-table-row').style.color = '#3B5A93';
+      }
+    })
+  }
 
-function popupClose() {
-  const $popup = document.querySelector(".popup.active");
-
-  $popup.classList.remove("active");
 }
 
 // gnb
 const $gnbActive = document.querySelector(".nav-link.active");
 const $gnbTtl = document.querySelectorAll(".nav-ttl");
-
-console.log($gnbTtl);
 
 for (i = 0; i <= $gnbTtl.length; i++) {
   let $targetGnbTtl = $gnbTtl[i];

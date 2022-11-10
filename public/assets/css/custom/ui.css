@@ -833,6 +833,7 @@ html.ie .scroll-custom {
   background-image: url("../../images/icon/icon_calander.svg");
   position: relative;
   max-width: 130px;
+  margin: 0;
   padding-left: 38px;
 }
 .inp-date ~ .date-icon {
@@ -1014,6 +1015,9 @@ html.ie .scroll-custom {
   border-bottom: 1px solid #E9ECEF;
 }
 .ad-table .ad-table-row:hover, .ad-table .ad-table-row:focus {
+  background-color: #F1F3F5;
+}
+.ad-table .ad-table-row.chck-row {
   background-color: #E9ECEF;
 }
 .ad-table .ad-table-hd {
