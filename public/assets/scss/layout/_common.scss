@@ -1,9 +1,12 @@
 /* =================== layout =================== */
 #page {
   min-height: 100vh;
-  padding-top: $hd-height;
-  padding-left: $gnb-width;
-  padding-bottom: 100px;
+
+  padding: {
+    top: $hd-height;
+    left: $gnb-width;
+    bottom: 100px;
+  }
 }
 
 .ad-main {
@@ -11,7 +14,6 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 40px;
   padding: 0 15px;
 }
 

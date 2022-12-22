@@ -65,9 +65,11 @@ background-image: urlPath($path, $img);
 }
 
 @mixin bg-op($p: center, $s: auto, $r: no-repeat) {
-  background-position: $p;
-  background-size: $s;
-  background-repeat: $r;
+  background: {
+    position: $p;
+    size: $s;
+    repeat: $r;
+  }
 }
 
 // bafore, after
@@ -178,13 +180,6 @@ background-image: urlPath($path, $img);
   }
 }
 
-// ie
-@mixin ie-style {
-  @at-root html.ie & {
-    @content;
-  }
-}
-
 // scroll custom style
 @mixin custom-scroll($c: color(gray-100), $sub-c: #fff, $r: 0, $s: 8px) {
   &::-webkit-scrollbar {
@@ -196,12 +191,6 @@ background-image: urlPath($path, $img);
   &::-webkit-scrollbar-thumb {
     background-color: $c;
     border-radius: $r;
-  }
-
-  @include ie-style {
-    scrollbar-arrow-color: $c;
-    scrollbar-face-color: $c;
-    scrollbar-track-color: $sub-c;
   }
 }
 
