@@ -144,8 +144,8 @@ background-image: urlPath($path, $img);
   overflow: hidden;
   display: block;
   display: -webkit-box;
-  line-height: $line-height; // $line-height : line-height값 (단위 필수)
   height: $line-height * $line-cnt;
+  line-height: $line-height; // $line-height : line-height값 (단위 필수)
   -webkit-line-clamp: $line-cnt; // $line-cnt : 라인 수
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
