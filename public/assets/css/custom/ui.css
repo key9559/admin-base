@@ -311,9 +311,14 @@ img {
   border-bottom: 1px solid #dee2e6;
   white-space: nowrap;
 }
-
-.tab-title-wrap {
-  max-width: 10000px;
+.tab-title-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+}
+.tab-title-container::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  border-radius: 0;
 }
 
 .tab-title {

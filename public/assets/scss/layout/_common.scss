@@ -126,16 +126,14 @@
 
 // tab title area
 .tab-title-container {
+  @include custom-scroll;
+
   overflow-y: hidden;
   overflow-x: auto;
   width: 100%;
   margin-top: 46px;
   border-bottom: 1px solid color(gray-300);
   white-space: nowrap;
-}
-
-.tab-title-wrap {
-  max-width: 10000px;
 }
 
 .tab-title {
