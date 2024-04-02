@@ -32,6 +32,20 @@ a {
   cursor: pointer;
 }
 
+button,
+input {
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 ol,
 ul,
 dl {
@@ -433,16 +447,6 @@ img {
           transform: rotate(45deg);
 }
 .manage-left-hd .btn-gnb-icon {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   z-index: 2;
   position: absolute;
   display: block;
@@ -514,16 +518,6 @@ img {
   height: calc(100vh - 170px);
 }
 .manage-left-hd .nav-ttl {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   display: block;
   width: 100%;
   height: 60px;
@@ -600,16 +594,6 @@ img {
 }
 
 .btn {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -745,19 +729,19 @@ img {
   cursor: not-allowed;
 }
 
-.btn-ghost-basic {
+.btn-bd-basic {
   border: 1px solid #dee2e6;
   color: #212529;
 }
-.btn-ghost-basic:hover, .btn-ghost-basic:focus {
+.btn-bd-basic:hover, .btn-bd-basic:focus {
   border-color: #e9ecef;
   color: #ced4da;
 }
-.btn-ghost-basic:active {
+.btn-bd-basic:active {
   border-color: #ced4da;
   color: #868e96;
 }
-.btn-ghost-basic:disabled, .btn-ghost-basic:disabled:hover, .btn-ghost-basic:disabled:focus {
+.btn-bd-basic:disabled, .btn-bd-basic:disabled:hover, .btn-bd-basic:disabled:focus {
   border-color: #dee2e6;
   color: #ced4da;
   cursor: not-allowed;
@@ -896,16 +880,6 @@ img {
 }
 
 .input {
-  border-radius: 0;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   display: block;
   width: 100%;
   height: 40px;

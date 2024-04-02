@@ -31,6 +31,19 @@ a {
   cursor: pointer;
 }
 
+button,
+input {
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
 ol,
 ul,
 dl {

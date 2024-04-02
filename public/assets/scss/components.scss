@@ -4,39 +4,83 @@
 @import "utility/variable";
 @import "utility/mixin";
 
+// only components.html
+
+// component container style
 .component-container {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 .component-ttl {
-	margin-top: 50px;
-	font-size: 30px;
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 .component-sub-ttl {
-	margin: 20px 0;
-	padding: 10px 20px;
-	font-size: 20px;
-	background-color: rgba(0, 0, 0, 0.04);
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  color: white;
 }
 
 .component-desc {
-	margin-top: 5px;
-	font-size: 18px;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
+// code block style
+.code-wrap {
+  margin-bottom: 20px;
+}
+
+code {
+  display: block;
+  max-width: 500px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+}
+
+code [class] {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+code .blue {
+  color: #1851a9;
+}
+
+code .skyblue {
+  color: #319fcb;
+}
+
+code .people {
+  color: #8025b7;
+}
+
+code .yellow {
+  color: #8d9100;
+}
+
+code .green {
+  color: #218d08;
+}
+
+//
 .bd-style01 {
-	@include bd-style01(400);
+  @include bd-style01(400);
 }
 
 .bd-style02 {
-	@include bd-style02(400);
+  @include bd-style02(400);
 }
 
 .bd-style03 {
-	@include bd-style03(400);
+  @include bd-style03(400);
 }
 
 .bd-style04 {
-	@include bd-style04(400);
+  @include bd-style04(400);
 }

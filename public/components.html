@@ -31,40 +31,41 @@
     <!-- END Open Graph -->
 
     <!-- css link -->
-    <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css" />
     <link rel="stylesheet" href="assets/css/custom/ui.css" />
     <link rel="stylesheet" href="assets/css/custom/components.css" />
 
-    <!-- script vandor -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/vendor/datepicker.min.js"></script>
+    <!-- script vendor -->
   </head>
 
   <body>
     <div id="page" class="component-page">
       <!-- start:: header -->
       <header class="manage-hd">
+        <!-- skip navigation -->
         <a href="#main-content" class="skip-nav">메인 바로가기</a>
+        <!-- START top header -->
         <div class="manage-top-hd">
           <div class="btns-wrap">
             <spsan class="user-name">홍길동 님</spsan>
             <a href="index.html" class="btn btn-m">로그아웃</a>
           </div>
         </div>
+        <!-- END top header -->
+        <!-- START left header -->
         <div class="manage-left-hd">
+          <!-- START mobile hamberger button -->
           <button type="button" class="btn-gnb-icon tab-show">
             <div class="voice-only">메뉴 보기</div>
           </button>
+          <!-- END mobile hamberger button -->
+          <!-- START company logo -->
           <h1 class="manage-logo-wrap">
             <a href="/"
               ><img src="assets/images/logo/logo.svg" alt="회사 로고"
             /></a>
             <a href="/" class="desc"><div>회사이름</div></a>
           </h1>
+          <!-- END company logo -->
           <nav class="manage-gnb scroll-custom">
             <div class="manage-onedep-wrap">
               <button type="button" class="nav-ttl">대분류1</button>
@@ -108,29 +109,110 @@
             </div>
           </nav>
         </div>
+        <!-- END left header -->
       </header>
       <!-- end:: header -->
       <!-- start:: main contents -->
       <main class="manage-main" id="main-content">
+        <p style="font-weight: 900; font-size: 30px; color: #00f">
+          (●'◡'●)본문의 코드는 참고용입니다.
+        </p>
         <h2 class="main-ttl">페이지 제목이 들어갑니다</h2>
         <p class="page-breadcrumb">Home > 관리자 관리 > 관리자 목록</p>
-        <p class="page-breadcrumb">브레드크럼</p>
 
         <!-- START typography -->
         <section class="component-container">
           <h2 class="component-ttl">타이포</h2>
           <p class="component-desc">본문에 쓰이는 문장 타입입니다.</p>
           <h3 class="component-sub-ttl">제목</h3>
-          <p class="main-ttl">제목스타일1</p>
-          <p class="sub-ttl">제목스타일1</p>
-          <h3 class="component-sub-ttl">
-            내용 : mixin으로 각 클래스에 불러와서 사용합니다.(하단클래스는
-            components에서만 사용)
-          </h3>
-          <p class="bd-style01">내용스타일1</p>
-          <p class="bd-style02">내용스타일2</p>
-          <p class="bd-style03">내용스타일3</p>
-          <p class="bd-style04">내용스타일4</p>
+          <p class="main-ttl">제목스타일1 size 30px, 600</p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">ttl-style01</span>; }
+            </code>
+          </div>
+
+          <p class="sub-ttl">제목스타일2 size 24px, 600</p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">ttl-style02</span>; }
+            </code>
+          </div>
+
+          <h3 class="component-sub-ttl">내용</h3>
+          <p class="bd-style01">
+            내용스타일1 @include size 18px, weight defualt 400
+          </p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style01</span>; }
+            </code>
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style01(300);</span> }
+            </code>
+          </div>
+
+          <p class="bd-style02">
+            내용스타일2 @include size 16px, weight defualt 400
+          </p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style02</span>; }
+            </code>
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style02(600);</span> }
+            </code>
+          </div>
+
+          <p class="bd-style03">
+            내용스타일3 @include size 14px, weight defualt 400
+          </p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style03</span>; }
+            </code>
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style03(100)</span>; }
+            </code>
+          </div>
+
+          <p class="bd-style04">
+            내용스타일4 @include size 12px, weight defualt 400
+          </p>
+
+          <div class="code-wrap">
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style04</span>; }
+            </code>
+            <code>
+              <span class="blue">.any-class</span>{
+              <span class="people">@include</span>
+              <span class="yellow">bd-style04(800)</span>; }
+            </code>
+          </div>
         </section>
         <!-- END typography -->
 
@@ -140,56 +222,169 @@
           <p class="component-desc">
             개수가 늘어날 경우를 대비하여 btns-wrap 을 한 단위로 사용됩니다.
           </p>
+          <p class="component-desc">버튼의 클래스는 oocss를 사용합니다.</p>
 
-          <h3 class="component-sub-ttl">button default</h3>
-          <!-- start:: button single -->
+          <h3 class="component-sub-ttl">버튼 기본형</h3>
+          <!-- start:: button defualt -->
           <div class="btns-wrap">
             <button class="btn btn-m btn-bd-basic">버튼</button>
           </div>
-          <!-- end:: button single -->
-          <h3 class="component-sub-ttl">
-            button medium size : padding: 0 12px
-          </h3>
-          <!-- start:: button default -->
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green"> "btn btn-m btn-bd-basic"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people"
+                >/* 기본(구 reset) 버튼크기(btn-m,btn-l,btn-xl) 버튼색상(전체
+                채움: btn-basic, btn-red, btn-main, 보더버튼: btn-bd-basic,
+                btn-bd-red, btn-bd-main) */</span
+              >
+            </code>
+          </div>
+          <!-- end:: button defualt -->
+
+          <!-- start:: button double -->
+          <div class="btns-wrap">
+            <button class="btn btn-m btn-bd-main">버튼</button>
+            <button class="btn btn-m btn-main">버튼</button>
+          </div>
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btn btn-m btn-bd-main"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btn btn-m btn-main"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* */</span>
+            </code>
+          </div>
+          <!-- end:: button double -->
+
+          <h3 class="component-sub-ttl">button colors</h3>
+          <!-- start:: button colors -->
+          <div class="btns-wrap">
+            <button class="btn btn-bd-basic">버튼</button>
+            <button class="btn btn-bd-red">버튼</button>
+            <button class="btn btn-bd-main">버튼</button>
+          </div>
+          <div class="btns-wrap">
+            <button class="btn btn-basic">버튼</button>
+            <button class="btn btn-red">버튼</button>
+            <button class="btn btn-main">버튼</button>
+          </div>
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btn btn-basic"</span>&gt; 버튼 &lt;/<span
+                class="blue"
+                >button</span
+              >&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* basic, red, main */</span>
+            </code>
+          </div>
+          <!-- end:: button colors -->
+
+          <h3 class="component-sub-ttl">button medium</h3>
+          <!-- start:: button medium -->
           <div class="btns-wrap">
             <button class="btn btn-m btn-bd-basic">버튼</button>
             <button class="btn btn-m btn-bd-red">버튼</button>
-            <button class="btn btn-m btn-bd-basic">버튼</button>
+            <button class="btn btn-m btn-bd-main">버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-m btn-basic">버튼</button>
             <button class="btn btn-m btn-red">버튼</button>
             <button class="btn btn-m btn-main">버튼</button>
           </div>
-          <!-- end:: button default -->
 
-          <h3 class="component-sub-ttl">button large size : padding: 0 20px</h3>
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green"> "btn btn-m btn-basic"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* height 32px, padding 0 12px */</span>
+            </code>
+          </div>
+          <!-- end:: button medium -->
+
+          <h3 class="component-sub-ttl">button large</h3>
           <!-- start:: button large -->
           <div class="btns-wrap">
             <button class="btn btn-l btn-bd-basic">버튼</button>
             <button class="btn btn-l btn-bd-red">버튼</button>
-            <button class="btn btn-l btn-bd-basic">버튼</button>
+            <button class="btn btn-l btn-bd-main">버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-l btn-basic">버튼</button>
             <button class="btn btn-l btn-red">버튼</button>
             <button class="btn btn-l btn-main">버튼</button>
           </div>
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green"> "btn btn-l btn-basic"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* height 40px, padding 0 20px */</span>
+            </code>
+          </div>
           <!-- end:: button large -->
 
-          <h3 class="component-sub-ttl">
-            button x-large size : padding: 0 40px
-          </h3>
+          <h3 class="component-sub-ttl">button x-large</h3>
           <!-- start:: button x-large -->
           <div class="btns-wrap">
             <button class="btn btn-xl btn-bd-basic">버튼</button>
             <button class="btn btn-xl btn-bd-red">버튼</button>
-            <button class="btn btn-xl btn-bd-basic">버튼</button>
+            <button class="btn btn-xl btn-bd-main">버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-xl btn-basic">버튼</button>
             <button class="btn btn-xl btn-red">버튼</button>
             <button class="btn btn-xl btn-main">버튼</button>
+          </div>
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green"> "btn btn-xl btn-basic"</span>&gt; 버튼
+              &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* height 48px, padding 0 40px */</span>
+            </code>
           </div>
           <!-- end:: button x-large -->
 
@@ -198,7 +393,7 @@
           <div class="btns-wrap">
             <button class="btn btn-m btn-bd-basic" disabled>버튼</button>
             <button class="btn btn-m btn-bd-red" disabled>버튼</button>
-            <button class="btn btn-m btn-bd-basic" disabled>버튼</button>
+            <button class="btn btn-m btn-bd-main" disabled>버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-m btn-basic" disabled>버튼</button>
@@ -208,7 +403,7 @@
           <div class="btns-wrap">
             <button class="btn btn-l btn-bd-basic" disabled>버튼</button>
             <button class="btn btn-l btn-bd-red" disabled>버튼</button>
-            <button class="btn btn-l btn-bd-basic" disabled>버튼</button>
+            <button class="btn btn-l btn-bd-main" disabled>버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-l btn-basic" disabled>버튼</button>
@@ -218,12 +413,28 @@
           <div class="btns-wrap">
             <button class="btn btn-xl btn-bd-basic" disabled>버튼</button>
             <button class="btn btn-xl btn-bd-red" disabled>버튼</button>
-            <button class="btn btn-xl btn-bd-basic" disabled>버튼</button>
+            <button class="btn btn-xl btn-bd-main" disabled>버튼</button>
           </div>
           <div class="btns-wrap">
             <button class="btn btn-xl btn-basic" disabled>버튼</button>
             <button class="btn btn-xl btn-red" disabled>버튼</button>
             <button class="btn btn-xl btn-main" disabled>버튼</button>
+          </div>
+
+          <div class="code-wrap">
+            <code>
+              &lt;<span class="blue">div</span>
+              <span class="skyblue">class=</span
+              ><span class="green">"btns-wrap"</span>&gt;<br />
+              &lt;<span class="blue">button</span>
+              <span class="skyblue">class=</span
+              ><span class="green">
+                "btn btn-xl btn-basic"
+                <span class="skyblue">disabled</span></span
+              >&gt; 버튼 &lt;/<span class="blue">button</span>&gt;<br />
+              &lt;/<span class="blue">div</span>&gt;<br />
+              <span class="people">/* button에 disabled 추가 */</span>
+            </code>
           </div>
           <!-- end:: button default disabled -->
         </section>
@@ -303,7 +514,7 @@
           </div>
           <!-- end:: input text -->
 
-          <h3 class="component-sub-ttl">달력을 플러그인 사용</h3>
+          <h3 class="component-sub-ttl">달력</h3>
           <!-- start:: input calander -->
           <div class="inp-grp">
             <label for="cal1" class="inp-label">기간</label>
@@ -312,9 +523,8 @@
               id="cal1"
               name="cal1"
               class="input inp-date"
-              value="2022-10-25"
+              value="2024-01-23"
               placeholder="시작일을 입력해주세요"
-              data-toggle="datepicker"
             />
             <span class="date-icon">~</span>
             <label for="cal2" class="inp-label">기간</label>
@@ -323,9 +533,8 @@
               id="cal2"
               name="cal2"
               class="input inp-date"
-              value="2022-10-25"
+              value="2024-10-23"
               placeholder="완료일을 입력해주세요"
-              data-toggle="datepicker"
             />
           </div>
           <!-- end:: input calander -->
@@ -1814,52 +2023,6 @@
     </div>
     <!-- END page -->
     <script src="assets/js/custom/ui.js"></script>
-    <!-- datepicker -->
-    <script>
-      // https://github.com/fengyuanchen/datepicker
-      $('[data-toggle="datepicker"]').datepicker({
-        format: "yyyy-mm-dd",
-        yearSuffix: "년",
-        months: [
-          "1월",
-          "2월",
-          "3월",
-          "4월",
-          "5월",
-          "6월",
-          "7월",
-          "8월",
-          "9월",
-          "10월",
-          "11월",
-          "12월",
-        ],
-        monthsShort: [
-          "1월",
-          "2월",
-          "3월",
-          "4월",
-          "5월",
-          "6월",
-          "7월",
-          "8월",
-          "9월",
-          "10월",
-          "11월",
-          "12월",
-        ],
-        days: [
-          "일요일",
-          "월요일",
-          "화요일",
-          "수요일",
-          "목요일",
-          "금요일",
-          "토요일",
-        ],
-        daysMin: ["일", "월", "화", "수", "목", "금", "토"],
-      });
-    </script>
     <!-- modal toggle script -->
     <script>
       function modalOpen(targetName) {
