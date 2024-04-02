@@ -188,7 +188,6 @@ img {
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
   width: 100%;
-  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -815,7 +814,9 @@ img {
   color: #adb5bd;
 }
 .btn-page.on {
-  border-color: #3b5a93;
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #3b5a93;
   color: #3b5a93;
 }
 .btn-page-prev, .btn-page-next {
@@ -911,12 +912,12 @@ img {
 .input::placeholder {
   color: #adb5bd;
 }
-.input:disabled {
+.input:disabled, .input:disabled:hover, .input:disabled:focus {
   background-color: #f6f7f8;
   color: #adb5bd;
   cursor: default;
 }
-.input:disabled:hover, .input:disabled:focus {
+.input:disabled:hover, .input:disabled:focus, .input:disabled:hover:hover, .input:disabled:hover:focus, .input:disabled:focus:hover, .input:disabled:focus:focus {
   border-color: #f1f3f5;
 }
 
@@ -941,6 +942,13 @@ img {
   color: transparent;
 }
 
+.inp-vali {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 4px;
+  color: #fc685e;
+}
+
 .inp-file {
   display: none;
 }
@@ -959,14 +967,14 @@ img {
 }
 
 .inp-date {
-  background-position: 14px center;
+  background-position: right 14px center;
   background-size: 15px;
   background-repeat: no-repeat;
   background-image: url("../../images/icon/icon_calander.svg");
   position: relative;
   max-width: 130px;
   margin: 0;
-  padding-left: 38px;
+  padding-right: 38px;
 }
 @media all and (max-width: 512px) {
   .inp-date {
@@ -993,6 +1001,11 @@ img {
   left: 10px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.inp-date-single {
+  max-width: 100%;
+  width: 295px;
 }
 
 .inp-date-btns {

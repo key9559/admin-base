@@ -211,7 +211,9 @@
   }
 
   &.on {
-    border-color: color(main);
+    @include bd-style02(600);
+
+    border-bottom: 1px solid color(main);
     color: color(main);
   }
 

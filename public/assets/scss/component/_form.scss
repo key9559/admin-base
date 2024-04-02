@@ -38,7 +38,7 @@
     color: color(gray-500);
   }
 
-  &:disabled {
+  @include disabled {
     background-color: color(gray-50);
     color: color(gray-500);
     cursor: default;
@@ -70,6 +70,13 @@
   color: transparent;
 }
 
+.inp-vali {
+  @include bd-style04;
+
+  margin-top: 4px;
+  color: color(red);
+}
+
 .inp-file {
   display: none;
 }
@@ -81,13 +88,13 @@
 }
 
 .inp-date {
-  @include bg-op($s: 15px, $p: 14px center);
+  @include bg-op($s: 15px, $p: right 14px center);
   @include bg-url(icon, "icon_calander.svg");
 
   position: relative;
   max-width: 130px;
   margin: 0;
-  padding-left: 38px;
+  padding-right: 38px;
 
   @include mobile {
     display: inline-block;
@@ -115,6 +122,11 @@
     left: 10px;
     transform: translateY(-50%);
   }
+}
+
+.inp-date-single {
+  max-width: 100%;
+  width: 295px; // inp-txt width
 }
 
 .inp-date-btns {

@@ -225,10 +225,8 @@
                     id="user-sort"
                     class="input inp-select"
                   >
-                    <option value="시스템 관리자" selected>
-                      시스템 관리자
-                    </option>
-                    <option value="교사">교사</option>
+                    <option value="관리자" selected>관리자</option>
+                    <option value="회원">회원</option>
                   </select>
                 </div>
               </div>
@@ -375,9 +373,9 @@
         <div class="custom-table-container">
           <p class="custom-table-container-ttl">사업자 정보</p>
           <div class="custom-table-wrap">
-            <!-- 사업자 유무, 사업자 번호 -->
+            <!-- 회원종류, 정보2 -->
             <div class="custom-table-row half-size">
-              <h3 class="custom-table-ttl">사업자 유무</h3>
+              <h3 class="custom-table-ttl">회원종류</h3>
               <div class="inp-grp">
                 <input
                   type="radio"
@@ -385,7 +383,7 @@
                   name="company-sort"
                   class="inp-radio d-none"
                 />
-                <label for="company-corp" class="radio-icon">선택</label>
+                <label for="company-corp" class="radio-icon">법인</label>
                 <label for="company-corp" class="radio-txt">법인</label>
               </div>
               <div class="inp-grp">
@@ -395,14 +393,14 @@
                   name="company-sort"
                   class="inp-radio d-none"
                 />
-                <label for="company-personal" class="radio-icon">선택</label>
+                <label for="company-personal" class="radio-icon">개인</label>
                 <label for="company-personal" class="radio-txt">개인</label>
               </div>
             </div>
             <div class="custom-table-row half-size">
-              <h3 class="custom-table-ttl">사업자 번호</h3>
+              <h3 class="custom-table-ttl">정보2</h3>
               <div class="inp-grp">
-                <label for="company-num" class="inp-label">사업자 번호</label>
+                <label for="company-num" class="inp-label">정보2</label>
                 <input
                   type="text"
                   id="company-num"
@@ -425,7 +423,7 @@
                   name="company-name"
                   class="input inp-txt"
                   placeholder="찾으시려는 내용을 입력해주세요."
-                  value="(주)버블콘"
+                  value="상호명"
                 />
               </div>
             </div>

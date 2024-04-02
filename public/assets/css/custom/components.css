@@ -4,15 +4,18 @@
 
 .component-ttl {
   margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f6fd;
   font-size: 30px;
 }
 
 .component-sub-ttl {
   margin: 20px 0;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
   font-size: 20px;
-  color: white;
 }
 
 .component-desc {
@@ -24,37 +27,36 @@
   margin-bottom: 20px;
 }
 
-code {
+.code {
   display: block;
   max-width: 500px;
   margin-top: 10px;
   padding: 10px;
-  border-radius: 10px;
-  background-color: #dfdfdf;
+  background-color: #ededed;
 }
 
-code [class] {
+.code span {
   font-size: 14px;
   letter-spacing: 0.1em;
 }
 
-code .blue {
+.code .blue {
   color: #1851a9;
 }
 
-code .skyblue {
+.code .skyblue {
   color: #319fcb;
 }
 
-code .people {
+.code .people {
   color: #8025b7;
 }
 
-code .yellow {
+.code .yellow {
   color: #8d9100;
 }
 
-code .green {
+.code .green {
   color: #218d08;
 }
 
