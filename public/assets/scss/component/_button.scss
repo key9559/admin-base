@@ -6,7 +6,6 @@
     flex-wrap: wrap;
   }
 
-
   &:not(:first-child) {
     margin-top: 5px;
   }
@@ -50,30 +49,28 @@
 
 // 버튼 색
 // fill button
-@each $name,
-$color in $btn-color {
-
+@each $name, $color in $btn-color {
   // basic은 예외로 작성
   .btn-#{$name} {
-    border: 1px solid color(#{$color} + '-500');
-    background-color: color(#{$color} + '-500');
+    border: 1px solid color(#{$color} + "-500");
+    background-color: color(#{$color} + "-500");
     color: color(gray-0);
 
     @include hover {
-      border-color: color(#{$color} + '-300');
-      background-color: color(#{$color} + '-300');
+      border-color: color(#{$color} + "-300");
+      background-color: color(#{$color} + "-300");
       color: color(gray-0);
     }
 
     @include active {
-      border-color: color(#{$color} + '-600');
-      background-color: color(#{$color} + '-600');
+      border-color: color(#{$color} + "-600");
+      background-color: color(#{$color} + "-600");
       color: color(gray-0);
     }
 
     @include disabled {
-      border-color: color(#{$color} + '-200');
-      background-color: color(#{$color} + '-200');
+      border-color: color(#{$color} + "-200");
+      background-color: color(#{$color} + "-200");
       color: color(gray-0);
       cursor: not-allowed;
     }
@@ -81,27 +78,25 @@ $color in $btn-color {
 }
 
 // ghost button
-@each $name,
-$color in $btn-color {
-
+@each $name, $color in $btn-color {
   // basic은 예외로 작성
   .btn-bd-#{$name} {
-    border: 1px solid color(#{$color} + '-500');
-    color: color(#{$color} + '-500');
+    border: 1px solid color(#{$color} + "-500");
+    color: color(#{$color} + "-500");
 
     @include hover {
-      border-color: color(#{$color} + '-300');
-      color: color(#{$color} + '-300');
+      border-color: color(#{$color} + "-300");
+      color: color(#{$color} + "-300");
     }
 
     @include active {
-      border-color: color(#{$color} + '-600');
-      color: color(#{$color} + '-600');
+      border-color: color(#{$color} + "-600");
+      color: color(#{$color} + "-600");
     }
 
     @include disabled {
-      border-color: color(#{$color} + '-200');
-      color: color(#{$color} + '-200');
+      border-color: color(#{$color} + "-200");
+      color: color(#{$color} + "-200");
       cursor: not-allowed;
     }
   }
@@ -132,7 +127,7 @@ $color in $btn-color {
   }
 }
 
-.btn-ghost-basic {
+.btn-bd-basic {
   border: 1px solid color(gray-300);
   color: color(text);
 
@@ -168,7 +163,6 @@ $color in $btn-color {
   text-indent: -rem;
 
   @include hover {
-
     &:before,
     &:after {
       height: 23px;
