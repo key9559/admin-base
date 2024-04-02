@@ -1,138 +1,155 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Expires" content="3600" />
+    <meta http-equiv="Pragma" content="3600" />
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <title>관리자 | 작업리스트</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta http-equiv="Expires" content="3600" />
-  <meta http-equiv="Pragma" content="3600" />
-  <meta http-equiv="cache-control" content="max-age=3600" />
-  <title>ACID관리자 | 작업리스트</title>
+    <meta name="title" content="타이틀" />
+    <meta name="author" content="회사" />
+    <meta name="description" content="상세설명" />
+    <meta name="keywords" content="키워드" />
 
-  <meta name="title" content="타이틀" />
-  <meta name="author" content="회사" />
-  <meta name="description" content="상세설명" />
-  <meta name="keywords" content="키워드" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="유알엘" />
+    <meta property="og:title" content="타이틀" />
+    <meta property="og:description" content="상세설명" />
+    <meta property="og:image" content="assets/images/favicon/og.png" />
+    <!-- Twitter -->
+    <meta property="twitter:url" content="유알엘" />
+    <meta property="twitter:title" content="타이틀" />
+    <meta property="twitter:description" content="상세설명" />
+    <!-- END Open Graph -->
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="유알엘" />
-  <meta property="og:title" content="타이틀" />
-  <meta property="og:description" content="상세설명" />
-  <meta property="og:image" content="assets/images/favicon/og.png" />
-  <!-- Twitter -->
-  <meta property="twitter:url" content="유알엘" />
-  <meta property="twitter:title" content="타이틀" />
-  <meta property="twitter:description" content="상세설명" />
-  <!-- END Open Graph -->
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/custom/ui.css" />
 
-  <!-- css link -->
-  <link rel="stylesheet" href="assets/css/vendor/datepicker.min.css">
-  <link rel="stylesheet" href="assets/css/custom/ui.css" />
+    <!-- script vandor -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/vendor/datepicker.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custom/worktable.css" />
+    <style>
+      #page {
+        padding: 20px 0 0;
+      }
 
-  <!-- script vandor -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="assets/js/vendor/datepicker.min.js"></script>
-  <link rel="stylesheet" href="assets/css/custom/worktable.css" />
-  <style>
-    #page {
-      padding: 20px 0 0;
-    }
+      .main-container {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+      }
+    </style>
+  </head>
 
-    .main-container {
-      max-width: 1600px;
-      width: 90%;
-      margin: 0 auto;
-      padding: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="page" class="worktable-page">
-    <!-- start:: main contents -->
-    <main class="edu-main">
-      <div class="main-container">
-        <div class="flex-btw-wrap">
-          <p class="ver">
-            <smalls>ver </smalls>1.0.0
-          </p>
-          <!-- FIXME: 수정사항이 있을 경우
+  <body>
+    <div id="page" class="worktable-page">
+      <!-- start:: main contents -->
+      <main class="edu-main">
+        <div class="main-container">
+          <div class="flex-btw-wrap">
+            <p class="ver"><smalls>ver </smalls>1.0.0</p>
+            <!-- FIXME: 수정사항이 있을 경우
             1. 버전 업데이트 
             2. 하단 리스트에 작성
             3. 지정된 페이지에서의 수정이면 테이블에 버전 넘버를 작성 -->
-          <p class="date"><span class="edit-date">마지막 수정일</span> 2022.10.26</p>
+            <p class="date">
+              <span class="edit-date">마지막 수정일</span> 2022.10.26
+            </p>
+          </div>
+          <div class="manage-table-wrap">
+            <table summary="퍼블리싱 작업목록" class="manage-table">
+              <caption class="de-table-ttl">
+                <h1>퍼블리싱 작업목록</h1>
+              </caption>
+              <thead>
+                <tr class="manage-table-row manage-table-hd">
+                  <th class="cell cell-name">페이지명</th>
+                  <th class="cell cell-end">완료일</th>
+                  <th class="cell cell-note">비고</th>
+                  <th class="cell cell-editdate">마지막수정일</th>
+                  <th class="cell cell-editnote">수정내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="manage-table-row">
+                  <td class="cell cell-name">
+                    <a
+                      href="components.html"
+                      target="blank"
+                      ref="”noopener"
+                      noreferrer”
+                      >components.html</a
+                    >
+                  </td>
+                  <td class="cell cell-end">2022.10.21</td>
+                  <td class="cell cell-note">페이지 부품 모음(팝업 포함)</td>
+                  <td class="cell cell-editdate">-</td>
+                  <td class="cell cell-editnote">-</td>
+                </tr>
+
+                <tr class="manage-table-row">
+                  <td class="cell cell-name">
+                    <a
+                      href="payment-mange.html"
+                      target="blank"
+                      ref="”noopener"
+                      noreferrer”
+                      >payment-mange.html</a
+                    >
+                  </td>
+                  <td class="cell cell-end">2022.10.26</td>
+                  <td class="cell cell-note">결제관리</td>
+                  <td class="cell cell-editdate">-</td>
+                  <td class="cell cell-editnote">-</td>
+                </tr>
+
+                <tr class="manage-table-row">
+                  <td class="cell cell-name">
+                    <a
+                      href="user-manage.html"
+                      target="blank"
+                      ref="”noopener"
+                      noreferrer”
+                      >user-manage.html</a
+                    >
+                  </td>
+                  <td class="cell cell-end">2022.10.26</td>
+                  <td class="cell cell-note">회원관리</td>
+                  <td class="cell cell-editdate">-</td>
+                  <td class="cell cell-editnote">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ol class="version-ckeck-wrap">
+            <li class="version-ckeck-list">
+              <small class="ver">1.0.0</small>
+              <span class="dec"
+                >생성 관리자화면 생성시 최소공수로 적용할 탬플릿 제작
+              </span>
+            </li>
+          </ol>
         </div>
-        <div class="manage-table-wrap">
-          <table summary="퍼블리싱 작업목록" class="manage-table">
-            <caption class="de-table-ttl">
-              <h1>퍼블리싱 작업목록</h1>
-            </caption>
-            <thead>
-              <tr class="manage-table-row manage-table-hd">
-                <th class="cell cell-name">페이지명</th>
-                <th class="cell cell-end">완료일</th>
-                <th class="cell cell-note">비고</th>
-                <th class="cell cell-editdate">마지막수정일</th>
-                <th class="cell cell-editnote">수정내용</th>
-              </tr>
-            </thead>
-            <tbody>
+      </main>
+      <!-- end:: main contents -->
+    </div>
 
-              <tr class="manage-table-row">
-                <td class="cell cell-name"><a href="components.html" target="blank" ref=”noopener
-                    noreferrer”>components.html</a>
-                </td>
-                <td class="cell cell-end">2022.10.21</td>
-                <td class="cell cell-note">페이지 부품 모음(팝업 포함)</td>
-                <td class="cell cell-editdate">-</td>
-                <td class="cell cell-editnote">-</td>
-              </tr>
-
-              <tr class="manage-table-row">
-                <td class="cell cell-name"><a href="payment-mange.html" target="blank" ref=”noopener
-                    noreferrer”>payment-mange.html</a>
-                </td>
-                <td class="cell cell-end">2022.10.26</td>
-                <td class="cell cell-note">결제관리</td>
-                <td class="cell cell-editdate">-</td>
-                <td class="cell cell-editnote">-</td>
-              </tr>
-
-              <tr class="manage-table-row">
-                <td class="cell cell-name"><a href="user-manage.html" target="blank" ref=”noopener
-                    noreferrer”>user-manage.html</a>
-                </td>
-                <td class="cell cell-end">2022.10.26</td>
-                <td class="cell cell-note">회원관리</td>
-                <td class="cell cell-editdate">-</td>
-                <td class="cell cell-editnote">-</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-
-        <ol class="version-ckeck-wrap">
-
-          <li class="version-ckeck-list">
-            <small class="ver">1.0.0</small>
-            <span class="dec">생성
-              관리자화면 생성시 최소공수로 적용할 탬플릿 제작
-            </span>
-          </li>
-
-        </ol>
-      </div>
-    </main>
-    <!-- end:: main contents -->
-  </div>
-
-  <!-- END page -->
-</body>
-
+    <!-- END page -->
+  </body>
 </html>

@@ -11,7 +11,7 @@
     <meta http-equiv="Expires" content="3600" />
     <meta http-equiv="Pragma" content="3600" />
     <meta http-equiv="cache-control" content="max-age=3600" />
-    <title>ACID관리자 | 컴포넌트</title>
+    <title>관리자 | 컴포넌트</title>
 
     <meta name="title" content="타이틀" />
     <meta name="author" content="회사" />
@@ -303,7 +303,7 @@
           </div>
           <!-- end:: input text -->
 
-          <h3 class="component-sub-ttl">달력</h3>
+          <h3 class="component-sub-ttl">달력을 플러그인 사용</h3>
           <!-- start:: input calander -->
           <div class="inp-grp">
             <label for="cal1" class="inp-label">기간</label>
@@ -312,8 +312,9 @@
               id="cal1"
               name="cal1"
               class="input inp-date"
-              value="2024-01-23"
+              value="2022-10-25"
               placeholder="시작일을 입력해주세요"
+              data-toggle="datepicker"
             />
             <span class="date-icon">~</span>
             <label for="cal2" class="inp-label">기간</label>
@@ -322,8 +323,9 @@
               id="cal2"
               name="cal2"
               class="input inp-date"
-              value="2024-10-23"
+              value="2022-10-25"
               placeholder="완료일을 입력해주세요"
+              data-toggle="datepicker"
             />
           </div>
           <!-- end:: input calander -->
@@ -1814,6 +1816,52 @@
     </div>
     <!-- END page -->
     <script src="assets/js/custom/ui.js"></script>
+    <!-- datepicker -->
+    <script>
+      // https://github.com/fengyuanchen/datepicker
+      $('[data-toggle="datepicker"]').datepicker({
+        format: "yyyy-mm-dd",
+        yearSuffix: "년",
+        months: [
+          "1월",
+          "2월",
+          "3월",
+          "4월",
+          "5월",
+          "6월",
+          "7월",
+          "8월",
+          "9월",
+          "10월",
+          "11월",
+          "12월",
+        ],
+        monthsShort: [
+          "1월",
+          "2월",
+          "3월",
+          "4월",
+          "5월",
+          "6월",
+          "7월",
+          "8월",
+          "9월",
+          "10월",
+          "11월",
+          "12월",
+        ],
+        days: [
+          "일요일",
+          "월요일",
+          "화요일",
+          "수요일",
+          "목요일",
+          "금요일",
+          "토요일",
+        ],
+        daysMin: ["일", "월", "화", "수", "목", "금", "토"],
+      });
+    </script>
     <!-- modal toggle script -->
     <script>
       function modalOpen(targetName) {
