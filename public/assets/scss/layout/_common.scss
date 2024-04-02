@@ -7,9 +7,13 @@
     left: $gnb-width;
     bottom: 100px;
   }
+
+  &.tab-size {
+    padding-left: 0;
+  }
 }
 
-.ad-main {
+.manage-main {
   overscroll-behavior: contain;
   width: 100%;
   max-width: 1300px;
@@ -74,19 +78,57 @@
   padding: 20px;
   background-color: color(gray-50);
 
+  @include media(1280px) {
+    width: calc(33.333% - 14px);
+    height: 90px;
+  }
+
+  @include tablet() {
+    width: calc(50% - 10px);
+  }
+
   .card-ttl {
     @include bd-style01;
+
+    @include media(1350px) {
+      font-size: rem(16);
+    }
+
+    @include media(1280px) {
+      font-size: rem(12);
+    }
   }
 
   .card-dec {
     @include bd-style02;
 
     text-align: right;
+
+    @include media(1350px) {
+      font-size: rem(14);
+    }
+
+    @include media(1280px) {
+      font-size: rem(10);
+    }
+
+    b {
+      @include media(1350px) {
+        font-size: rem(25);
+      }
+
+      @include media(1280px) {
+        font-size: rem(18);
+      }
+    }
   }
 }
 
 // tab title area
 .tab-title-container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
   margin-top: 46px;
   border-bottom: 1px solid color(gray-300);
 }
@@ -108,10 +150,10 @@
   }
 
   @include hover {
-    border-color: color(Primary-200);
+    border-color: color(main-200);
   }
 
   &.active {
-    border-color: color(Primary-700);
+    border-color: color(main-700);
   }
 }

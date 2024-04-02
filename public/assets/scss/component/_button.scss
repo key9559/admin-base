@@ -85,7 +85,7 @@ $color in $btn-color {
 $color in $btn-color {
 
   // basic은 예외로 작성
-  .btn-ghost-#{$name} {
+  .btn-bd-#{$name} {
     border: 1px solid color(#{$color} + '-500');
     color: color(#{$color} + '-500');
 
@@ -218,8 +218,8 @@ $color in $btn-color {
   }
 
   &.on {
-    border-color: color(primary);
-    color: color(primary);
+    border-color: color(main);
+    color: color(main);
   }
 
   &-prev,

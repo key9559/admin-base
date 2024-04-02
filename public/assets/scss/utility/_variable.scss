@@ -1,58 +1,58 @@
 // color set
 // 실제 사용은 하단의 color map
 // blue color
-$blue-900: #1D2D49;
-$blue-800: #25385B;
-$blue-700: #2C436D;
-$blue-600: #334E7F;
-$blue-500: #3B5A93;
-$blue-400: #496FB6;
-$blue-300: #6D8CC5;
-$blue-200: #92A9D3;
-$blue-100: #B6C6E2;
-$blue-50: #DAE2F1;
+$blue-900: #1d2d49;
+$blue-800: #25385b;
+$blue-700: #2c436d;
+$blue-600: #334e7f;
+$blue-500: #3b5a93;
+$blue-400: #496fb6;
+$blue-300: #6d8cc5;
+$blue-200: #92a9d3;
+$blue-100: #b6c6e2;
+$blue-50: #dae2f1;
 
 // red color
-$red-900: #F11104;
-$red-800: #FB2114;
-$red-700: #FB392D;
-$red-600: #FB5146;
-$red-500: #FC685E;
-$red-400: #FC8078;
-$red-300: #FD9791;
-$red-200: #FDAEAA;
-$red-100: #FEC6C3;
-$red-50: #FEDEDC;
+$red-900: #f11104;
+$red-800: #fb2114;
+$red-700: #fb392d;
+$red-600: #fb5146;
+$red-500: #fc685e;
+$red-400: #fc8078;
+$red-300: #fd9791;
+$red-200: #fdaeaa;
+$red-100: #fec6c3;
+$red-50: #fededc;
 
 // gray scale
 $gray-900: #212529;
-$gray-800: #343A40;
+$gray-800: #343a40;
 $gray-700: #495057;
-$gray-600: #868E96;
-$gray-500: #ADB5BD;
-$gray-400: #CED4DA;
-$gray-300: #DEE2E6;
-$gray-200: #E9ECEF;
-$gray-100: #F1F3F5;
-$gray-50: #F6F7F8;
-$gray-0: #FFF;
+$gray-600: #868e96;
+$gray-500: #adb5bd;
+$gray-400: #ced4da;
+$gray-300: #dee2e6;
+$gray-200: #e9ecef;
+$gray-100: #f1f3f5;
+$gray-50: #f6f7f8;
+$gray-0: #fff;
 
 // color map
 $color-set: (
-  primary: $blue-500,
-  secondary: $red-500,
+  main: $blue-500,
+  sub: $red-500,
   text: $gray-900,
   white: $gray-0,
-  Primary-900: $blue-900,
-  Primary-800: $blue-800,
-  Primary-700: $blue-700,
-  Primary-600: $blue-600,
-  Primary-500: $blue-500,
-  Primary-400: $blue-400,
-  Primary-300: $blue-300,
-  Primary-200: $blue-200,
-  Primary-100: $blue-100,
-  Primary-50: $blue-50,
+  main-900: $blue-900,
+  main-800: $blue-800,
+  main-700: $blue-700,
+  main-600: $blue-600,
+  main-500: $blue-500,
+  main-400: $blue-400,
+  main-300: $blue-300,
+  main-200: $blue-200,
+  main-100: $blue-100,
+  main-50: $blue-50,
   red-900: $red-900,
   red-800: $red-800,
   red-700: $red-700,
@@ -80,7 +80,7 @@ $zIndex-set: (
   popup: 100,
   fixed: 20,
   header: 10,
-  double: 2,
+  two: 2,
   default: 1,
   zero: 0,
   minus: -1,
@@ -93,7 +93,7 @@ $path-set: (
 );
 
 // 높이, 넓이
-$hd-height: 60px;
+$hd-height: 50px;
 $gnb-width: 260px;
 $logo-height: 170px;
 
@@ -102,5 +102,5 @@ $logo-height: 170px;
 $btn-color: (
   // basic: gray, // basic은 예외로 작성
   red: red,
-  primary: Primary,
+  main: main
 );

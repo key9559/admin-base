@@ -33,7 +33,7 @@ $pop-hd-height: 45px;
   }
 
   &-container {
-    z-index: z(double);
+    z-index: z(two);
     position: relative;
     max-width: 50vw;
     min-width: 600px;
@@ -47,7 +47,7 @@ $pop-hd-height: 45px;
     position: relative;
     height: $pop-hd-height;
     padding: $pop-pd;
-    background-color: color(primary);
+    background-color: color(main);
     font-weight: 600;
     font-size: rem(20);
     line-height: $pop-hd-height;
@@ -142,7 +142,7 @@ $pop-hd-height: 45px;
     margin-bottom: 0;
   }
 
-  .ad-table {
+  .manage-table {
     min-width: 800px;
   }
 

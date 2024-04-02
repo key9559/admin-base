@@ -34,3 +34,18 @@
   overflow-y: auto;
   overscroll-behavior: contain;
 }
+
+// responsive
+.tab-hide {
+  @include tablet() {
+    display: none !important;
+  }
+}
+
+.tab-show {
+  display: none !important;
+
+  @include tablet() {
+    display: block !important;
+  }
+}

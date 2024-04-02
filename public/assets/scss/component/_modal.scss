@@ -1,0 +1,85 @@
+/* =================== modal =================== */
+.modal {
+  @include custom-scroll($s: 0);
+
+  overflow: scroll;
+  overscroll-behavior: contain;
+  z-index: z(minus) - 10;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s;
+
+  &.active {
+    z-index: z(popup);
+    opacity: 1;
+
+    .modal-container {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-bg {
+    width: 100%;
+    height: 101vh;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 600px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+  }
+
+  .btn-close {
+    border-radius: 0;
+    background-color: color(main);
+  }
+}
+
+// alert, confirm 등 작은 크기의 모달
+.mini-modal {
+  .modal-container {
+    max-width: 380px;
+    height: auto;
+    max-height: 250px;
+  }
+}
+
+.modal-ttl {
+  @include bd-style01;
+
+  height: 40px;
+  background-color: color(main);
+  line-height: 40px;
+  font-weight: 600;
+  text-indent: 0.2em;
+  color: color(white);
+}
+
+.alert-conts-wrapper {
+  @include custom-scroll;
+
+  overflow: auto;
+  overscroll-behavior: contain;
+  width: 100%;
+  height: calc(100% - 40px);
+  max-height: 210px; // mini-modal height - modal title height
+  padding: 15px;
+  text-align: center;
+
+  .btns-wrap {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

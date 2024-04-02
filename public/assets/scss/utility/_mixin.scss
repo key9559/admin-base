@@ -11,6 +11,18 @@
   }
 }
 
+@mixin mobile() {
+  @media all and (max-width: 512px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+
 // size
 @mixin circle($s) {
   width: $s;
@@ -60,8 +72,8 @@
 }
 
 // background image
-@mixin bg-url($path, $img){
-background-image: urlPath($path, $img);
+@mixin bg-url($path, $img) {
+  background-image: urlPath($path, $img);
 }
 
 @mixin bg-op($p: center, $s: auto, $r: no-repeat) {
@@ -117,7 +129,6 @@ background-image: urlPath($path, $img);
 }
 
 @mixin hover {
-
   &:hover,
   &:focus {
     @content;
@@ -131,7 +142,6 @@ background-image: urlPath($path, $img);
 }
 
 @mixin disabled {
-
   &:disabled,
   &:disabled:hover,
   &:disabled:focus {
@@ -163,7 +173,6 @@ background-image: urlPath($path, $img);
 
 // iphone notch
 @mixin notch {
-
   /* iPhone XS : 2436x1125px at 458ppi */
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     @content;
@@ -181,7 +190,7 @@ background-image: urlPath($path, $img);
 }
 
 // scroll custom style
-@mixin custom-scroll($c: color(gray-100), $sub-c: #fff, $r: 0, $s: 8px) {
+@mixin custom-scroll($c: color(gray-400), $sub-c: #fff, $r: 0, $s: 6px) {
   &::-webkit-scrollbar {
     width: $s;
     height: $s;

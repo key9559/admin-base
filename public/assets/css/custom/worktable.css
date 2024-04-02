@@ -32,8 +32,8 @@
 
 .manage-table-row.manage-table-hd {
   height: 30px;
-  line-height: 30px;
   background-color: #888;
+  line-height: 30px;
   color: white;
 }
 .manage-table-row.manage-table-hd:hover, .manage-table-row.manage-table-hd:focus {

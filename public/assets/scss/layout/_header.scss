@@ -1,6 +1,24 @@
 /* =================== header =================== */
+// skip nav
+.skip-nav {
+  z-index: z(minus);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: color(main-900);
+  line-height: 40px;
+  text-align: center;
+  font-size: rem(20);
+  color: color(white);
+
+  &:focus {
+    z-index: z(fixed);
+  }
+}
 // top fixed
-.ad-top-hd {
+.manage-top-hd {
   @include flex-center;
 
   z-index: z(header);
@@ -20,8 +38,8 @@
     margin: 0;
     transform: translateY(-50%);
 
-    >span,
-    >a {
+    > span,
+    > a {
       @include bd-style03;
     }
   }
@@ -32,7 +50,7 @@
 }
 
 // left fixed
-.ad-left-hd {
+.manage-left-hd {
   z-index: z(header);
   position: fixed;
   top: 0;
@@ -42,16 +60,64 @@
   border-right: 1px solid color(gray-100);
   background-color: color(gray-0);
 
-  .ad-logo-wrap {
+  @at-root .tab-size & {
+    @include tablet() {
+      overflow: hidden;
+      width: $hd-height;
+      height: $hd-height;
+    }
+  }
+
+  &.tab-active {
+    width: 100vw;
+    height: 100vh;
+
+    .btn-gnb-icon:before {
+      transform: rotate(-45deg);
+    }
+
+    .btn-gnb-icon:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .btn-gnb-icon {
+    @include input-reset;
+
+    z-index: z(two);
+    position: absolute;
+    display: block;
+    width: $hd-height;
+    height: $hd-height;
+
+    @include make-virtual {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40%;
+      height: 3px;
+      margin-top: -7px;
+      margin-left: -20%;
+      border-radius: 3px;
+      background-color: color(white);
+      transition: all 0.2s;
+    }
+
+    &:after {
+      margin-top: 7px;
+    }
+  }
+
+  .manage-logo-wrap {
     @include flex {
-      @include flex-op(flex-start, space-between);
+      @include flex-op(center, space-between);
 
       flex-direction: column;
     }
 
     height: $logo-height;
     padding: 25px 30px;
-    background-color: color(primary);
+    background-color: color(main);
     color: white;
 
     .desc {
@@ -60,12 +126,12 @@
       width: 100%;
       height: 48px;
       line-height: 48px;
-      background-color: color(Primary-600);
+      background-color: color(main-600);
       text-align: center;
     }
   }
 
-  .ad-gnb {
+  .manage-gnb {
     height: calc(100vh - $logo-height);
   }
 
@@ -84,15 +150,15 @@
     cursor: pointer;
 
     @include hover {
-      color: color(primary);
+      color: color(main);
     }
 
     &:first-child {
       border-top: 0;
     }
 
-    &.on+.nav-list-wrap,
-    &.active+.nav-list-wrap {
+    &.on + .nav-list-wrap,
+    &.active + .nav-list-wrap {
       display: block;
     }
   }
@@ -116,11 +182,11 @@
     transition-property: color;
 
     @include hover {
-      color: color(Primary-300);
+      color: color(main-300);
     }
 
     &.active {
-      color: color(primary);
+      color: color(main);
 
       @include make-before {
         position: absolute;
@@ -128,8 +194,8 @@
         left: -15px;
         width: 7px;
         height: 7px;
-        border-left: 1.5px solid color(primary);
-        border-bottom: 1.5px solid color(primary);
+        border-left: 1.5px solid color(main);
+        border-bottom: 1.5px solid color(main);
       }
     }
   }
