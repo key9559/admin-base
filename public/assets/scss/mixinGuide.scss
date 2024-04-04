@@ -1,0 +1,309 @@
+@charset 'utf-8';
+// utility
+@import "utility/function";
+@import "utility/variable";
+@import "utility/mixin";
+
+// only mixin-guide.html
+
+// component container style
+.component-warning {
+  font-weight: 900;
+  font-size: 30px;
+  color: #00f;
+}
+
+.component-container {
+  margin: 20px 0;
+}
+
+.component-ttl {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f6fd;
+  font-size: 30px;
+}
+
+.component-sub-ttl {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+}
+
+.component-desc {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+// code block style
+.code-wrap {
+  margin-bottom: 20px;
+}
+
+.code {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ededed;
+}
+
+.code span {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.code .blue {
+  color: #1851a9;
+}
+
+.code .skyblue {
+  color: #319fcb;
+}
+
+.code .people {
+  color: #8025b7;
+}
+
+.code .yellow {
+  color: #8d9100;
+}
+
+.code .green {
+  color: #218d08;
+}
+
+.code .red {
+  color: #c03030;
+}
+
+.code .dep1 {
+  padding-left: 20px;
+}
+
+.code .dep2 {
+  padding-left: 40px;
+}
+
+// 예시
+.ex {
+  @include flex-center;
+
+  margin: 20px 0;
+  background-color: beige;
+  text-align: center;
+}
+
+.ex1 {
+  @include square(200px);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  @include media-h(600px) {
+    background-color: pink;
+  }
+
+  @include media(1570px) {
+    background-color: skyblue;
+  }
+
+  @include tablet {
+    border: 2px solid red;
+  }
+
+  @include mobile {
+    background-color: white;
+  }
+}
+
+.ex2 {
+  @include circle(50px);
+}
+
+.ex3 {
+  @include square(50px);
+}
+
+.ex4 {
+  width: 50vw;
+  height: 100px;
+
+  div {
+    @include full;
+    @include flex-center;
+  }
+}
+
+// flexs
+.ex-flex {
+  margin: 20px 0;
+  background-color: beige;
+  text-align: center;
+}
+
+.ex5 {
+  @include flex {
+    gap: 10px;
+  }
+
+  div {
+    padding: 10px;
+    background-color: pink;
+
+    &:nth-of-type(2n) {
+      background-color: skyblue;
+    }
+  }
+}
+
+.ex6 {
+  @include flex-col {
+    gap: 10px;
+  }
+
+  div {
+    padding: 10px;
+    background-color: pink;
+
+    &:nth-of-type(2n) {
+      background-color: skyblue;
+    }
+  }
+}
+
+.ex7 {
+  @include flex-center {
+    gap: 10px;
+  }
+
+  div {
+    padding: 10px;
+    background-color: pink;
+
+    &:nth-of-type(2n) {
+      background-color: skyblue;
+    }
+  }
+}
+
+.ex8 {
+  @include flex-btw {
+    gap: 10px;
+  }
+
+  div {
+    padding: 10px;
+    background-color: pink;
+
+    &:nth-of-type(2n) {
+      background-color: skyblue;
+    }
+  }
+}
+
+// inputs
+.inp-ex {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+
+  input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: 3px solid red;
+
+    @include hover {
+      border: 3px solid blue;
+    }
+
+    @include active {
+      background-color: beige;
+    }
+
+    @include disabled {
+      background-color: lightgray;
+      border-color: gray;
+    }
+  }
+}
+
+// scroll
+.scroll-ex1 {
+  @include custom-scroll;
+
+  max-width: 500px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: color(gray-200);
+
+  div {
+    height: 1000px;
+  }
+}
+
+.scroll-ex2 {
+  @include hide-scroll;
+
+  max-width: 500px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: color(gray-200);
+
+  div {
+    height: 1000px;
+  }
+}
+
+// typo
+.ex-t {
+  max-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: color(red-50);
+  font-size: 16px;
+}
+
+.ex9 {
+  @include ellipse(2, 24px);
+
+  padding: 0 10px;
+}
+
+.ex9-1 {
+  @include ellipse(2, 24px);
+  @include remove-ellipse;
+}
+
+.ex10-1 {
+  @include ttl-style01;
+}
+
+.ex10-2 {
+  @include ttl-style02;
+}
+
+.ex10-3 {
+  @include bd-style01;
+}
+
+.ex10-4 {
+  @include bd-style02;
+}
+
+.ex10-5 {
+  @include bd-style03;
+}
+
+.ex10-6 {
+  @include bd-style04;
+}
